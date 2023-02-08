@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+  .big-size-container {
+    margin-top: 20px;
+    height: 70px;
+    .row {
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          text-align: center;
+        }
+      }
+      nav {
+        text-align: center;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          li {
+            margin-left: 35px;
+            a {
+              font-size: 18px;
+              color: #fff;
+              position: relative;
+              z-index: 1;
+            }
+          }
+        }
+      }
+      .icons {
+        i {
+          color: white;
+          font-size: 18px;
+          margin-left: 20px;
+          transition: 0.5s;
+          &:hover {
+            color: black;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-container{
+    .row{
+        .user-cart{
+            float: right;
+        }
+       
+    }
+
+    
+  }
+  .menusss{
+    overflow: hidden;
+    position: relative;
+    top: -34px;
+    background-color: red;
+    width: 0px;
+    height: 200px;
+    transition: 1s;
+}
+.menusss.active{
+    
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -34px;
+    background-color: red;
+    transition: 1s;
+}
+
+.drone-menu{
+    position: absolute;
+    left: 500px;
+    top: 83px;
+    background-color: red;
+    width: 200px;
+    height: 0px;
+    transition: 1s;
+}
+.drone-menu.active{
+    position: absolute;
+    left: 500px;
+    top: 83px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 1s;
+}
+.accesories-menu{
+    position: absolute;
+    left: 620px;
+    top: 83px;
+    background-color: red;
+    width: 200px;
+    height: 0px;
+    transition: 1s;
+}
+.accesories-menu.active{
+    position: absolute;
+    left: 620px;
+    top: 83px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 1s;
+}
+}
+
+
+#underwater{
+   .item{
+    position: relative;
+    .text{
+        position: absolute;
+        bottom: 200px;
+        right: -610px;
+        h2{
+            font-size: 35px;
+            color: rgb(233, 233, 233);
+        }
+        h1{
+            font-size: 78px;
+            color: white;
+        }
+        p{
+            font-size: 18px;
+            color: white;
+        }
+        .btn{
+            width: 170px;
+            background-color: rgb(201, 13, 13);
+            color: white;
+            border-radius: 15px;
+        }
+    }
+  
+   }
+ 
+}
