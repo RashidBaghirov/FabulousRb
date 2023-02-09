@@ -25,10 +25,7 @@ header .big-size-container .row nav {
   text-align: center;
 }
 header .big-size-container .row nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
+  position: relative;
 }
 header .big-size-container .row nav ul li {
   margin-left: 35px;
@@ -36,99 +33,351 @@ header .big-size-container .row nav ul li {
 header .big-size-container .row nav ul li a {
   font-size: 18px;
   color: #fff;
-  position: relative;
   z-index: 1;
+}
+header .big-size-container .row nav ul li a:hover {
+  color: #b4afaf;
+}
+header .big-size-container .row nav ul li .accesories-menu {
+  overflow: hidden;
+  position: absolute;
+  top: 34px;
+  background-color: rgb(252, 252, 252);
+  visibility: hidden;
+  transition: 0.2s all;
+}
+header .big-size-container .row nav ul li .accesories-menu .menu {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header .big-size-container .row nav ul li .accesories-menu .menu h5 {
+  cursor: pointer;
+}
+header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
+  text-align: center;
+}
+header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  cursor: pointer;
+}
+header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
+  color: gray;
+}
+header .big-size-container .row nav ul li .accesories-menu.active {
+  visibility: visible;
+}
+header .big-size-container .row nav ul li .drone-menu {
+  overflow: hidden;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  top: 34px;
+  left: 50px;
+  visibility: hidden;
+  transition: 0.2s all;
+}
+header .big-size-container .row nav ul li .drone-menu .menu {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  cursor: pointer;
+}
+header .big-size-container .row nav ul li .drone-menu .menu ul li {
+  padding: 2px;
+  cursor: pointer;
+}
+header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
+  color: gray;
+}
+header .big-size-container .row nav ul li .drone-menu.active {
+  visibility: visible;
 }
 header .big-size-container .row .icons i {
   color: white;
-  font-size: 18px;
+  font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
+  cursor: pointer;
 }
 header .big-size-container .row .icons i:hover {
   color: black;
   transition: 0.5s;
 }
-header .mobile-container .row .user-cart {
+header .big-size-container .row .icons .count {
+  color: white;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  right: 9px;
+  bottom: 10px;
+}
+header .big-size-container .row .search_input_large {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  transition: 0.3s all;
+}
+header .big-size-container .row .search_input_large .icon_search {
+  position: absolute;
+  top: 0px;
+  right: 3px;
+}
+header .big-size-container .row .search_input_large.active {
+  visibility: visible;
+  opacity: 1;
+}
+header .big-size-container .row .user_registration {
+  right: 8%;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  transition: 0.3s all;
+}
+header .big-size-container .row .user_registration .language {
+  line-height: 0;
+}
+header .big-size-container .row .user_registration .language .image {
+  margin-bottom: 10px;
+}
+header .big-size-container .row .user_registration.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobile-container {
+  background-color: white;
+}
+.mobile-container .row .user-cart {
   float: right;
 }
-header .menusss {
+.mobile-container .row .search_input {
   overflow: hidden;
-  position: relative;
-  top: -34px;
-  background-color: red;
-  width: 0px;
-  height: 200px;
-  transition: 1s;
-}
-header .menusss.active {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  top: -34px;
-  background-color: red;
-  transition: 1s;
-}
-header .drone-menu {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
-  left: 500px;
-  top: 83px;
-  background-color: red;
-  width: 200px;
-  height: 0px;
-  transition: 1s;
+  top: 30px;
+  left: 50px;
+  transition: 0.3s all;
 }
-header .drone-menu.active {
+.mobile-container .row .search_input .icon_search {
   position: absolute;
-  left: 500px;
-  top: 83px;
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  transition: 1s;
+  top: 0px;
+  right: 3px;
 }
-header .accesories-menu {
-  position: absolute;
-  left: 620px;
-  top: 83px;
-  background-color: red;
-  width: 200px;
-  height: 0px;
-  transition: 1s;
+.mobile-container .row .search_input.active {
+  visibility: visible;
+  opacity: 1;
 }
-header .accesories-menu.active {
+.mobile-container .row .user_mobile_registration {
+  top: 2%;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
-  left: 620px;
-  top: 83px;
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  transition: 1s;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  padding: 0px 30px;
+  transition: 0.3s all;
+}
+.mobile-container .row .user_mobile_registration .language {
+  line-height: 0;
+}
+.mobile-container .row .user_mobile_registration .language .image {
+  margin-bottom: 10px;
+}
+.mobile-container .row .user_mobile_registration.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 #underwater .item {
   position: relative;
 }
-#underwater .item .text {
+
+.mobile-menu {
+  overflow: hidden;
+  position: relative;
+  top: -34px;
+  background-color: rgb(255, 255, 255);
+  width: 0px;
+  height: 100vh;
+  transition: 1s;
+}
+.mobile-menu ul {
+  padding: 10px;
+}
+.mobile-menu ul li {
+  padding: 10px;
+}
+.mobile-menu ul li a {
+  color: black;
+}
+.mobile-menu ul li a i.active {
+  transform: rotate(180deg);
+}
+.mobile-menu ul .acs-icon {
+  display: none;
+}
+.mobile-menu ul .acs-icon.active {
+  display: block;
+}
+.mobile-menu ul .drone-icon {
+  display: none;
+}
+.mobile-menu ul .drone-icon.active {
+  display: block;
+}
+
+.mobile-menu.active {
+  position: relative;
+  width: 200px;
+  height: 100vh;
+  top: -34px;
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+#underwater .item.slider_2 {
+  position: relative;
+}
+#underwater .item.slider_2 .sliderContent {
   position: absolute;
-  bottom: 200px;
-  right: -610px;
+  top: 170px;
+  left: 6%;
+  color: #fff;
+  line-height: 30px;
 }
-#underwater .item .text h2 {
-  font-size: 35px;
-  color: rgb(233, 233, 233);
+#underwater .item.slider_2 .sliderContent .title {
+  font-size: 34px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-#underwater .item .text h1 {
-  font-size: 78px;
+#underwater .item.slider_2 .sliderContent h1 {
+  font-size: 60px;
+  margin-top: 30px;
+}
+#underwater .item.slider_2 .sliderContent .shopnow {
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 25px;
+}
+#underwater .item.slider_2 .sliderContent .shopnow:hover {
+  background-color: black;
   color: white;
 }
-#underwater .item .text p {
-  font-size: 18px;
+#underwater .item.slider_1 {
+  position: relative;
+}
+#underwater .item.slider_1 .sliderContent {
+  position: absolute;
+  top: 170px;
+  left: 50%;
+  color: #fff;
+  line-height: 30px;
+}
+#underwater .item.slider_1 .sliderContent .title {
+  font-size: 34px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#underwater .item.slider_1 .sliderContent h1 {
+  font-size: 66px;
+  margin-top: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#underwater .item.slider_1 .sliderContent .shopnow {
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 25px;
+}
+#underwater .item.slider_1 .sliderContent .shopnow:hover {
+  background-color: black;
   color: white;
 }
-#underwater .item .text .btn {
-  width: 170px;
-  background-color: rgb(201, 13, 13);
-  color: white;
-  border-radius: 15px;
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  #underwater .item.slider_1 .sliderContent {
+    top: 50px;
+  }
+  #underwater .item.slider_1 .sliderContent .title {
+    font-size: 22px;
+  }
+  #underwater .item.slider_1 .sliderContent h1 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  #underwater .item.slider_1 .sliderContent .shopnow {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #underwater .item.slider_1 .sliderContent .text {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 391px) and (max-width: 821px) {
+  #underwater .item.slider_2 .sliderContent {
+    top: 50px;
+  }
+  #underwater .item.slider_2 .sliderContent .title {
+    font-size: 22px;
+  }
+  #underwater .item.slider_2 .sliderContent h1 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  #underwater .item.slider_2 .sliderContent .shopnow {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #underwater .item.slider_2 .sliderContent .text {
+    font-size: 14px;
+    width: 50%;
+  }
+}
+
+#ImportInfo {
+  margin-top: 20px;
+}
+#ImportInfo .animeIcon .image {
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+}
+#ImportInfo .animeIcon .image img {
+  transition: 0.6s;
+}
+#ImportInfo .animeIcon .image:hover img {
+  transform: rotateY(360deg);
+}
+#ImportInfo .animeIcon .title-text {
+  text-align: center;
+}
+#ImportInfo .animeIcon .title-text p {
+  color: gray;
+}
+@media screen and (max-width: 391px) {
+  #ImportInfo .animeIcon {
+    display: flex;
+  }
+  #ImportInfo .animeIcon .title-text {
+    margin-left: 20px;
+    text-align: left;
+  }
+  #ImportInfo .animeIcon .image {
+    width: 60px;
+    height: 60px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+  }
+  #ImportInfo .animeIcon .image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+  }
 }/*# sourceMappingURL=style.css.map */
