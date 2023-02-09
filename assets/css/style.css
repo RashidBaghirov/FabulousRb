@@ -155,7 +155,9 @@ header .big-size-container .row .user_registration.active {
   background-color: white;
 }
 .mobile-container .row .user-cart {
-  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-container .row .search_input {
   overflow: hidden;
@@ -176,7 +178,7 @@ header .big-size-container .row .user_registration.active {
   opacity: 1;
 }
 .mobile-container .row .user_mobile_registration {
-  top: 2%;
+  top: 3%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -196,10 +198,6 @@ header .big-size-container .row .user_registration.active {
 .mobile-container .row .user_mobile_registration.active {
   visibility: visible;
   opacity: 1;
-}
-
-#underwater .item {
-  position: relative;
 }
 
 .mobile-menu {
@@ -271,6 +269,7 @@ header .big-size-container .row .user_registration.active {
 #underwater .item.slider_2 .sliderContent .shopnow:hover {
   background-color: black;
   color: white;
+  border: 1px solid black;
 }
 #underwater .item.slider_1 {
   position: relative;
@@ -299,6 +298,7 @@ header .big-size-container .row .user_registration.active {
 #underwater .item.slider_1 .sliderContent .shopnow:hover {
   background-color: black;
   color: white;
+  border: 1px solid black;
 }
 @media screen and (min-width: 391px) and (max-width: 821px) {
   #underwater .item.slider_1 .sliderContent {
@@ -340,9 +340,6 @@ header .big-size-container .row .user_registration.active {
   }
 }
 
-#ImportInfo {
-  margin-top: 20px;
-}
 #ImportInfo .animeIcon .image {
   padding: 8px 0;
   display: flex;
@@ -380,4 +377,55 @@ header .big-size-container .row .user_registration.active {
     height: 100%;
     transition: 0.6s;
   }
+}
+
+#About {
+  padding: 45px;
+}
+#About .about .title {
+  font-size: 16px;
+  letter-spacing: 8px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #eb4d4b;
+}
+#About .about .home_title .home-title {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0;
+  font-weight: 600;
+  color: #232323;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+#About .about .home_title .home-title::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+}
+#About .about .desc {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #787878;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+#About .about ::marker {
+  color: red;
+}
+#About .about .view_more {
+  margin-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 20px;
+}
+#About .about .view_more:hover {
+  background-color: black;
+  border: 1px solid black;
 }/*# sourceMappingURL=style.css.map */

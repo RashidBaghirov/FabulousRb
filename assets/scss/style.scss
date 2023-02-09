@@ -144,14 +144,14 @@ header {
         background-color: rgb(255, 255, 255);
         padding: 0px 30px;
         transition: 0.3s all;
-        .language{
+        .language {
           line-height: 0;
-          .image{
-              margin-bottom: 10px;
+          .image {
+            margin-bottom: 10px;
           }
         }
       }
-      .user_registration.active{
+      .user_registration.active {
         visibility: visible;
         opacity: 1;
       }
@@ -163,7 +163,9 @@ header {
   background-color: white;
   .row {
     .user-cart {
-      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .search_input {
       overflow: hidden;
@@ -184,7 +186,7 @@ header {
       opacity: 1;
     }
     .user_mobile_registration {
-      top: 2%;
+      top: 3%;
       right: 0;
       visibility: hidden;
       opacity: 0;
@@ -193,23 +195,17 @@ header {
       background-color: rgb(255, 255, 255);
       padding: 0px 30px;
       transition: 0.3s all;
-      .language{
+      .language {
         line-height: 0;
-        .image{
-            margin-bottom: 10px;
+        .image {
+          margin-bottom: 10px;
         }
       }
     }
-    .user_mobile_registration.active{
+    .user_mobile_registration.active {
       visibility: visible;
       opacity: 1;
     }
-  }
-}
-
-#underwater {
-  .item {
-    position: relative;
   }
 }
 
@@ -277,9 +273,10 @@ header {
         padding-left: 35px;
         padding-right: 35px;
         border-radius: 25px;
-        &:hover{
+        &:hover {
           background-color: black;
           color: white;
+          border: 1px solid black;
         }
       }
     }
@@ -305,9 +302,10 @@ header {
         padding-left: 35px;
         padding-right: 35px;
         border-radius: 25px;
-        &:hover{
+        &:hover {
           background-color: black;
           color: white;
+          border: 1px solid black;
         }
       }
     }
@@ -359,7 +357,6 @@ header {
 }
 
 #ImportInfo {
-  margin-top: 20px;
   .animeIcon {
     .image {
       padding: 8px 0;
@@ -400,6 +397,62 @@ header {
           height: 100%;
           transition: 0.6s;
         }
+      }
+    }
+  }
+}
+
+#About {
+  padding: 45px;
+  .about {
+    .title {
+      font-size: 16px;
+      letter-spacing: 8px;
+      font-weight: 500;
+      margin-bottom: 12px;
+      color: #eb4d4b;
+    }
+    .home_title {
+      .home-title {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: 0;
+        font-weight: 600;
+        color: #232323;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 80px;
+          height: 4px;
+          background: #eb4d4b;
+          bottom: 0;
+        }
+      }
+    }
+    .desc {
+      margin-bottom: 25px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #787878;
+      letter-spacing: 0.5px;
+      line-height: 24px;
+    }
+    ::marker{
+      color: red;
+    }
+    .view_more{
+      margin-top: 18px;
+      padding-left: 18px;
+      padding-right: 18px;
+      border-radius :20px;
+      &:hover{
+        background-color: black;
+        border: 1px solid black;
       }
     }
   }
