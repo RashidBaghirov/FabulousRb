@@ -198,9 +198,6 @@ header .big-size-container .row .user_registration.active {
 header .mobile-container {
   background-color: white;
 }
-header .mobile-container .row .user-cart {
-  text-align: end;
-}
 header .mobile-container .row .search_input {
   overflow: hidden;
   visibility: hidden;
