@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!device || !device.length) {
     localStorage.setItem("device", JSON.stringify([]));
   } else {
-    // ShowTotalPrice(device);
     ShowProductCount(device);
   }
 });
@@ -169,17 +168,9 @@ function GetProductsData(product) {
   return result;
 }
 
-// function ShowTotalPrice(device) {
-//   let total = document.querySelectorAll(".total-price");
-//   total.forEach((tt) => {
-//     tt.innerText = basket.reduce((total, product) => {
-//       return (total += parseInt(product.price * product.count));
-//     }, 0);
-//   });
-// }
 
 function ShowProductCount(device) {
-  let deviceCount = document.querySelector(".total-price");
+  let deviceCount = document.querySelector(".total_count");
   deviceCount.innerText = device.reduce((total, product) => {
     return (total += product.count);
   }, 0);
@@ -192,8 +183,6 @@ let exitbtn=document.querySelector(".exitbutton")
 let base=document.getElementById("base");
 
 cart.addEventListener("click", function (product) {
-  base.style.zIndex="10000000000000000";
-  base.style.backgroundColor="gray";
   ulparent.classList.add("active");
   let device = JSON.parse(localStorage.getItem("device"));
   ul.innerHTML = " ";
@@ -235,17 +224,3 @@ cart.addEventListener("click", function (product) {
 exitbtn.addEventListener("click",function(){
   ulparent.classList.remove("active");
 })
-
-// let user = document.querySelector(".user");
-// let registr = document.querySelector(".registration");
-
-// user.addEventListener("click", function () {
-//   registr.classList.toggle("activ");
-//   ulparent.classList.remove("active");
-// });
-
-// let sub = document.querySelector(".sub");
-
-// sub.addEventListener("click", function () {
-//   registr.classList.remove("activ");
-// });
