@@ -150,16 +150,13 @@ header .big-size-container .row .user_registration.active {
   visibility: visible;
   opacity: 1;
 }
-
-.mobile-container {
+header .mobile-container {
   background-color: white;
 }
-.mobile-container .row .user-cart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+header .mobile-container .row .user-cart {
+  text-align: end;
 }
-.mobile-container .row .search_input {
+header .mobile-container .row .search_input {
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
@@ -168,16 +165,17 @@ header .big-size-container .row .user_registration.active {
   left: 50px;
   transition: 0.3s all;
 }
-.mobile-container .row .search_input .icon_search {
+header .mobile-container .row .search_input .icon_search {
   position: absolute;
   top: 0px;
   right: 3px;
 }
-.mobile-container .row .search_input.active {
+header .mobile-container .row .search_input.active {
   visibility: visible;
   opacity: 1;
 }
-.mobile-container .row .user_mobile_registration {
+header .mobile-container .row .user_mobile_registration {
+  text-align: start;
   top: 3%;
   right: 0;
   visibility: hidden;
@@ -189,18 +187,17 @@ header .big-size-container .row .user_registration.active {
   padding: 0px 30px;
   transition: 0.3s all;
 }
-.mobile-container .row .user_mobile_registration .language {
+header .mobile-container .row .user_mobile_registration .language {
   line-height: 0;
 }
-.mobile-container .row .user_mobile_registration .language .image {
+header .mobile-container .row .user_mobile_registration .language .image {
   margin-bottom: 10px;
 }
-.mobile-container .row .user_mobile_registration.active {
+header .mobile-container .row .user_mobile_registration.active {
   visibility: visible;
   opacity: 1;
 }
-
-.mobile-menu {
+header .mobile-menu {
   overflow: hidden;
   position: relative;
   top: -34px;
@@ -209,32 +206,31 @@ header .big-size-container .row .user_registration.active {
   height: 100vh;
   transition: 1s;
 }
-.mobile-menu ul {
+header .mobile-menu ul {
   padding: 10px;
 }
-.mobile-menu ul li {
+header .mobile-menu ul li {
   padding: 10px;
 }
-.mobile-menu ul li a {
+header .mobile-menu ul li a {
   color: black;
 }
-.mobile-menu ul li a i.active {
+header .mobile-menu ul li a i.active {
   transform: rotate(180deg);
 }
-.mobile-menu ul .acs-icon {
+header .mobile-menu ul .acs-icon {
   display: none;
 }
-.mobile-menu ul .acs-icon.active {
+header .mobile-menu ul .acs-icon.active {
   display: block;
 }
-.mobile-menu ul .drone-icon {
+header .mobile-menu ul .drone-icon {
   display: none;
 }
-.mobile-menu ul .drone-icon.active {
+header .mobile-menu ul .drone-icon.active {
   display: block;
 }
-
-.mobile-menu.active {
+header .mobile-menu.active {
   position: relative;
   width: 200px;
   height: 100vh;
@@ -243,105 +239,228 @@ header .big-size-container .row .user_registration.active {
   transition: 1s;
 }
 
-#underwater .item.slider_2 {
+@media screen and (max-width: 391px) {
+  #base {
+    top: 70px;
+  }
+}
+#base:hover .right {
+  opacity: 1;
+}
+#base:hover .left {
+  opacity: 1;
+}
+#base .right {
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  padding: 4px 10px;
+  position: absolute;
+  top: 300px;
+  right: 25px;
+  z-index: 2;
+  background-color: #eb4d4b;
+  transition: 0.3s;
+  opacity: 0;
+}
+#base .right:hover {
+  background-color: #333;
+}
+#base .right i {
+  color: white;
+}
+#base .left {
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  padding: 4px 10px;
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  z-index: 2;
+  background-color: #eb4d4b;
+  transition: 0.3s;
+  opacity: 0;
+}
+#base .left:hover {
+  background-color: #333;
+}
+#base .left i {
+  color: white;
+}
+#base .fastDrone {
   position: relative;
 }
-#underwater .item.slider_2 .sliderContent {
+#base .fastDrone .droneImage {
   position: absolute;
-  top: 170px;
-  left: 6%;
-  color: #fff;
-  line-height: 30px;
+  width: 100%;
+  cursor: pointer;
 }
-#underwater .item.slider_2 .sliderContent .title {
-  font-size: 34px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+#base .fastDrone .droneImage img {
+  width: 100%;
 }
-#underwater .item.slider_2 .sliderContent h1 {
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneImage img {
+    content: url("../images/ResponsiveDrone1.png");
+    width: 100%;
+  }
+}
+#base .fastDrone .droneInfo {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  width: 50%;
+  color: white;
+  overflow: hidden;
+}
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneInfo {
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    text-align: center;
+  }
+}
+#base .fastDrone .droneInfo .title-text {
+  width: 80%;
+}
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneInfo .title-text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 821px) {
+  #base .fastDrone .droneInfo .title-text {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneInfo .title-text h2 {
+    font-size: 18px;
+  }
+}
+#base .fastDrone .droneInfo .title-text h1 {
+  padding: 8px 0;
+  font-size: 75px;
+}
+@media screen and (max-width: 821px) {
+  #base .fastDrone .droneInfo .title-text h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneInfo .title-text h1 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneInfo .title-text p {
+    display: none;
+  }
+}
+#base .fastDrone .droneButton button {
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background-color: #eb4d4b;
+}
+@media screen and (max-width: 391px) {
+  #base .fastDrone .droneButton button {
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+}
+#base .fastDrone .droneButton button:hover {
+  background-color: #333;
+}
+#base .underwaterDrone {
+  position: relative;
+}
+#base .underwaterDrone .droneImage {
+  cursor: pointer;
+}
+#base .underwaterDrone .droneImage img {
+  width: 100%;
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneImage img {
+    content: url("../images/ResponsiveDrone2.png");
+    width: 100%;
+  }
+}
+#base .underwaterDrone .droneInfo {
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 50%;
+  color: white;
+  overflow: hidden;
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneInfo {
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    text-align: center;
+  }
+}
+#base .underwaterDrone .droneInfo .title-text {
+  width: 70%;
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneInfo .title-text {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 821px) {
+  #base .underwaterDrone .droneInfo .title-text {
+    padding-top: 18px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneInfo .title-text h2 {
+    font-size: 18px;
+  }
+}
+#base .underwaterDrone .droneInfo .title-text h1 {
+  padding: 8px 0;
   font-size: 60px;
-  margin-top: 30px;
 }
-#underwater .item.slider_2 .sliderContent .shopnow {
-  padding-left: 35px;
-  padding-right: 35px;
-  border-radius: 25px;
-}
-#underwater .item.slider_2 .sliderContent .shopnow:hover {
-  background-color: black;
-  color: white;
-  border: 1px solid black;
-}
-#underwater .item.slider_1 {
-  position: relative;
-}
-#underwater .item.slider_1 .sliderContent {
-  position: absolute;
-  top: 170px;
-  left: 50%;
-  color: #fff;
-  line-height: 30px;
-}
-#underwater .item.slider_1 .sliderContent .title {
-  font-size: 34px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-#underwater .item.slider_1 .sliderContent h1 {
-  font-size: 66px;
-  margin-top: 30px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-#underwater .item.slider_1 .sliderContent .shopnow {
-  padding-left: 35px;
-  padding-right: 35px;
-  border-radius: 25px;
-}
-#underwater .item.slider_1 .sliderContent .shopnow:hover {
-  background-color: black;
-  color: white;
-  border: 1px solid black;
-}
-@media screen and (min-width: 391px) and (max-width: 821px) {
-  #underwater .item.slider_1 .sliderContent {
-    top: 50px;
+@media screen and (max-width: 821px) {
+  #base .underwaterDrone .droneInfo .title-text h1 {
+    font-size: 28px;
   }
-  #underwater .item.slider_1 .sliderContent .title {
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneInfo .title-text h1 {
     font-size: 22px;
   }
-  #underwater .item.slider_1 .sliderContent h1 {
-    font-size: 26px;
-    margin-top: 20px;
-  }
-  #underwater .item.slider_1 .sliderContent .shopnow {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  #underwater .item.slider_1 .sliderContent .text {
-    font-size: 14px;
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneInfo .title-text p {
+    display: none;
   }
 }
-@media screen and (min-width: 391px) and (max-width: 821px) {
-  #underwater .item.slider_2 .sliderContent {
-    top: 50px;
+#base .underwaterDrone .droneButton button {
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background-color: #eb4d4b;
+}
+@media screen and (max-width: 391px) {
+  #base .underwaterDrone .droneButton button {
+    font-size: 10px;
+    margin-bottom: 30px;
   }
-  #underwater .item.slider_2 .sliderContent .title {
-    font-size: 22px;
-  }
-  #underwater .item.slider_2 .sliderContent h1 {
-    font-size: 26px;
-    margin-top: 20px;
-  }
-  #underwater .item.slider_2 .sliderContent .shopnow {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  #underwater .item.slider_2 .sliderContent .text {
-    font-size: 14px;
-    width: 50%;
-  }
+}
+#base .underwaterDrone .droneButton button:hover {
+  background-color: #333;
 }
 
 #ImportInfo .animeIcon .image {
-  padding: 8px 0;
   display: flex;
   justify-content: center;
 }
@@ -380,7 +499,11 @@ header .big-size-container .row .user_registration.active {
 }
 
 #About {
-  padding: 45px;
+  padding: 48px;
+}
+#About .image img {
+  width: 100%;
+  height: 100%;
 }
 #About .about .title {
   font-size: 16px;
@@ -428,4 +551,214 @@ header .big-size-container .row .user_registration.active {
 #About .about .view_more:hover {
   background-color: black;
   border: 1px solid black;
+}
+
+#products {
+  background-image: url(../images/testimonialbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 48px;
+}
+#products .title .subtitle {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #eb4d4b;
+}
+#products .title .home {
+  font-size: 34px;
+  position: relative;
+}
+#products .title .home .home-title:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#products .item {
+  display: flex;
+  justify-content: center;
+}
+#products .item .detail {
+  position: relative;
+  text-align: left;
+  background: #fff;
+  padding: 65px 50px 40px;
+  margin-top: 60px;
+}
+#products .item .detail .image {
+  max-width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #eb4d4b;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  position: absolute;
+  top: -60px;
+  left: 50px;
+}
+#products .item .user_description {
+  margin-bottom: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+#products .item .user_detail .user_name {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #232323;
+}
+#products .item .user_detail .user_designation {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 6px;
+  letter-spacing: 0.5px;
+  color: #eb4d4b;
+  display: inline-block;
+}
+
+#latest .title .subtitle {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #eb4d4b;
+}
+#latest .title .home {
+  font-size: 34px;
+  position: relative;
+}
+#latest .title .home .home-title:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#latest .latest_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#latest .latest_ul .latest_ul_li {
+  border: 1px solid rgb(238, 235, 235);
+  padding: 5px;
+  margin: 1px;
+  display: inline-block;
+}
+#latest .latest_ul .latest_ul_li:hover {
+  background-color: #f3ebeb;
+}
+#latest .latest_ul .latest_ul_li a {
+  padding: 20px;
+}
+#latest .device {
+  margin-bottom: 110px;
+  padding: 11px;
+  height: 400px;
+  position: relative;
+}
+#latest .device .image {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+#latest .device .image img {
+  width: 100%;
+  height: 100%;
+}
+#latest .device .image .first {
+  position: absolute;
+  opacity: 1;
+  transition: 1s all;
+}
+#latest .device .image .second {
+  position: absolute;
+  opacity: 0;
+  transition: 1s all;
+}
+#latest .device .image:hover .first {
+  opacity: 0;
+}
+#latest .device .image:hover .second {
+  opacity: 1;
+}
+#latest .device .rating {
+  position: absolute;
+  color: rgb(230, 255, 5);
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#latest .device .buttons {
+  position: absolute;
+  left: auto;
+  right: 16px;
+  top: 10px;
+  display: block;
+}
+#latest .device .buttons .allbutton {
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 50%;
+  margin-top: 5px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#latest .device .allbutton.active {
+  opacity: 1;
+}
+#latest .caption {
+  padding: 10px;
+}
+#latest .caption .add_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb4d4b;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -62px;
+  transition: 0.5s all;
+  overflow: hidden;
+  opacity: 0;
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+}
+#latest .caption .add_cart.active {
+  opacity: 1;
+}
+#latest .caption .description {
+  margin-bottom: 10px;
+}
+#latest .caption .price {
+  color: #eb4d4b;
+  font-size: 16px;
+  margin-bottom: 5px;
+  transition: all 0.4s;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

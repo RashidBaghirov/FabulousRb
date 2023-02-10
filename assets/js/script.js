@@ -42,13 +42,22 @@ $(document).ready(function () {
     $(".user_mobile_registration").toggleClass("active");
     $(".search_input").removeClass("active");
   });
+  
+  $(".device").on("mouseover", function () {
+    $(this).find(".add_cart").addClass("active");
+    $(this).find(".allbutton").addClass("active");
+  });
+  $(".device").on("mouseout", function () {
+    $(this).find(".add_cart").removeClass("active");
+    $(this).find(".allbutton").removeClass("active");
+  });
+
   setInterval(function () {
     $(".sliderContent").addClass("animate__fadeInDownBig");
     setTimeout(function () {
       $(".sliderContent").removeClass("animate__fadeInDownBig");
     }, 2450);
   }, 2500);
-
 
   var owl = $(".owl-carousel");
   owl.owlCarousel({
@@ -83,4 +92,160 @@ $(document).ready(function () {
       },
     },
   });
+ 
+
+
+  $('.person').owlCarousel({
+    stagePadding: 50,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+
 });
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  let devicestr = localStorage.getItem("device");
+  let device = JSON.parse(devicestr);
+
+  if (!device || !device.length) {
+    localStorage.setItem("device", JSON.stringify([]));
+  } else {
+    // ShowTotalPrice(device);
+    ShowProductCount(device);
+  }
+});
+
+let buttons = document.querySelectorAll(".add_cart");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    let device = JSON.parse(localStorage.getItem("device"));
+    if (!device) {
+      localStorage.setItem("device", JSON.stringify([]));
+      device = JSON.parse(localStorage.getItem("device"));
+    }
+    let product = GetProductsData(this);
+    console.log(product);
+    let sameid = device.find((pro) => {
+      return pro.id == product.id;
+    });
+    if (!sameid) {
+      device.push(product);
+    } else {
+      sameid.count++;
+    }
+    // ulparent.classList.remove("active");
+    // ShowTotalPrice(device);
+    ShowProductCount(device);
+    let devicestr = JSON.stringify(device);
+    localStorage.setItem("device", devicestr);
+  });
+});
+
+function GetProductsData(product) {
+  let parent = product.parentElement.parentElement
+  let title = parent.querySelector(".title")
+  let src = parent.querySelector("img").src;
+  let id = parent.getAttribute("data-id");
+  let price = parent.querySelector(".price").innerText;
+  result = { title, src, id, price, count: 1 };
+  return result;
+}
+
+// function ShowTotalPrice(device) {
+//   let total = document.querySelectorAll(".total-price");
+//   total.forEach((tt) => {
+//     tt.innerText = basket.reduce((total, product) => {
+//       return (total += parseInt(product.price * product.count));
+//     }, 0);
+//   });
+// }
+
+function ShowProductCount(device) {
+  let deviceCount = document.querySelector(".total-price");
+  deviceCount.innerText = device.reduce((total, product) => {
+    return (total += product.count);
+  }, 0);
+}
+
+let cart = document.querySelector(".cart");
+let ul = document.querySelector(".box_device");
+let ulparent = document.querySelector(".box");
+let exitbtn=document.querySelector(".exitbutton")
+let base=document.getElementById("base");
+
+cart.addEventListener("click", function (product) {
+  base.style.zIndex="10000000000000000";
+  base.style.backgroundColor="gray";
+  ulparent.classList.add("active");
+  let device = JSON.parse(localStorage.getItem("device"));
+  ul.innerHTML = " ";
+
+  device.forEach((devices) => {
+    let task = `
+  <li>
+  <div class="cart_image">
+      <img src="${devices.src}" alt="">
+  </div>
+  <div class="info">
+     <h6>${devices.title}</h6>
+     <span>${devices.count}</span>
+     x
+      <span>${devices.price}AZN</span>
+  </div>
+  <div class="del_btn">
+    <i class="fa-solid fa-trash"></i>
+  </div>
+  </li>
+  `;
+    ul.innerHTML += task;
+  });
+  let delbtn = document.querySelectorAll(".del_btn");
+
+  delbtn.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      let li = this.parentElement;
+      let id = document.querySelector("data-id");
+      device = device.filter((dev) => dev.id != id);
+      li.remove();
+      // ShowTotalPrice(basket);
+      ShowProductCount(device);
+      localStorage.setItem("device", JSON.stringify(basket));
+    });
+  });
+});
+
+exitbtn.addEventListener("click",function(){
+  ulparent.classList.remove("active");
+})
+
+// let user = document.querySelector(".user");
+// let registr = document.querySelector(".registration");
+
+// user.addEventListener("click", function () {
+//   registr.classList.toggle("activ");
+//   ulparent.classList.remove("active");
+// });
+
+// let sub = document.querySelector(".sub");
+
+// sub.addEventListener("click", function () {
+//   registr.classList.remove("activ");
+// });
