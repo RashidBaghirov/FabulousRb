@@ -1,4 +1,16 @@
 $(document).ready(function () {
+
+  $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 10) {
+            $("header").addClass("ac");
+        } else {
+           $("header").removeClass("ac");
+        }
+    });
+  });
+
+
   $(".mobil-bars").on("click", function () {
     $(".mobile-menu").addClass("active");
     $(".search_input").removeClass("active");
@@ -185,6 +197,7 @@ let exitbtn=document.querySelector(".exitbutton")
 let base=document.getElementById("base");
 
 cart.addEventListener("click", function (product) {
+  document.body.style.overflowY="hidden";
   ulparent.classList.add("active");
   let device = JSON.parse(localStorage.getItem("device"));
   ul.innerHTML = " ";
@@ -225,4 +238,5 @@ cart.addEventListener("click", function (product) {
 
 exitbtn.addEventListener("click",function(){
   ulparent.classList.remove("active");
+  document.body.style.overflowY="scroll";
 })
