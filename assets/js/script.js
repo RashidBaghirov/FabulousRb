@@ -79,7 +79,7 @@ $(document).ready(function () {
     }
   });
 
-  $(".mobil-bars").on("click", function () {
+  $(".mobil_bars").on("click", function () {
     $(".mobile-menu").addClass("active");
     $(".search_input").removeClass("active");
   });
@@ -106,7 +106,7 @@ $(document).ready(function () {
   $(".drone").on("mouseout", function () {
     $(".drone-menu").removeClass("active");
   });
-  $(".fa-magnifying-glass").on("click", function () {
+  $(".mobile_glass").on("click", function () {
     $(".search_input").toggleClass("active");
     $(".user_mobile_registration").removeClass("active");
   });
@@ -118,7 +118,7 @@ $(document).ready(function () {
     $(".user_registration").toggleClass("active");
     $(".search_input_large").removeClass("active");
   });
-  $(".mobile_user").on("click", function () {
+  $(".user").on("click", function () {
     $(".user_mobile_registration").toggleClass("active");
     $(".search_input").removeClass("active");
   });
