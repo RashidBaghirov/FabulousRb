@@ -10,6 +10,22 @@ $(document).ready(function () {
     });
   });
 
+  
+  $(".accordion_btn").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).siblings(".content").slideUp("fast");
+      $(this).removeClass("active");
+      console.log(this);
+
+    } else {
+      $(".content").slideUp("fast");
+      $(".btn").removeClass("active");
+      $(this).siblings(".content").slideToggle();
+      $(this).toggleClass("active");
+      console.log(this);
+    }
+  });
+
 
   $(".mobil-bars").on("click", function () {
     $(".mobile-menu").addClass("active");
@@ -65,9 +81,9 @@ $(document).ready(function () {
   });
 
   setInterval(function () {
-    $(".sliderContent").addClass("animate__fadeInDownBig");
+    $(".title_text_carusel").addClass("animate__fadeInDownBig");
     setTimeout(function () {
-      $(".sliderContent").removeClass("animate__fadeInDownBig");
+      $(".title_text_carusel").removeClass("animate__fadeInDownBig");
     }, 2450);
   }, 2500);
 

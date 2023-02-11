@@ -615,7 +615,7 @@ header {
     }
   }
 }
-#ImportInfo {
+#import {
   .animeIcon {
     .image {
       display: flex;
@@ -1415,4 +1415,38 @@ footer {
       }
     }
   }
+}
+
+
+
+#faq{
+    .container{
+        .accordion{
+            .content{
+                display: none;
+            }
+
+            .btn{
+                .title{
+                    display: flex;
+                    justify-content: space-between;
+                    i{
+                        font-size: 29px;
+                        transform: rotate(0deg);
+                        transition: 1s;
+                        float: right;
+                    }
+                }
+            }
+            .btn.active{
+                .title{
+                    i{
+                    
+                        transform: rotate(180deg);
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+    }
 }
