@@ -129,72 +129,7 @@ header {
           z-index: 1;
           overflow: hidden;
 
-          .cart-list{
-            width: 100%;
-            height: 100%;
-            .product-list{
-                overflow-y: scroll;
-                overflow-x: hidden;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                li{
-                    margin: 0;
-                    p{
-                        margin: 50% auto;
-                        text-align: center;
-                        color: #adadad;
-                    }
-                }
-            }
-        }
-        .cart-bottom{
-            position: sticky;
-            bottom: 0px;
-            width: 100%;
-            height: 30%;
-            border-top: 1px solid #eee;
-            background-color: white;
-            ul{
-                line-height: 30px;
-                font-size: 15px;
-                padding: 0;
-                margin: 0;
-                li{
-                    margin: 0;
-                    display: flex;
-                    justify-content: space-between;
-                    span:nth-child(even){
-                        font-weight: 500;
-                    }
-                }
-            }
-            .buttons{
-                width: 100%;
-                padding: 10px 0;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                button{
-                    font-size: 14px;
-                    height: 40px;
-                    width: 49%;
-                    border: none;
-                    background-color:#EB4D50;
-                    color: white;
-                    transition: 0.5s;
-                    &:hover{
-                        background-color: #232323;
-                    }
-                    &:nth-child(2){
-                        background-color: #232323;
-                    }
-                    &:nth-child(2):hover {
-                        background-color:#EB4D50;
-                    }
-                }
-            }
-        }
+        
 
           .box_device {
             li {
@@ -242,14 +177,19 @@ header {
     .search_input_large {
       visibility: hidden;
       opacity: 0;
-      position: absolute;
+      position: relative;
       top: 70%;
       right: 5%;
       transition: 0.3s all;
+      .input_div{
+        position: absolute;
+        right: 0;
+      }
+
       .icon_search {
         position: absolute;
         top: 0px;
-        right: 3px;
+        right: 0px;
       }
     }
     .search_input_large.active {
@@ -257,6 +197,8 @@ header {
       opacity: 1;
     }
     .user_registration {
+      width: 35%;
+      top: 71%;
       right: 8%;
       visibility: hidden;
       opacity: 0;
