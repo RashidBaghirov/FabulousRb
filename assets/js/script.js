@@ -80,10 +80,19 @@ $(document).ready(function () {
     $(this).find(".allbutton").removeClass("active");
   });
 
+  $(".title_info_faq_title").click(function () {
+    let $icon = $(this).find("i");
+    $icon.toggleClass("active");
+    $(this).next().slideToggle();
+    $(".faq_info_").not($(this).next()).slideUp();
+    $(".title_info_faq_title i").not($icon).removeClass("active");
+  });
+
   setInterval(function () {
-    $(".title_text_carusel").addClass("animate__fadeInDownBig");
+    $(".droneInfo").addClass("animate__fadeInDownBig");
+    
     setTimeout(function () {
-      $(".title_text_carusel").removeClass("animate__fadeInDownBig");
+      $(".droneInfo").removeClass("animate__fadeInDownBig");
     }, 2450);
   }, 2500);
 

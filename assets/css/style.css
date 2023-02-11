@@ -537,59 +537,59 @@ header .big-size-container .user_registration.active {
   background-color: #333;
 }
 
-#ImportInfo .animeIcon .image {
+#import .animeIcon .image {
   display: flex;
   justify-content: center;
 }
-#ImportInfo .animeIcon .image img {
+#import .animeIcon .image img {
   transition: 0.6s;
 }
-#ImportInfo .animeIcon .image:hover img {
+#import .animeIcon .image:hover img {
   transform: rotateY(360deg);
 }
-#ImportInfo .animeIcon .title-text {
+#import .animeIcon .title-text {
   text-align: center;
 }
-#ImportInfo .animeIcon .title-text p {
+#import .animeIcon .title-text p {
   color: gray;
 }
 @media screen and (max-width: 391px) {
-  #ImportInfo .animeIcon {
+  #import .animeIcon {
     display: flex;
   }
-  #ImportInfo .animeIcon .title-text {
+  #import .animeIcon .title-text {
     margin-left: 20px;
     text-align: left;
   }
-  #ImportInfo .animeIcon .image {
+  #import .animeIcon .image {
     width: 60px;
     height: 60px;
     padding: 8px 0;
     display: flex;
     justify-content: center;
   }
-  #ImportInfo .animeIcon .image img {
+  #import .animeIcon .image img {
     width: 100%;
     height: 100%;
     transition: 0.6s;
   }
 }
 
-#About {
+#about {
   padding: 48px;
 }
-#About .image img {
+#about .image img {
   width: 100%;
   height: 100%;
 }
-#About .about .title {
+#about .about .title {
   font-size: 16px;
   letter-spacing: 8px;
   font-weight: 500;
   margin-bottom: 12px;
   color: #eb4d4b;
 }
-#About .about .home_title .home-title {
+#about .about .home_title .home-title {
   font-size: 40px;
   line-height: 40px;
   letter-spacing: 0;
@@ -600,7 +600,7 @@ header .big-size-container .user_registration.active {
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
-#About .about .home_title .home-title::before {
+#about .about .home_title .home-title::before {
   position: absolute;
   content: "";
   width: 80px;
@@ -608,7 +608,7 @@ header .big-size-container .user_registration.active {
   background: #eb4d4b;
   bottom: 0;
 }
-#About .about .desc {
+#about .about .desc {
   margin-bottom: 25px;
   font-size: 14px;
   font-weight: 400;
@@ -616,16 +616,16 @@ header .big-size-container .user_registration.active {
   letter-spacing: 0.5px;
   line-height: 24px;
 }
-#About .about ::marker {
+#about .about ::marker {
   color: red;
 }
-#About .about .view_more {
+#about .about .view_more {
   margin-top: 18px;
   padding-left: 18px;
   padding-right: 18px;
   border-radius: 20px;
 }
-#About .about .view_more:hover {
+#about .about .view_more:hover {
   background-color: black;
   border: 1px solid black;
 }
@@ -1298,4 +1298,130 @@ footer .footer_end_ .accordion .accordion-item .first_accordion .accordion_body 
     text-decoration: none;
     color: white;
   }
+}
+
+#faq {
+  background-color: #f2f6f9;
+}
+#faq .faq_caption {
+  text-align: center;
+  padding: 50px 0 0 0;
+  margin: 50px 0 0 0;
+}
+@media screen and (max-width: 391px) {
+  #faq .faq_caption {
+    margin: 20px 0 0 0;
+    padding: 20px 0 0 0;
+  }
+}
+@media screen and (max-width: 821px) {
+  #faq .faq_caption {
+    font-size: 14px;
+    padding: 12px 0 0 0;
+    letter-spacing: 3px;
+  }
+}
+#faq .faq_caption h5 {
+  font-size: 17px;
+  color: #eb4d4b;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+@media screen and (max-width: 391px) {
+  #faq .faq_caption h5 {
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 12px 0 0 0;
+    letter-spacing: 10px;
+  }
+}
+@media screen and (max-width: 821px) {
+  #faq .faq_caption h5 {
+    font-size: 14px;
+    padding: 12px 0 0 0;
+    letter-spacing: 3px;
+  }
+}
+#faq .faq_caption h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+@media screen and (max-width: 391px) {
+  #faq .faq_caption h1 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 821px) {
+  #faq .faq_caption h1 {
+    font-size: 26px;
+  }
+}
+#faq .line_ {
+  margin: 14px auto 50px;
+  width: 10%;
+  height: 4px;
+  background-color: #eb4d4b;
+}
+@media screen and (max-width: 391px) {
+  #faq .line_ {
+    width: 20%;
+    margin: 12px auto;
+  }
+}
+@media screen and (max-width: 821px) {
+  #faq .line_ {
+    margin: 12px auto;
+  }
+}
+#faq .accordion {
+  padding: 20px 100px;
+}
+@media screen and (max-width: 391px) {
+  #faq .accordion {
+    padding: 20px 30px;
+  }
+}
+@media screen and (max-width: 821px) {
+  #faq .accordion {
+    padding: 20px 10px;
+  }
+}
+#faq .accordion .title_info {
+  border-bottom: 1px solid lightgray;
+}
+#faq .accordion .title_info .title_info_faq_title {
+  width: 100%;
+  padding: 14px 0;
+  width: 100%;
+  height: 50px;
+}
+#faq .accordion .title_info .title_info_faq_title h5 {
+  color: #333;
+  float: left;
+}
+@media screen and (max-width: 391px) {
+  #faq .accordion .title_info .title_info_faq_title h5 {
+    font-size: 15px;
+  }
+}
+#faq .accordion .title_info .title_info_faq_title i {
+  font-size: 14px;
+  float: right;
+  transform: rotate(0deg);
+  transition: 0.1s;
+}
+#faq .accordion .title_info .title_info_faq_title i.active {
+  transform: rotate(180deg);
+}
+#faq .accordion .title_info .faq_info_ {
+  color: #787878;
+  display: none;
+}
+@media screen and (max-width: 391px) {
+  #faq .accordion .title_info .faq_info_ p {
+    font-size: 13px;
+  }
+}
+#faq .accordion .title_info ._faq_ {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

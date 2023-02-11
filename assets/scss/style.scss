@@ -161,7 +161,7 @@ header {
               }
             }
           }
-          .cart_button_x{
+          .cart_button_x {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -660,7 +660,7 @@ header {
   }
 }
 
-#About {
+#about {
   padding: 48px;
   .image {
     img {
@@ -1417,36 +1417,155 @@ footer {
   }
 }
 
+#faq {
+  background-color: #f2f6f9;
 
+  .faq_caption {
+      text-align: center;
+      padding: 50px 0 0 0;
+      margin: 50px 0 0 0;
 
-#faq{
-    .container{
-        .accordion{
-            .content{
-                display: none;
-            }
+      @media screen and (max-width: 391px) {
+          & {
+              margin: 20px 0 0 0;
+              padding: 20px 0 0 0;
+          }
+      }
 
-            .btn{
-                .title{
-                    display: flex;
-                    justify-content: space-between;
-                    i{
-                        font-size: 29px;
-                        transform: rotate(0deg);
-                        transition: 1s;
-                        float: right;
-                    }
-                }
-            }
-            .btn.active{
-                .title{
-                    i{
-                    
-                        transform: rotate(180deg);
-                        transition: 1s;
-                    }
-                }
-            }
-        }
-    }
+      @media screen and (max-width: 821px) {
+          & {
+              font-size: 14px;
+              padding: 12px 0 0 0;
+              letter-spacing: 3px;
+          }
+      }
+
+      h5 {
+          font-size: 17px;
+          color: #eb4d4b;
+          text-transform: uppercase;
+          letter-spacing: 7px;
+
+          @media screen and (max-width: 391px) {
+              & {
+                  font-size: 14px;
+                  letter-spacing: 3px;
+                  padding: 12px 0 0 0;
+                  letter-spacing: 10px;
+              }
+          }
+
+          @media screen and (max-width: 821px) {
+              & {
+                  font-size: 14px;
+                  padding: 12px 0 0 0;
+                  letter-spacing: 3px;
+              }
+          }
+      }
+
+      h1 {
+          font-size: 40px;
+          font-weight: 700;
+
+          @media screen and (max-width: 391px) {
+              & {
+                  font-size: 26px;
+              }
+          }
+
+          @media screen and (max-width: 821px) {
+              & {
+                  font-size: 26px;
+              }
+          }
+      }
+  }
+
+  .line_ {
+      margin: 14px auto 50px;
+      width: 10%;
+      height: 4px;
+      background-color: #eb4d4b;
+
+      @media screen and (max-width: 391px) {
+          & {
+              width: 20%;
+              margin: 12px auto;
+          }
+      }
+
+      @media screen and (max-width: 821px) {
+          & {
+              margin: 12px auto;
+          }
+      }
+  }
+
+  .accordion {
+      padding: 20px 100px;
+
+      @media screen and (max-width: 391px) {
+          & {
+              padding: 20px 30px;
+          }
+      }
+
+      @media screen and (max-width: 821px) {
+          & {
+              padding: 20px 10px;
+          }
+      }
+
+      .title_info {
+          border-bottom: 1px solid lightgray;
+
+          .title_info_faq_title {
+              width: 100%;
+              padding: 14px 0;
+              width: 100%;
+              height: 50px;
+
+              h5 {
+                  color: #333;
+                  float: left;
+
+                  @media screen and (max-width: 391px) {
+                      & {
+                          font-size: 15px;
+                      }
+                  }
+              }
+
+              i {
+                  font-size: 14px;
+                  float: right;
+                  transform: rotate(0deg);
+                  transition: 0.1s;
+              }
+
+              i.active {
+                  transform: rotate(180deg);
+              }
+          }
+
+          .faq_info_ {
+              color: #787878;
+              display: none;
+
+              p {
+                  @media screen and (max-width: 391px) {
+                      & {
+                          font-size: 13px;
+                      }
+                  }
+              }
+          }
+
+          ._faq_ {
+              display: block;
+          }
+      }
+  }
+
 }
