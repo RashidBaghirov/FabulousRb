@@ -1,22 +1,75 @@
 $(document).ready(function () {
+  $(window).scroll(function () {
+    let big_size = $(".big-size-container");
+    let mob_size = $(".mobile-container ");
+    scroll = $(window).scrollTop();
+    let a = big_size.find(".li_a");
+    let icon= big_size.find(".icon");
+    if (scroll >= 66) {
+      big_size
+        .css({
+          position: "fixed",
+          top: 0,
+          backgroundColor: "white",
+          boxShadow: "1px 1px 10px 1px gray",
+          zIndex: 2,
+        })
+        .addClass("animate_animated animate_fadeInDown");
+      a.css({ color: "black" });
+      icon.css({ color: "black" });
+      a.mouseover(function () {
+        $(this).css({ color: "#eb4d4b" });
+      });
+      a.mouseout(function () {
+        $(this).css({ color: "black" });
+      });
+      icon.mouseover(function () {
+        $(this).css({ color: "#eb4d4b" });
+      });
+      icon.mouseout(function () {
+        $(this).css({ color: "black" });
+      });
+      mob_size.css({
+        position: "fixed",
+        top: 0,
+        backgroundColor: "white",
+        boxShadow: "1px 1px 10px 1px gray",
+        zIndex: 2,
+      });
+      a.mouseout(function () {
+        $(this).css({ color: "black" });
+      });
+    } else {
+      if ($(window).width() >= 891) {
+        big_size.css({
+          position: "absolute",
+          backgroundColor: "transparent",
+          boxShadow: "none",
+        });
+        a.css({ color: "white" });
+      } else {
+        a.css({ color: "black" });
+      }
+      big_size.css({
+        position: "absolute",
+      });
 
-  $(function() {
-    $(window).on("scroll", function() {
-        if($(window).scrollTop() > 10) {
-            $("header").addClass("ac");
-        } else {
-           $("header").removeClass("ac");
-        }
-    });
+      big_size.removeClass("animate_animated animate_fadeInDown");
+
+      a.mouseover(function () {
+        $(this).css({ color: "black" });
+      });
+      a.mouseout(function () {
+        $(this).css({ color: "white" });
+      });
+    }
   });
 
-  
   $(".accordion_btn").on("click", function () {
     if ($(this).hasClass("active")) {
       $(this).siblings(".content").slideUp("fast");
       $(this).removeClass("active");
       console.log(this);
-
     } else {
       $(".content").slideUp("fast");
       $(".btn").removeClass("active");
@@ -25,7 +78,6 @@ $(document).ready(function () {
       console.log(this);
     }
   });
-
 
   $(".mobil-bars").on("click", function () {
     $(".mobile-menu").addClass("active");
@@ -70,7 +122,7 @@ $(document).ready(function () {
     $(".user_mobile_registration").toggleClass("active");
     $(".search_input").removeClass("active");
   });
-  
+
   $(".device").on("mouseover", function () {
     $(this).find(".add_cart").addClass("active");
     $(this).find(".allbutton").addClass("active");
@@ -90,7 +142,7 @@ $(document).ready(function () {
 
   setInterval(function () {
     $(".droneInfo").addClass("animate__fadeInDownBig");
-    
+
     setTimeout(function () {
       $(".droneInfo").removeClass("animate__fadeInDownBig");
     }, 2450);
@@ -129,35 +181,28 @@ $(document).ready(function () {
       },
     },
   });
- 
 
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:2,
-            nav:true,
-            loop:false
-        }
-    }
-})
-
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 3,
+        nav: false,
+      },
+      1000: {
+        items: 2,
+        nav: true,
+        loop: false,
+      },
+    },
+  });
 });
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let devicestr = localStorage.getItem("device");
@@ -198,15 +243,14 @@ buttons.forEach((btn) => {
 });
 
 function GetProductsData(product) {
-  let parent = product.parentElement.parentElement
-  let title = parent.querySelector(".title")
+  let parent = product.parentElement.parentElement;
+  let title = parent.querySelector(".title");
   let src = parent.querySelector("img").src;
   let id = parent.getAttribute("data-id");
   let price = parent.querySelector(".price").innerText;
   result = { title, src, id, price, count: 1 };
   return result;
 }
-
 
 function ShowProductCount(device) {
   let deviceCount = document.querySelector(".total_count");
@@ -218,11 +262,11 @@ function ShowProductCount(device) {
 let cart = document.querySelector(".cart");
 let ul = document.querySelector(".box_device");
 let ulparent = document.querySelector(".box");
-let exitbtn=document.querySelector(".exitbutton")
-let base=document.getElementById("base");
+let exitbtn = document.querySelector(".exitbutton");
+let base = document.getElementById("base");
 
 cart.addEventListener("click", function (product) {
-  document.body.style.overflowY="hidden";
+  document.body.style.overflowY = "hidden";
   ulparent.classList.add("active");
   let device = JSON.parse(localStorage.getItem("device"));
   ul.innerHTML = " ";
@@ -261,7 +305,7 @@ cart.addEventListener("click", function (product) {
   });
 });
 
-exitbtn.addEventListener("click",function(){
+exitbtn.addEventListener("click", function () {
   ulparent.classList.remove("active");
-  document.body.style.overflowY="scroll";
-})
+  document.body.style.overflowY = "scroll";
+});

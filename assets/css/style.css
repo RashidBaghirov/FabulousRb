@@ -5,16 +5,13 @@
 }
 
 header {
-  background-color: #47b8f4;
+  position: absolute;
   width: 100%;
-  position: sticky;
-  top: 0;
-  bottom: 0;
   z-index: 100;
   transition: 0.5s all;
 }
 header .big-size-container {
-  height: 50px;
+  height: 66px;
 }
 header .big-size-container .row .logo {
   display: flex;
@@ -33,12 +30,12 @@ header .big-size-container .row nav ul {
 header .big-size-container .row nav ul li {
   margin-left: 35px;
 }
-header .big-size-container .row nav ul li a {
+header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
   color: #fff;
   z-index: 1;
 }
-header .big-size-container .row nav ul li a:hover {
+header .big-size-container .row nav ul li .li_a:hover {
   color: #b4afaf;
 }
 header .big-size-container .row nav ul li .accesories-menu {
@@ -206,11 +203,11 @@ header .big-size-container .user_registration.active {
   visibility: visible;
   opacity: 1;
 }
-
-.mobile-container {
+header .mobile-container {
   background-color: white;
+  height: 66px;
 }
-.mobile-container .row .search_input {
+header .mobile-container .row .search_input {
   overflow: hidden;
   visibility: hidden;
   opacity: 0;
@@ -219,16 +216,16 @@ header .big-size-container .user_registration.active {
   left: 50px;
   transition: 0.3s all;
 }
-.mobile-container .row .search_input .icon_search {
+header .mobile-container .row .search_input .icon_search {
   position: absolute;
   top: 0px;
   right: 3px;
 }
-.mobile-container .row .search_input.active {
+header .mobile-container .row .search_input.active {
   visibility: visible;
   opacity: 1;
 }
-.mobile-container .row .user_mobile_registration {
+header .mobile-container .row .user_mobile_registration {
   text-align: start;
   top: 3%;
   right: 0;
@@ -241,18 +238,17 @@ header .big-size-container .user_registration.active {
   padding: 0px 30px;
   transition: 0.3s all;
 }
-.mobile-container .row .user_mobile_registration .language {
+header .mobile-container .row .user_mobile_registration .language {
   line-height: 0;
 }
-.mobile-container .row .user_mobile_registration .language .image {
+header .mobile-container .row .user_mobile_registration .language .image {
   margin-bottom: 10px;
 }
-.mobile-container .row .user_mobile_registration.active {
+header .mobile-container .row .user_mobile_registration.active {
   visibility: visible;
   opacity: 1;
 }
-
-.mobile-menu {
+header .mobile-menu {
   overflow: hidden;
   position: relative;
   top: -34px;
@@ -261,59 +257,37 @@ header .big-size-container .user_registration.active {
   height: 100vh;
   transition: 1s;
 }
-.mobile-menu ul {
+header .mobile-menu ul {
   padding: 10px;
 }
-.mobile-menu ul li {
+header .mobile-menu ul li {
   padding: 10px;
 }
-.mobile-menu ul li a {
+header .mobile-menu ul li a {
   color: black;
 }
-.mobile-menu ul li a i.active {
+header .mobile-menu ul li a i.active {
   transform: rotate(180deg);
 }
-.mobile-menu ul .acs-icon {
+header .mobile-menu ul .acs-icon {
   display: none;
 }
-.mobile-menu ul .acs-icon.active {
+header .mobile-menu ul .acs-icon.active {
   display: block;
 }
-.mobile-menu ul .drone-icon {
+header .mobile-menu ul .drone-icon {
   display: none;
 }
-.mobile-menu ul .drone-icon.active {
+header .mobile-menu ul .drone-icon.active {
   display: block;
 }
-
-.mobile-menu.active {
+header .mobile-menu.active {
   position: relative;
   width: 200px;
   height: 100vh;
   top: -34px;
   background-color: rgb(255, 255, 255);
   transition: 1s;
-}
-
-.ac {
-  background-color: white;
-  color: black;
-  transition: 0.5s all;
-}
-.ac .big-size-container .row ul li a {
-  color: black;
-}
-.ac .big-size-container .row ul li a:hover {
-  color: #1d1b1b;
-}
-.ac .big-size-container .row .icons .icon {
-  color: black;
-}
-.ac .big-size-container .row .icons .icon:hover {
-  color: rgb(58, 56, 56);
-}
-.ac .big-size-container .row .icons .count {
-  color: rgb(53, 52, 52);
 }
 
 @media screen and (max-width: 391px) {
@@ -774,9 +748,11 @@ header .big-size-container .user_registration.active {
 }
 #latest .device .image:hover .first {
   opacity: 0;
+  transform: rotateY(180deg);
 }
 #latest .device .image:hover .second {
   opacity: 1;
+  transform: rotateY(180deg);
 }
 #latest .device .rating {
   position: absolute;
@@ -1264,26 +1240,25 @@ footer .footer_end_ .accordion .accordion-item .first_accordion .accordion_body 
     color: gray;
   }
 }
-
-.secondFooter {
+footer .secondFooter {
   background-color: #151515;
 }
-.secondFooter .box {
+footer .secondFooter .box {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.secondFooter .box .text-img p {
+footer .secondFooter .box .text-img p {
   color: white;
 }
-.secondFooter .box .text-img p a {
+footer .secondFooter .box .text-img p a {
   text-decoration: none;
   color: white;
 }
 @media only screen and (max-width: 391px) {
-  .secondFooter .box {
+  footer .secondFooter .box {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
@@ -1291,10 +1266,10 @@ footer .footer_end_ .accordion .accordion-item .first_accordion .accordion_body 
     align-items: center;
     flex-direction: column;
   }
-  .secondFooter .box .text-img p {
+  footer .secondFooter .box .text-img p {
     color: white;
   }
-  .secondFooter .box .text-img p a {
+  footer .secondFooter .box .text-img p a {
     text-decoration: none;
     color: white;
   }
