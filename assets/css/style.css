@@ -722,6 +722,9 @@ header .mobile-menu.active {
 #latest .latest_ul .latest_ul_li a {
   padding: 20px;
 }
+#latest .latest_ul .active {
+  background-color: #f3ebeb;
+}
 #latest .device {
   margin-bottom: 110px;
   padding: 11px;
@@ -757,10 +760,12 @@ header .mobile-menu.active {
 }
 #latest .device .rating {
   position: absolute;
-  color: rgb(230, 255, 5);
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+}
+#latest .device .rating .yellow {
+  color: yellow;
 }
 #latest .device .buttons {
   position: absolute;
@@ -815,6 +820,15 @@ header .mobile-menu.active {
   margin-bottom: 5px;
   transition: all 0.4s;
   opacity: 1;
+}
+#latest .active {
+  display: block;
+}
+#latest .second_crsl {
+  display: none;
+}
+#latest .third_crsl {
+  display: none;
 }
 
 footer {

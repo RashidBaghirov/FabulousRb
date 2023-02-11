@@ -820,6 +820,9 @@ header {
         padding: 20px;
       }
     }
+    .active{
+      background-color: #f3ebeb;
+    }
   }
   .device {
     margin-bottom: 110px;
@@ -858,10 +861,12 @@ header {
     }
     .rating {
       position: absolute;
-      color: rgb(230, 255, 5);
       bottom: 40px;
       left: 50%;
       transform: translateX(-50%);
+      .yellow{
+        color: yellow;
+      }
     }
     .buttons {
       position: absolute;
@@ -918,6 +923,16 @@ header {
       opacity: 1;
     }
   }
+  .active{
+    display: block;
+  }
+  .second_crsl{
+    display: none;
+  }
+  .third_crsl{
+    display: none;
+  }
+
 }
 
 footer {
