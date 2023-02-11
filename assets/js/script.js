@@ -201,7 +201,7 @@ $(document).ready(function () {
 
 $('#products .owl-carousel').owlCarousel({
   stagePadding: 50,
-  loop:true,
+  loop:false,
   margin:10,
   nav:true,
   responsive:{
@@ -212,7 +212,7 @@ $('#products .owl-carousel').owlCarousel({
           items:3
       },
       1000:{
-          items:1,
+          items:2,
       }
   }
 })
@@ -260,7 +260,7 @@ buttons.forEach((btn) => {
 
 function GetProductsData(product) {
   let parent = product.parentElement.parentElement;
-  let title = parent.querySelector(".title");
+  let title = parent.querySelector(".description .title").innerText
   let src = parent.querySelector("img").src;
   let id = parent.getAttribute("data-id");
   let price = parent.querySelector(".price").innerText;
@@ -297,7 +297,7 @@ cart.addEventListener("click", function (product) {
      <h6>${devices.title}</h6>
      <span>${devices.count}</span>
      x
-      <span>${devices.price}AZN</span>
+      <span>${devices.price}</span>
   </div>
   <div class="del_btn">
     <i class="fa-solid fa-trash"></i>
@@ -311,12 +311,12 @@ cart.addEventListener("click", function (product) {
   delbtn.forEach((btn) => {
     btn.addEventListener("click", function () {
       let li = this.parentElement;
-      let id = document.querySelector("data-id");
-      device = device.filter((dev) => dev.id != id);
+      let src = li.querySelector(".cart_image img").src;
+      device = device.filter((dev) => dev.src != src);
       li.remove();
       // ShowTotalPrice(basket);
       ShowProductCount(device);
-      localStorage.setItem("device", JSON.stringify(basket));
+      localStorage.setItem("device", JSON.stringify(device));
     });
   });
 });

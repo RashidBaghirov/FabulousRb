@@ -352,7 +352,7 @@ header .mobile-menu.active {
 }
 @media screen and (max-width: 391px) {
   #base .fastDrone .droneImage img {
-    content: url("../images/ResponsiveDrone1.png");
+    content: url("../images/responsive_slider1.png");
     width: 100%;
   }
 }
@@ -437,7 +437,7 @@ header .mobile-menu.active {
 }
 @media screen and (max-width: 391px) {
   #base .underwaterDrone .droneImage img {
-    content: url("../images/ResponsiveDrone2.png");
+    content: url("../images/responsive_slider2.png");
     width: 100%;
   }
 }
@@ -634,6 +634,7 @@ header .mobile-menu.active {
   margin-top: 20px;
 }
 #products .item {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -906,7 +907,7 @@ footer .contact form .message:hover {
   background-color: black;
 }
 footer .subs {
-  padding: 30px 10px 30px;
+  padding: 42px 21px;
   border: 1px solid rgba(102, 102, 102, 0.15);
   text-align: center;
 }
