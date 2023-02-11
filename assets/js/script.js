@@ -148,11 +148,11 @@ $(document).ready(function () {
     }, 2450);
   }, 2500);
 
-  var owl = $(".owl-carousel");
+  var owl = $("#base .owl-carousel");
   owl.owlCarousel({
     items: 1,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2500,
   });
   $(".play").on("click", function () {
@@ -161,7 +161,7 @@ $(document).ready(function () {
   $(".stop").on("click", function () {
     owl.trigger("stop.owl.autoplay");
   });
-  $(".owl-carousel").owlCarousel({
+  $("#base .owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
@@ -182,27 +182,26 @@ $(document).ready(function () {
     },
   });
 
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-      },
-      600: {
-        items: 3,
-        nav: false,
-      },
-      1000: {
-        items: 2,
-        nav: true,
-        loop: false,
-      },
-    },
-  });
+  $('#latest .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   let devicestr = localStorage.getItem("device");
