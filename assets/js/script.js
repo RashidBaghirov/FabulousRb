@@ -335,17 +335,25 @@ cart.addEventListener("click", function (product) {
   device.forEach((devices) => {
     let task = `
   <li>
-  <div class="cart_image">
-      <img src="${devices.src}" alt="">
+ <div class="d-flex">
+   <div class="cart_image">
+  <img src="${devices.src}" alt="">
+    </div>
+    <div class="info d-flex">
+   <p>${devices.count}</p>
+   <p>x</p>
+   <p>${devices.title}</p>
+   </div>
+</div>
+<div>
+  <p>${devices.price}</p>
   </div>
-  <div class="info">
-  <span>${devices.count}</span>
-     <h6>${devices.title}</h6>
-     x
-      <span>${devices.price}</span>
-  </div>
-  <div class="del_btn">
-    <i class="fa-solid fa-trash"></i>
+  <div class="del_btn" style="position: relative;">
+    <i class="fa-solid fa-trash" style="
+    position: absolute;
+    top: -138px;
+    right: 16px;"
+></i>
   </div>
   </li>
   `;

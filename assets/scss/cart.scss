@@ -1,0 +1,43 @@
+@import "./header";
+@import "./footer";
+@import "./clipboard";
+
+#carts {
+  .table-responsive {
+    .table {
+      .table_body {
+        .buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .first {
+            color: white;
+            background: black;
+            border: 1px solid black;
+            width: 40px;
+            height: 33px;
+            text-align: center;
+            transition: 0.6s all;
+            cursor: pointer;
+            &:hover{
+                background: #eb4d4b;
+            }
+          }
+          .second {
+            color: white;
+            background: #eb4d4b;
+            border: 1px solid black;
+            width: 40px;
+            height: 33px;
+            text-align: center;
+            transition: 0.6s all;
+            cursor: pointer;
+            &:hover{
+                background: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}

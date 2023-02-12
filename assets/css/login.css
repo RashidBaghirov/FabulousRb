@@ -116,23 +116,17 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 1s;
   z-index: 1;
-  overflow: hidden;
 }
 header .big-size-container .row .icons .box .box_device li {
-  border-bottom: 1px solid black;
-  padding: 15px;
-  display: flex;
+  border-bottom: 1px solid rgb(167, 164, 164);
   list-style: none;
 }
 header .big-size-container .row .icons .box .box_device li .cart_image {
-  width: 90px;
-  height: 120px;
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(192, 188, 188);
 }
 header .big-size-container .row .icons .box .box_device li .cart_image img {
-  padding: 10px;
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -140,13 +134,15 @@ header .big-size-container .row .icons .box .box_device li .info {
   padding: 20px;
   margin-left: 25px;
 }
-header .big-size-container .row .icons .box .box_device li .exitbutton {
-  position: absolute;
-  right: 12px;
-  font-size: 13px;
-  cursor: pointer;
+header .big-size-container .row .icons .box .box_device li .info p {
+  font-size: 12px;
 }
-header .big-size-container .row .icons .box .cart_button_x {
+header .big-size-container .row .icons .box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .big-size-container .row .icons .box .box_device li .cart-sticky .exitbutton {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -154,7 +150,60 @@ header .big-size-container .row .icons .box .cart_button_x {
   border-bottom: 1px solid #eee;
   margin-bottom: 5px;
 }
-header .big-size-container .row .box.active {
+header .big-size-container .row .icons .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .big-size-container .row .icons .box .cart-bottom {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  height: 30%;
+  border-top: 1px solid #eee;
+  background-color: white;
+}
+header .big-size-container .row .icons .box .cart-bottom ul {
+  line-height: 30px;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+header .big-size-container .row .icons .box .cart-bottom ul li {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+header .big-size-container .row .icons .box .cart-bottom ul li span:nth-child(even) {
+  font-weight: 500;
+}
+header .big-size-container .row .icons .box .cart-bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .big-size-container .row .icons .box .cart-bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .big-size-container .row .icons .box .cart-bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .big-size-container .row .icons .box .cart-bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .big-size-container .row .icons .box .cart-bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .big-size-container .row .icons .box.active {
   width: 350px;
 }
 header .big-size-container .search_input_large {
@@ -283,151 +332,6 @@ header .mobile-menu ul .drone-icon.active {
 }
 header .mobile-menu.active {
   width: 200px;
-}
-
-#clipboard .clipboard_background {
-  background-image: url(../images/breadcrumb.png);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#clipboard .clipboard_background ul li {
-  font-size: 14px;
-}
-#clipboard .clipboard_background ul li a {
-  transition: 0.5s;
-  color: #232323;
-}
-#clipboard .clipboard_background ul li a::after {
-  content: " ";
-  display: inline;
-  border-right: 1px solid #232323;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-#clipboard .clipboard_background ul li a:hover {
-  color: #eb4d4b;
-}
-
-#login {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-#login .container .row .registr {
-  border: 0.8px solid #e9e9e9;
-  border-radius: 5px;
-  width: 100%;
-  height: 240px;
-  padding: 15px;
-}
-#login .container .row .registr span {
-  font-size: 16px;
-  display: block;
-  color: black;
-  padding-top: 3px;
-  padding-bottom: 10px;
-}
-#login .container .row .registr p {
-  font-size: 13px;
-  color: #333;
-}
-#login .container .row .registr .reg_btn {
-  transition: 0.8s;
-  background-color: #333;
-  color: white;
-  border-color: #333;
-  border-radius: 0;
-  font-family: "Poppins", sans-serif;
-}
-#login .container .row .registr .reg_btn:hover {
-  background-color: #eb4d4b;
-  border-color: #eb4d4b;
-  font-family: "Poppins", sans-serif;
-}
-#login .container .row .login {
-  border: 0.8px solid #e9e9e9;
-  border-radius: 5px;
-  width: 100%;
-  height: 305px;
-  padding: 15px;
-}
-#login .container .row .login .text p {
-  font-weight: 700;
-  line-height: 0px;
-  font-size: 16px;
-  color: #333;
-  padding-top: 3px;
-  padding-bottom: 10px;
-}
-#login .container .row .login .inputs .email label {
-  font-size: 14px;
-  color: #333;
-  padding-bottom: 5px;
-}
-#login .container .row .login .inputs .email input {
-  width: 100%;
-  border-color: #c2c2c2;
-  border-width: 1px;
-}
-#login .container .row .login .inputs .email input::-moz-placeholder {
-  color: #c2c2c2;
-  font-size: 14px;
-  padding: 6px;
-}
-#login .container .row .login .inputs .email input::placeholder {
-  color: #c2c2c2;
-  font-size: 14px;
-  padding: 6px;
-}
-#login .container .row .login .inputs .password label {
-  font-size: 14px;
-  padding-bottom: 5px;
-  color: #333;
-}
-#login .container .row .login .inputs .password input {
-  width: 100%;
-  border-color: #c2c2c2;
-  border-width: 1px;
-}
-#login .container .row .login .inputs .password input::-moz-placeholder {
-  color: #c2c2c2;
-  font-size: 14px;
-  padding: 6px;
-}
-#login .container .row .login .inputs .password input::placeholder {
-  color: #c2c2c2;
-  font-size: 14px;
-  padding: 6px;
-}
-#login .container .row .login .pass span {
-  display: block;
-}
-#login .container .row .login .pass span a {
-  font-size: 14px;
-  transition: 0.8s;
-  text-decoration: none;
-  color: #232323;
-}
-#login .container .row .login .pass span a:hover {
-  color: #eb4d4b;
-}
-#login .container .row .login .pass .login_button {
-  width: 24%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  transition: 0.8s;
-  background-color: #333;
-  color: white;
-  border-color: #333;
-  border-radius: 0;
-}
-#login .container .row .login .pass .login_button:hover {
-  background-color: #eb4d4b;
-  border-color: #eb4d4b;
 }
 
 footer {
@@ -889,4 +793,149 @@ footer .secondFooter .box .text-img p a {
     text-decoration: none;
     color: white;
   }
+}
+
+#clipboard .clipboard_background {
+  background-image: url(../images/breadcrumb.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clipboard .clipboard_background ul li {
+  font-size: 14px;
+}
+#clipboard .clipboard_background ul li a {
+  transition: 0.5s;
+  color: #232323;
+}
+#clipboard .clipboard_background ul li a::after {
+  content: " ";
+  display: inline;
+  border-right: 1px solid #232323;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#clipboard .clipboard_background ul li a:hover {
+  color: #eb4d4b;
+}
+
+#login {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#login .container .row .registr {
+  border: 0.8px solid #e9e9e9;
+  border-radius: 5px;
+  width: 100%;
+  height: 240px;
+  padding: 15px;
+}
+#login .container .row .registr span {
+  font-size: 16px;
+  display: block;
+  color: black;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+#login .container .row .registr p {
+  font-size: 13px;
+  color: #333;
+}
+#login .container .row .registr .reg_btn {
+  transition: 0.8s;
+  background-color: #333;
+  color: white;
+  border-color: #333;
+  border-radius: 0;
+  font-family: "Poppins", sans-serif;
+}
+#login .container .row .registr .reg_btn:hover {
+  background-color: #eb4d4b;
+  border-color: #eb4d4b;
+  font-family: "Poppins", sans-serif;
+}
+#login .container .row .login {
+  border: 0.8px solid #e9e9e9;
+  border-radius: 5px;
+  width: 100%;
+  height: 305px;
+  padding: 15px;
+}
+#login .container .row .login .text p {
+  font-weight: 700;
+  line-height: 0px;
+  font-size: 16px;
+  color: #333;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+#login .container .row .login .inputs .email label {
+  font-size: 14px;
+  color: #333;
+  padding-bottom: 5px;
+}
+#login .container .row .login .inputs .email input {
+  width: 100%;
+  border-color: #c2c2c2;
+  border-width: 1px;
+}
+#login .container .row .login .inputs .email input::-moz-placeholder {
+  color: #c2c2c2;
+  font-size: 14px;
+  padding: 6px;
+}
+#login .container .row .login .inputs .email input::placeholder {
+  color: #c2c2c2;
+  font-size: 14px;
+  padding: 6px;
+}
+#login .container .row .login .inputs .password label {
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: #333;
+}
+#login .container .row .login .inputs .password input {
+  width: 100%;
+  border-color: #c2c2c2;
+  border-width: 1px;
+}
+#login .container .row .login .inputs .password input::-moz-placeholder {
+  color: #c2c2c2;
+  font-size: 14px;
+  padding: 6px;
+}
+#login .container .row .login .inputs .password input::placeholder {
+  color: #c2c2c2;
+  font-size: 14px;
+  padding: 6px;
+}
+#login .container .row .login .pass span {
+  display: block;
+}
+#login .container .row .login .pass span a {
+  font-size: 14px;
+  transition: 0.8s;
+  text-decoration: none;
+  color: #232323;
+}
+#login .container .row .login .pass span a:hover {
+  color: #eb4d4b;
+}
+#login .container .row .login .pass .login_button {
+  width: 24%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: 0.8s;
+  background-color: #333;
+  color: white;
+  border-color: #333;
+  border-radius: 0;
+}
+#login .container .row .login .pass .login_button:hover {
+  background-color: #eb4d4b;
+  border-color: #eb4d4b;
 }/*# sourceMappingURL=login.css.map */

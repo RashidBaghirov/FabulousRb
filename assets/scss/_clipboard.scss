@@ -1,0 +1,33 @@
+
+#clipboard {
+    .clipboard_background {
+      background-image: url(../images/breadcrumb.png);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ul {
+        li {
+          font-size: 14px;
+          a {
+            transition: 0.5s;
+            color: #232323;
+            &::after{
+              content: " ";
+              display: inline;
+              border-right: 1px solid #232323;
+              margin-left: 5px;
+              margin-right: 5px;
+            }
+          
+            &:hover {
+              color: #eb4d4b;
+            }
+          }
+        }
+      }
+    }
+  }

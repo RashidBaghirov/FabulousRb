@@ -823,74 +823,34 @@ footer .secondFooter .box .text-img p a {
   color: #eb4d4b;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-#registration {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-#registration .alert .warning {
-  padding: 10px;
-  text-align: center;
-  color: gray;
-}
-#registration .alert .warning a {
-  cursor: pointer;
-  color: #232323;
-}
-#registration .alert .warning a:hover {
-  color: #eb4d4b;
-}
-#registration form .registr_detail {
-  padding-top: 15px;
-  padding-bottom: 15px;
+#carts .table-responsive .table .table_body .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
-#registration form .registr_detail .registr_detail_btn {
-  border: 1px solid #232323;
-  background-color: #232323;
-  transition: 0.8s;
+#carts .table-responsive .table .table_body .buttons .first {
+  color: white;
+  background: black;
+  border: 1px solid black;
+  width: 40px;
+  height: 33px;
+  text-align: center;
+  transition: 0.6s all;
+  cursor: pointer;
 }
-#registration form .registr_detail .registr_detail_btn:hover {
-  background-color: #eb4d4b;
+#carts .table-responsive .table .table_body .buttons .first:hover {
+  background: #eb4d4b;
 }
-#registration form .registr_detail input {
-  width: 100%;
-  height: 30px;
-  border: 1px solid rgb(241, 238, 238);
+#carts .table-responsive .table .table_body .buttons .second {
+  color: white;
+  background: #eb4d4b;
+  border: 1px solid black;
+  width: 40px;
+  height: 33px;
+  text-align: center;
+  transition: 0.6s all;
+  cursor: pointer;
 }
-#registration form .registr_detail input::-moz-placeholder {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-#registration form .registr_detail input::placeholder {
-  padding: 5px 10px;
-  font-size: 14px;
-}
-#registration form .registr_detail .radio {
-  width: 15px;
-  height: 15px;
-  padding: 0;
-}
-#registration form .registr_detail .import {
-  font-weight: 600;
-  width: 25%;
-}
-#registration form .registr_detail .import sup {
-  color: red;
-  font-size: 16px;
-  margin-right: 5px;
-  position: relative;
-  top: 2px;
-}
-#registration form .title h5 {
-  border-bottom: 1px solid gray;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}/*# sourceMappingURL=registr.css.map */
+#carts .table-responsive .table .table_body .buttons .second:hover {
+  background: red;
+}/*# sourceMappingURL=cart.css.map */
