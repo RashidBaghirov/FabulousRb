@@ -1582,5 +1582,26 @@ footer {
   }
 }
 
+.circle{
+  .upper{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #eb4d4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 80px;
+    right: 28px;
+    .up{
+      i{
+        color: white;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
 
 
