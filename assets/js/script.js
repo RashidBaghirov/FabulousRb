@@ -64,12 +64,6 @@ $(document).ready(function () {
       });
     }
   });
-
-
-
-
-
-
   var activeCat = "";
   function filterGroup(group) {
     if (activeCat != group) {
@@ -92,22 +86,6 @@ $(document).ready(function () {
   $(".third_btn").click(function () {
     filterGroup("third_crsl ");
   });
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   $(".accordion_btn").on("click", function () {
     if ($(this).hasClass("active")) {
@@ -226,22 +204,26 @@ $(document).ready(function () {
     },
   });
 
-  $('#latest  .owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+  var owl = $('#latest .owl-carousel');
+  owl.owlCarousel({
+      loop:false,
+      nav:true,
+      margin:10,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },            
+          960:{
+              items:2
+          },
+          1200:{
+              items:3
+          }
+      }
+  });
 
 $('#reclams  .owl-carousel').owlCarousel({
   loop:true,
@@ -261,7 +243,6 @@ $('#reclams  .owl-carousel').owlCarousel({
   }
 })
 
-
 $('#products .owl-carousel').owlCarousel({
   stagePadding: 50,
   loop:false,
@@ -271,14 +252,15 @@ $('#products .owl-carousel').owlCarousel({
       0:{
           items:1
       },
-      600:{
-          items:1
+      621:{
+          items:2
       },
       1000:{
-          items:2,
+          items:2
       }
   }
 })
+
 
 });
 
@@ -357,8 +339,8 @@ cart.addEventListener("click", function (product) {
       <img src="${devices.src}" alt="">
   </div>
   <div class="info">
+  <span>${devices.count}</span>
      <h6>${devices.title}</h6>
-     <span>${devices.count}</span>
      x
       <span>${devices.price}</span>
   </div>
