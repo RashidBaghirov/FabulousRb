@@ -419,6 +419,7 @@ footer .contact form .right {
   display: inline-block;
   width: 46%;
   height: 45px;
+  margin-bottom: 37px;
   border-radius: 15px;
   border: none;
 }
@@ -552,11 +553,17 @@ footer .subs .icons_social ul li a {
   margin-left: 5px;
   text-decoration: none;
 }
-footer .subs .icons_social ul li a i {
-  font-size: 35px;
+footer .subs .icons_social ul li a .icons {
+  width: 50px;
+  height: 50px;
 }
-footer .subs .icons_social ul li a i:hover {
-  color: #eb4d4b !important;
+footer .subs .icons_social ul li a .icons img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+footer .subs .icons_social ul li a .icons img:hover {
+  color: #eb4d4b;
 }
 @media only screen and (max-width: 391px) {
   footer .contact {
