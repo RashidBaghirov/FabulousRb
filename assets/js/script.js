@@ -93,9 +93,7 @@ $(document).ready(function () {
     filterGroup("third_crsl ");
   });
 
-  $(".latest_ul_li").on("click",function(){
-    $(this).toggleClass("active");
-  })
+  
 
 
 
@@ -245,23 +243,24 @@ $(document).ready(function () {
     }
 })
 
+$('#reclams  .owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay: true,
+  autoplayTimeout: 2500,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+})
 
-$("first_btn").on("click",function(){
-  
-  $("first").addClass("active");
-  $("second").removeClass("active");
-  $("third").removeClass("active");
-})
-$("second_btn").on("click",function(){
-  $("second").addClass("active");
-  $("first").removeClass("active");
-  $("third").removeClass("active");
-})
-$("third_btn").on("click",function(){
-  $("third").addClass("active");
-  $("first").removeClass("active");
-  $("second").removeClass("active");
-})
 
 $('#products .owl-carousel').owlCarousel({
   stagePadding: 50,

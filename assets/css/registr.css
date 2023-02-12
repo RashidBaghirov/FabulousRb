@@ -1,6 +1,6 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -291,676 +291,98 @@ header .mobile-menu.active {
   width: 200px;
 }
 
-@media screen and (max-width: 391px) {
-  #base {
-    top: 70px;
-  }
-}
-#base:hover .right {
-  opacity: 1;
-}
-#base:hover .left {
-  opacity: 1;
-}
-#base .right {
-  cursor: pointer;
-  width: 33px;
-  height: 33px;
-  padding: 4px 10px;
-  position: absolute;
-  top: 300px;
-  right: 25px;
-  z-index: 2;
-  background-color: #eb4d4b;
-  transition: 0.3s;
-  opacity: 0;
-}
-#base .right:hover {
-  background-color: #333;
-}
-#base .right i {
-  color: white;
-}
-#base .left {
-  cursor: pointer;
-  width: 33px;
-  height: 33px;
-  padding: 4px 10px;
-  position: absolute;
-  top: 300px;
-  left: 25px;
-  z-index: 2;
-  background-color: #eb4d4b;
-  transition: 0.3s;
-  opacity: 0;
-}
-#base .left:hover {
-  background-color: #333;
-}
-#base .left i {
-  color: white;
-}
-#base .fastDrone {
-  position: relative;
-}
-#base .fastDrone .droneImage {
-  position: absolute;
-  width: 100%;
-  cursor: pointer;
-}
-#base .fastDrone .droneImage img {
-  width: 100%;
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneImage img {
-    content: url("../images/responsive_slider1.png");
-    width: 100%;
-  }
-}
-#base .fastDrone .droneInfo {
-  cursor: pointer;
-  position: absolute;
-  top: 40px;
-  left: 120px;
-  width: 50%;
-  color: white;
-  overflow: hidden;
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneInfo {
-    width: 100%;
-    position: absolute;
-    top: 180px;
-    left: 0;
-    text-align: center;
-  }
-}
-#base .fastDrone .droneInfo .title-text {
-  width: 80%;
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneInfo .title-text {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 821px) {
-  #base .fastDrone .droneInfo .title-text {
-    padding-top: 20px;
-  }
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneInfo .title-text h2 {
-    font-size: 18px;
-  }
-}
-#base .fastDrone .droneInfo .title-text h1 {
-  padding: 8px 0;
-  font-size: 75px;
-}
-@media screen and (max-width: 821px) {
-  #base .fastDrone .droneInfo .title-text h1 {
-    font-size: 35px;
-  }
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneInfo .title-text h1 {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneInfo .title-text p {
-    display: none;
-  }
-}
-#base .fastDrone .droneButton button {
-  border-radius: 20px;
-  color: white;
-  border: none;
-  background-color: #eb4d4b;
-}
-@media screen and (max-width: 391px) {
-  #base .fastDrone .droneButton button {
-    font-size: 10px;
-    margin-bottom: 30px;
-  }
-}
-#base .fastDrone .droneButton button:hover {
-  background-color: #333;
-}
-#base .underwaterDrone {
-  position: relative;
-}
-#base .underwaterDrone .droneImage {
-  cursor: pointer;
-}
-#base .underwaterDrone .droneImage img {
-  width: 100%;
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneImage img {
-    content: url("../images/responsive_slider2.png");
-    width: 100%;
-  }
-}
-#base .underwaterDrone .droneInfo {
-  cursor: pointer;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  width: 50%;
-  color: white;
-  overflow: hidden;
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneInfo {
-    width: 100%;
-    position: absolute;
-    top: 180px;
-    text-align: center;
-  }
-}
-#base .underwaterDrone .droneInfo .title-text {
-  width: 70%;
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneInfo .title-text {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 821px) {
-  #base .underwaterDrone .droneInfo .title-text {
-    padding-top: 18px;
-  }
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneInfo .title-text h2 {
-    font-size: 18px;
-  }
-}
-#base .underwaterDrone .droneInfo .title-text h1 {
-  padding: 8px 0;
-  font-size: 60px;
-}
-@media screen and (max-width: 821px) {
-  #base .underwaterDrone .droneInfo .title-text h1 {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneInfo .title-text h1 {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneInfo .title-text p {
-    display: none;
-  }
-}
-#base .underwaterDrone .droneButton button {
-  border-radius: 20px;
-  color: white;
-  border: none;
-  background-color: #eb4d4b;
-}
-@media screen and (max-width: 391px) {
-  #base .underwaterDrone .droneButton button {
-    font-size: 10px;
-    margin-bottom: 30px;
-  }
-}
-#base .underwaterDrone .droneButton button:hover {
-  background-color: #333;
-}
-
-#import .animeIcon .image {
+#clipboard .clipboard_background {
+  background-image: url(../images/breadcrumb.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 200px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-#import .animeIcon .image img {
-  transition: 0.6s;
+#clipboard .clipboard_background ul li {
+  font-size: 14px;
 }
-#import .animeIcon .image:hover img {
-  transform: rotateY(360deg);
+#clipboard .clipboard_background ul li a {
+  transition: 0.5s;
+  color: #232323;
 }
-#import .animeIcon .title-text {
+#clipboard .clipboard_background ul li a::after {
+  content: " ";
+  display: inline;
+  border-right: 1px solid #232323;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#clipboard .clipboard_background ul li a:hover {
+  color: #eb4d4b;
+}
+
+#registration {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#registration .alert .warning {
+  padding: 10px;
   text-align: center;
-}
-#import .animeIcon .title-text p {
   color: gray;
 }
-@media screen and (max-width: 391px) {
-  #import .animeIcon {
-    display: flex;
-  }
-  #import .animeIcon .title-text {
-    margin-left: 20px;
-    text-align: left;
-  }
-  #import .animeIcon .image {
-    width: 60px;
-    height: 60px;
-    padding: 8px 0;
-    display: flex;
-    justify-content: center;
-  }
-  #import .animeIcon .image img {
-    width: 100%;
-    height: 100%;
-    transition: 0.6s;
-  }
-}
-
-#about {
-  padding: 48px;
-}
-#about .image img {
-  width: 100%;
-  height: 100%;
-}
-#about .about .title {
-  font-size: 16px;
-  letter-spacing: 8px;
-  font-weight: 500;
-  margin-bottom: 12px;
-  color: #eb4d4b;
-}
-#about .about .home_title .home-title {
-  font-size: 40px;
-  line-height: 40px;
-  letter-spacing: 0;
-  font-weight: 600;
+#registration .alert .warning a {
+  cursor: pointer;
   color: #232323;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 25px;
-  padding-bottom: 25px;
 }
-#about .about .home_title .home-title::before {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: #eb4d4b;
-  bottom: 0;
-}
-#about .about .desc {
-  margin-bottom: 25px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #787878;
-  letter-spacing: 0.5px;
-  line-height: 24px;
-}
-#about .about ::marker {
-  color: red;
-}
-#about .about .view_more {
-  margin-top: 18px;
-  padding-left: 18px;
-  padding-right: 18px;
-  border-radius: 20px;
-}
-#about .about .view_more:hover {
-  background-color: black;
-  border: 1px solid black;
-}
-
-#products {
-  background-image: url(../images/testimonialbackground.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 48px;
-}
-#products .title .subtitle {
-  font-size: 26px;
-  margin: 0;
-  margin-bottom: 12px;
+#registration .alert .warning a:hover {
   color: #eb4d4b;
 }
-#products .title .home {
-  font-size: 34px;
-  position: relative;
-}
-#products .title .home .home_title:before {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: #eb4d4b;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-#products .item {
-  width: 100%;
+#registration form .registr_detail {
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
-#products .item .detail {
-  position: relative;
-  text-align: left;
-  background: #fff;
-  padding: 65px 50px 40px;
-  margin-top: 60px;
+#registration form .registr_detail .registr_detail_btn {
+  border: 1px solid #232323;
+  background-color: #232323;
+  transition: 0.8s;
 }
-#products .item .detail .image {
-  max-width: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 5px solid #eb4d4b;
-  margin: 0 auto;
+#registration form .registr_detail .registr_detail_btn:hover {
+  background-color: #eb4d4b;
+}
+#registration form .registr_detail input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid rgb(241, 238, 238);
+}
+#registration form .registr_detail input::-moz-placeholder {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+#registration form .registr_detail input::placeholder {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+#registration form .registr_detail .radio {
+  width: 15px;
+  height: 15px;
   padding: 0;
-  text-align: center;
-  position: absolute;
-  top: -60px;
-  left: 50px;
 }
-#products .item .user_description {
-  margin-bottom: 15px;
-  line-height: 24px;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  color: #666;
+#registration form .registr_detail .import {
+  font-weight: 600;
+  width: 25%;
 }
-#products .item .user_detail .user_name {
-  position: relative;
-  display: inline-block;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #232323;
-}
-#products .item .user_detail .user_designation {
-  font-size: 14px;
-  font-weight: 400;
-  padding-left: 6px;
-  letter-spacing: 0.5px;
-  color: #eb4d4b;
-  display: inline-block;
-}
-
-#latest .title .subtitle {
-  font-size: 26px;
-  margin: 0;
-  margin-bottom: 12px;
-  color: #eb4d4b;
-}
-#latest .title .home {
-  font-size: 34px;
-  position: relative;
-}
-#latest .title .home .home-title:before {
-  position: absolute;
-  content: "";
-  width: 80px;
-  height: 4px;
-  background: #eb4d4b;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-#latest .latest_ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#latest .latest_ul .latest_ul_li {
-  border: 1px solid rgb(238, 235, 235);
-  padding: 5px;
-  margin: 1px;
-  display: inline-block;
-}
-#latest .latest_ul .latest_ul_li:hover {
-  background-color: #f3ebeb;
-}
-#latest .device {
-  margin-bottom: 110px;
-  padding: 11px;
-  height: 400px;
-  position: relative;
-}
-#latest .device .image {
-  height: 100%;
-  position: relative;
-  cursor: pointer;
-}
-#latest .device .image img {
-  width: 100%;
-  height: 100%;
-}
-#latest .device .image .first {
-  position: absolute;
-  opacity: 1;
-  transition: 1s all;
-}
-#latest .device .image .second {
-  position: absolute;
-  opacity: 0;
-  transition: 1s all;
-}
-#latest .device .image:hover .first {
-  opacity: 0;
-  transform: rotateY(180deg);
-}
-#latest .device .image:hover .second {
-  opacity: 1;
-  transform: rotateY(180deg);
-}
-#latest .device .rating {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#latest .device .rating .yellow {
-  color: yellow;
-}
-#latest .device .buttons {
-  position: absolute;
-  left: auto;
-  right: 16px;
-  top: 10px;
-  display: block;
-}
-#latest .device .buttons .allbutton {
-  border: 1px solid black;
-  padding: 6px;
-  border-radius: 50%;
-  margin-top: 5px;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s all;
-  cursor: pointer;
-}
-#latest .device .allbutton.active {
-  opacity: 1;
-}
-#latest .caption {
-  padding: 10px;
-}
-#latest .caption .add_cart {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #eb4d4b;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: -62px;
-  transition: 0.5s all;
-  overflow: hidden;
-  opacity: 0;
-  height: 35px;
-  width: 120px;
-  cursor: pointer;
-}
-#latest .caption .add_cart.active {
-  opacity: 1;
-}
-#latest .caption .description {
-  margin-bottom: 10px;
-}
-#latest .caption .price {
-  color: #eb4d4b;
+#registration form .registr_detail .import sup {
+  color: red;
   font-size: 16px;
-  margin-bottom: 5px;
-  transition: all 0.4s;
-  opacity: 1;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
 }
-#latest .active {
-  display: block;
-}
-#latest .second_crsl {
-  display: none;
-}
-#latest .third_crsl {
-  display: none;
-}
-#latest .owl-theme .owl-dots .owl-dot span {
-  visibility: hidden;
-}
-
-#faq {
-  background-color: #f2f6f9;
-}
-#faq .faq_caption {
-  text-align: center;
-  padding: 50px 0 0 0;
-  margin: 50px 0 0 0;
-}
-@media screen and (max-width: 391px) {
-  #faq .faq_caption {
-    margin: 20px 0 0 0;
-    padding: 20px 0 0 0;
-  }
-}
-@media screen and (max-width: 821px) {
-  #faq .faq_caption {
-    font-size: 14px;
-    padding: 12px 0 0 0;
-    letter-spacing: 3px;
-  }
-}
-#faq .faq_caption h5 {
-  font-size: 17px;
-  color: #eb4d4b;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-}
-@media screen and (max-width: 391px) {
-  #faq .faq_caption h5 {
-    font-size: 14px;
-    letter-spacing: 3px;
-    padding: 12px 0 0 0;
-    letter-spacing: 10px;
-  }
-}
-@media screen and (max-width: 821px) {
-  #faq .faq_caption h5 {
-    font-size: 14px;
-    padding: 12px 0 0 0;
-    letter-spacing: 3px;
-  }
-}
-#faq .faq_caption h1 {
-  font-size: 40px;
-  font-weight: 700;
-}
-@media screen and (max-width: 391px) {
-  #faq .faq_caption h1 {
-    font-size: 26px;
-  }
-}
-@media screen and (max-width: 821px) {
-  #faq .faq_caption h1 {
-    font-size: 26px;
-  }
-}
-#faq .line_ {
-  margin: 14px auto 50px;
-  width: 10%;
-  height: 4px;
-  background-color: #eb4d4b;
-}
-@media screen and (max-width: 391px) {
-  #faq .line_ {
-    width: 20%;
-    margin: 12px auto;
-  }
-}
-@media screen and (max-width: 821px) {
-  #faq .line_ {
-    margin: 12px auto;
-  }
-}
-#faq .accordion {
-  padding: 20px 100px;
-}
-@media screen and (max-width: 391px) {
-  #faq .accordion {
-    padding: 20px 30px;
-  }
-}
-@media screen and (max-width: 821px) {
-  #faq .accordion {
-    padding: 20px 10px;
-  }
-}
-#faq .accordion .title_info {
-  border-bottom: 1px solid lightgray;
-}
-#faq .accordion .title_info .title_info_faq_title {
-  width: 100%;
-  padding: 14px 0;
-  width: 100%;
-  height: 50px;
-}
-#faq .accordion .title_info .title_info_faq_title h5 {
-  color: #333;
-  float: left;
-}
-@media screen and (max-width: 391px) {
-  #faq .accordion .title_info .title_info_faq_title h5 {
-    font-size: 15px;
-  }
-}
-#faq .accordion .title_info .title_info_faq_title i {
-  font-size: 14px;
-  float: right;
-  transform: rotate(0deg);
-  transition: 0.1s;
-}
-#faq .accordion .title_info .title_info_faq_title i.active {
-  transform: rotate(180deg);
-}
-#faq .accordion .title_info .faq_info_ {
-  color: #787878;
-  display: none;
-}
-@media screen and (max-width: 391px) {
-  #faq .accordion .title_info .faq_info_ p {
-    font-size: 13px;
-  }
-}
-#faq .accordion .title_info ._faq_ {
-  display: block;
-}
-
-#reclams .item .image img {
-  transition: 0.6s all;
-}
-#reclams .item .image:hover img {
-  transform: rotateY(360deg);
+#registration form .title h5 {
+  border-bottom: 1px solid gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 footer {
@@ -1415,4 +837,4 @@ footer .secondFooter .box .text-img p a {
     text-decoration: none;
     color: white;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=registr.css.map */
