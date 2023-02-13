@@ -348,7 +348,6 @@ footer .contact .footer_contact {
   font-size: 16px;
   color: #eb4d4b;
   letter-spacing: 6px;
-  font-family: "Poppins", sans-serif;
 }
 footer .contact h2 {
   font-size: 42px;
@@ -360,7 +359,6 @@ footer .contact p {
   background-color: #eb4d4b;
   text-align: center;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
 }
 footer .contact form .right {
   text-align: center;
@@ -381,11 +379,9 @@ footer .contact .left {
 }
 footer .contact .left::-moz-placeholder {
   padding: 10px 8px;
-  font-family: "Poppins", sans-serif;
 }
 footer .contact .left::placeholder {
   padding: 10px 8px;
-  font-family: "Poppins", sans-serif;
 }
 footer .contact .form_text {
   margin-top: 20px;
@@ -396,11 +392,9 @@ footer .contact .form_text {
 }
 footer .contact .form_text::-moz-placeholder {
   padding: 10px 16px;
-  font-family: "Poppins", sans-serif;
 }
 footer .contact .form_text::placeholder {
   padding: 10px 16px;
-  font-family: "Poppins", sans-serif;
 }
 footer .contact .message {
   width: 24%;
@@ -412,7 +406,6 @@ footer .contact .message {
   font-weight: 400;
   background-color: #eb4d4b;
   padding-top: 4px;
-  font-family: "Poppins", sans-serif;
   transition: 0.5s;
 }
 footer .contact .message:hover {
@@ -430,7 +423,6 @@ footer .subs .text .subs_span {
 }
 footer .subs .text h2 {
   font-size: 42px;
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 footer .subs .text .other {
@@ -441,7 +433,6 @@ footer .subs .text .other {
   background-color: #eb4d4b;
   text-align: center;
   display: inline-block;
-  font-family: "Poppins", sans-serif;
 }
 footer .subs .icon_text_ {
   line-height: 30px;
@@ -454,13 +445,11 @@ footer .subs .icon_text_ h2 {
   margin-top: 10px;
   font-size: 22px;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
 }
 footer .subs .icon_text_ p {
   font-size: 16px;
   color: #666;
   font-weight: 400;
-  font-family: "Poppins", sans-serif;
 }
 footer .subs .input_email {
   position: relative;
@@ -524,11 +513,9 @@ footer .subs .icons_social ul li a .icons img:hover {
     font-size: 16px;
     color: #eb4d4b;
     letter-spacing: 6px;
-    font-family: "Poppins", sans-serif;
   }
   footer .contact h2 {
     font-size: 42px;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
   }
   footer .contact p {
@@ -538,7 +525,6 @@ footer .subs .icons_social ul li a .icons img:hover {
     background-color: #eb4d4b;
     text-align: center;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
   }
   footer .contact form input {
     display: inline-block;
@@ -549,11 +535,9 @@ footer .subs .icons_social ul li a .icons img:hover {
   }
   footer .contact form input::-moz-placeholder {
     padding: 10px 8px;
-    font-family: "Poppins", sans-serif;
   }
   footer .contact form input::placeholder {
     padding: 10px 8px;
-    font-family: "Poppins", sans-serif;
   }
   footer .contact form .leftInp {
     margin-left: 32px;
@@ -567,11 +551,9 @@ footer .subs .icons_social ul li a .icons img:hover {
   }
   footer .contact form textarea::-moz-placeholder {
     padding: 10px 16px;
-    font-family: "Poppins", sans-serif;
   }
   footer .contact form textarea::placeholder {
     padding: 10px 16px;
-    font-family: "Poppins", sans-serif;
   }
   footer .contact form .button {
     width: 41%;
@@ -583,7 +565,6 @@ footer .subs .icons_social ul li a .icons img:hover {
     font-weight: 400;
     background-color: #eb4d4b;
     padding-top: 14px;
-    font-family: "Poppins", sans-serif;
     transition: 0.5s;
   }
   footer .contact form .button:hover {
@@ -599,11 +580,9 @@ footer .subs .icons_social ul li a .icons img:hover {
     font-size: 16px;
     color: #eb4d4b;
     letter-spacing: 6px;
-    font-family: "Poppins", sans-serif;
   }
   footer .subscrib .text h2 {
     font-size: 42px;
-    font-family: "Poppins", sans-serif;
     font-weight: 700;
   }
   footer .subscrib .text p {
@@ -614,7 +593,6 @@ footer .subs .icons_social ul li a .icons img:hover {
     background-color: #eb4d4b;
     text-align: center;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
   }
   footer .subscrib .icon-text {
     line-height: 30px;
@@ -627,13 +605,11 @@ footer .subs .icons_social ul li a .icons img:hover {
     margin-top: 10px;
     font-size: 22px;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
   }
   footer .subscrib .icon-text p {
     font-size: 16px;
     color: #666;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
   }
   footer .subscrib .inp {
     position: relative;
@@ -682,7 +658,6 @@ footer .footer_text_ .footer_text_up li a,
 footer .footer_text_ .footer_text_down li a {
   text-decoration: none;
   color: gray;
-  font-family: "Poppins", sans-serif;
 }
 footer .footer_text_ .footer_text_up .line,
 footer .footer_text_ .footer_text_down .line {
@@ -728,7 +703,6 @@ footer .footer_end_ .accordion .accordion-item .first_accordion .accordion_body 
   footer .text .textDown li a {
     text-decoration: none;
     color: gray;
-    font-family: "Poppins", sans-serif;
   }
   footer .text .textUp .line,
   footer .text .textDown .line {
