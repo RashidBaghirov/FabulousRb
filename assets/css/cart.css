@@ -863,48 +863,101 @@ footer .secondFooter .box .text-img p a {
 }
 .container .row .accordion .cart_info_ {
   display: none;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
 }
-.container .row .accordion .active {
-  display: block;
+.container .row .accordion .cart_info_ .inputs input {
+  border: 1px solid rgb(214, 210, 210);
+  width: 80%;
+  height: 30px;
 }
-.container .row .cart-bottom {
-  position: sticky;
-  bottom: 0px;
-  width: 100%;
-  height: 30%;
-  border-top: 1px solid #eee;
-  background-color: white;
-}
-.container .row .cart-bottom ul {
-  line-height: 30px;
-  font-size: 15px;
-  padding: 0;
-  margin: 0;
-}
-.container .row .cart-bottom ul li {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.container .row .cart-bottom ul li span:nth-child(even) {
-  font-weight: 500;
-}
-.container .row .cart-bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.container .row .cart-bottom .buttons button {
+.container .row .accordion .cart_info_ .inputs input::-moz-placeholder {
   font-size: 14px;
-  height: 40px;
-  width: 49%;
+}
+.container .row .accordion .cart_info_ .inputs input::placeholder {
+  font-size: 14px;
+}
+.container .row .accordion .cart_info_ .inputs button {
+  width: 20%;
+  font-size: 14px;
+  height: 30px;
   border: none;
   background-color: #232323;
   color: white;
   transition: 0.5s;
 }
-.container .row .cart-bottom .buttons button:hover {
+.container .row .accordion .cart_info_ .inputs button:hover {
   background-color: #eb4d50;
+}
+.container .row .accordion .cart_info_ .first .selection select,
+.container .row .accordion .cart_info_ .second .selection select {
+  border: 1px solid rgb(214, 210, 210);
+  width: 100%;
+}
+.container .row .accordion .cart_info_ .first .selection select option,
+.container .row .accordion .cart_info_ .second .selection select option {
+  font-size: 14px;
+  color: rgb(160, 157, 157);
+}
+.container .row .accordion .cart_info_ .third .inputs input {
+  border: 1px solid rgb(214, 210, 210);
+}
+.container .row .accordion .cart_info_ button {
+  font-size: 14px;
+  height: 40px;
+  width: 20%;
+  border: none;
+  background-color: #232323;
+  color: white;
+  transition: 0.5s;
+}
+.container .row .accordion .cart_info_ button:hover {
+  background-color: #eb4d50;
+}
+.container .row .cart-bottom {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  display: flex;
+}
+.container .row .cart-bottom ul {
+  width: 50%;
+  line-height: 32px;
+  font-size: 17px;
+  padding: 0px;
+  margin-top: 8px;
+}
+.container .row .cart-bottom ul li {
+  padding: 5;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid rgb(221, 220, 220);
+}
+.container .row .buttons {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .row .buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 14px;
+  height: 40px;
+  border: none;
+  background-color: #232323;
+  color: white;
+  transition: 0.5s;
+}
+.container .row .buttons button:hover {
+  background-color: #eb4d50;
+}
+.container .row .buttons .first_btn {
+  background-color: #eb4d50;
+}
+.container .row .buttons .first_btn:hover {
+  background-color: #232323;
 }/*# sourceMappingURL=cart.css.map */
