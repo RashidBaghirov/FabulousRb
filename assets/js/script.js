@@ -323,7 +323,7 @@ function ShowProductCount(device) {
 }
 
 let cart = document.querySelectorAll(".cart");
-let ul = document.querySelector(".box_device");
+let ul = document.querySelectorAll(".box_device");
 let ulparent = document.querySelectorAll(".box");
 let exitbtn = document.querySelectorAll(".exitbutton");
 let base = document.getElementById("base");
@@ -336,7 +336,9 @@ cart.forEach((crt)=>{
       ule.classList.add("active");
     })
     let device = JSON.parse(localStorage.getItem("device"));
-    ul.innerHTML = " ";
+    ul.forEach((ll)=>{
+      ll.innerHTML=" ";
+    })
   
     device.forEach((devices) => {
       let task = `
@@ -345,14 +347,15 @@ cart.forEach((crt)=>{
      <div class="cart_image">
     <img src="${devices.src}" alt="">
       </div>
-      <div class="info d-flex">
-     <p>${devices.count}</p>
-     <p class="me-1 ms-1">x</p>
-     <p>${devices.title}</p>
+      <div class="info ">
+     <span>${devices.count}</span>
+     <span class="me-1 ms-1">x</span>
+     <span>${devices.title}</span>
+     <p>${devices.price}</p>
      </div>
   </div>
   <div>
-    <p>${devices.price}</p>
+    
     </div>
     <div class="del_btn" style="position: relative;">
       <i class="fa-solid fa-trash" style="
@@ -363,7 +366,10 @@ cart.forEach((crt)=>{
     </div>
     </li>
     `;
-      ul.innerHTML += task;
+    ul.forEach((ll)=>{
+      ll.innerHTML+= task;
+    })
+      
     });
     let delbtn = document.querySelectorAll(".del_btn");
   
