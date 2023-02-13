@@ -308,7 +308,7 @@ function GetProductsData(product) {
   let title = parent.querySelector(".description .title").innerText
   let src = parent.querySelector("img").src;
   let id = parent.getAttribute("data-id");
-  let price = parent.querySelector(".price").innerText;
+  let price = parent.querySelector(".prices").innerText;
   result = { title, src, id, price, count: 1 };
   return result;
 }
