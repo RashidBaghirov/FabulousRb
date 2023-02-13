@@ -300,6 +300,112 @@ header {
         visibility: visible;
         opacity: 1;
       }
+      .count {
+        color: white;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        display: inline-block;
+        background-color: red;
+        border-radius: 50%;
+        position: relative;
+        right: -1px;
+        bottom: 29px;
+      }
+      .box {
+        height: 100vh;
+        width: 0px;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        margin: 0 auto;
+        background-color: white;
+        transition: 1s;
+        z-index: 1;
+        overflow: auto;
+        .device_box {
+          height: 62%;
+          overflow: auto;
+          .box_device {
+            li {
+              border-bottom: 1px solid rgb(167, 164, 164);
+              list-style: none;
+              .cart_image {
+                border-right: 1px solid rgb(192, 188, 188);
+                img {
+                  width: 100px;
+                  height: 100px;
+                  object-fit: contain;
+                }
+              }
+              .info {
+                padding: 20px;
+                p {
+                  font-size: 12px;
+                }
+              }
+              .cart-sticky {
+                position: fixed;
+                background: #fff;
+                z-index: 99;
+                .exitbutton {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 5px 0 15px;
+                  border-bottom: 1px solid #eee;
+                  margin-bottom: 5px;
+                }
+              }
+            }
+          }
+        }
+        .cart_button_x {
+          position: fixed;
+          background: #fff;
+          display: contents;
+          z-index: 99;
+        }
+        .cart_bottom {
+          border-top: 1px solid rgb(182, 170, 170);
+          li {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            span {
+              font-weight: 700;
+            }
+          }
+          .buttons {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button {
+              font-size: 14px;
+              height: 40px;
+              width: 49%;
+              border: none;
+              background-color: #eb4d50;
+              color: white;
+              transition: 0.5s;
+              &:hover {
+                background-color: #232323;
+              }
+              &:nth-child(2) {
+                background-color: #232323;
+              }
+              &:nth-child(2):hover {
+                background-color: #eb4d50;
+              }
+            }
+          }
+        }
+      }
+      .box.active {
+        width: 350px;
+      }
     }
   }
   .mobile-menu {

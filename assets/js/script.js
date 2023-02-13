@@ -314,67 +314,78 @@ function GetProductsData(product) {
 }
 
 function ShowProductCount(device) {
-  let deviceCount = document.querySelector(".total_count");
-  deviceCount.innerText = device.reduce((total, product) => {
-    return (total += product.count);
-  }, 0);
+  let deviceCount = document.querySelectorAll(".total_count");
+    deviceCount.forEach((dvc)=>{
+      dvc.innerText = device.reduce((total, product) => {
+        return (total += product.count);
+      }, 0);
+    })
 }
 
-let cart = document.querySelector(".cart");
+let cart = document.querySelectorAll(".cart");
 let ul = document.querySelector(".box_device");
-let ulparent = document.querySelector(".box");
-let exitbtn = document.querySelector(".exitbutton");
+let ulparent = document.querySelectorAll(".box");
+let exitbtn = document.querySelectorAll(".exitbutton");
 let base = document.getElementById("base");
 
-cart.addEventListener("click", function (product) {
-  document.body.style.overflowY = "hidden";
-  ulparent.classList.add("active");
-  let device = JSON.parse(localStorage.getItem("device"));
-  ul.innerHTML = " ";
-
-  device.forEach((devices) => {
-    let task = `
-  <li>
- <div class="d-flex">
-   <div class="cart_image">
-  <img src="${devices.src}" alt="">
+cart.forEach((crt)=>{
+  console.log(crt);
+  crt.addEventListener("click", function (product) {
+    document.body.style.overflowY = "hidden";
+    ulparent.forEach((ule)=>{
+      ule.classList.add("active");
+    })
+    let device = JSON.parse(localStorage.getItem("device"));
+    ul.innerHTML = " ";
+  
+    device.forEach((devices) => {
+      let task = `
+    <li>
+   <div class="d-flex">
+     <div class="cart_image">
+    <img src="${devices.src}" alt="">
+      </div>
+      <div class="info d-flex">
+     <p>${devices.count}</p>
+     <p class="me-1 ms-1">x</p>
+     <p>${devices.title}</p>
+     </div>
+  </div>
+  <div>
+    <p>${devices.price}</p>
     </div>
-    <div class="info d-flex">
-   <p>${devices.count}</p>
-   <p class="me-1 ms-1">x</p>
-   <p>${devices.title}</p>
-   </div>
-</div>
-<div>
-  <p>${devices.price}</p>
-  </div>
-  <div class="del_btn" style="position: relative;">
-    <i class="fa-solid fa-trash" style="
-    position: absolute;
-    top: -125px;
-    right: 16px;"
-></i>
-  </div>
-  </li>
-  `;
-    ul.innerHTML += task;
-  });
-  let delbtn = document.querySelectorAll(".del_btn");
-
-  delbtn.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      let li = this.parentElement;
-      let src = li.querySelector(".cart_image img").src;
-      device = device.filter((dev) => dev.src != src);
-      li.remove();
-      // ShowTotalPrice(basket);
-      ShowProductCount(device);
-      localStorage.setItem("device", JSON.stringify(device));
+    <div class="del_btn" style="position: relative;">
+      <i class="fa-solid fa-trash" style="
+      position: absolute;
+      top: -125px;
+      right: 16px;"
+  ></i>
+    </div>
+    </li>
+    `;
+      ul.innerHTML += task;
+    });
+    let delbtn = document.querySelectorAll(".del_btn");
+  
+    delbtn.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        let li = this.parentElement;
+        let src = li.querySelector(".cart_image img").src;
+        device = device.filter((dev) => dev.src != src);
+        li.remove();
+        // ShowTotalPrice(basket);
+        ShowProductCount(device);
+        localStorage.setItem("device", JSON.stringify(device));
+      });
     });
   });
-});
+})
 
-exitbtn.addEventListener("click", function () {
-  ulparent.classList.remove("active");
-  document.body.style.overflowY = "scroll";
-});
+exitbtn.forEach((ext)=>{
+  ext.addEventListener("click", function () {
+    ulparent.forEach((ule)=>{
+      ule.classList.remove("active");
+    })
+    document.body.style.overflowY = "scroll";
+  });
+})
