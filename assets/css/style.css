@@ -116,33 +116,37 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 1s;
   z-index: 1;
+  overflow: auto;
 }
-header .big-size-container .row .icons .box .box_device li {
+header .big-size-container .row .icons .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
   list-style: none;
 }
-header .big-size-container .row .icons .box .box_device li .cart_image {
+header .big-size-container .row .icons .box .device_box .box_device li .cart_image {
   border-right: 1px solid rgb(192, 188, 188);
 }
-header .big-size-container .row .icons .box .box_device li .cart_image img {
+header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
   width: 100px;
   height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-header .big-size-container .row .icons .box .box_device li .info {
+header .big-size-container .row .icons .box .device_box .box_device li .info {
   padding: 20px;
-  margin-left: 25px;
 }
-header .big-size-container .row .icons .box .box_device li .info p {
+header .big-size-container .row .icons .box .device_box .box_device li .info p {
   font-size: 12px;
 }
-header .big-size-container .row .icons .box .box_device li .cart-sticky {
+header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
   position: fixed;
   background: #fff;
   z-index: 99;
 }
-header .big-size-container .row .icons .box .box_device li .cart-sticky .exitbutton {
+header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -156,36 +160,25 @@ header .big-size-container .row .icons .box .cart_button_x {
   display: contents;
   z-index: 99;
 }
-header .big-size-container .row .icons .box .cart-bottom {
-  position: sticky;
-  bottom: 0px;
-  width: 100%;
-  height: 30%;
-  border-top: 1px solid #eee;
-  background-color: white;
+header .big-size-container .row .icons .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
 }
-header .big-size-container .row .icons .box .cart-bottom ul {
-  line-height: 30px;
-  font-size: 15px;
-  padding: 0;
-  margin: 0;
-}
-header .big-size-container .row .icons .box .cart-bottom ul li {
-  margin: 0;
+header .big-size-container .row .icons .box .cart_bottom li {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
-header .big-size-container .row .icons .box .cart-bottom ul li span:nth-child(even) {
-  font-weight: 500;
+header .big-size-container .row .icons .box .cart_bottom li span {
+  font-weight: 700;
 }
-header .big-size-container .row .icons .box .cart-bottom .buttons {
+header .big-size-container .row .icons .box .cart_bottom .buttons {
   width: 100%;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .big-size-container .row .icons .box .cart-bottom .buttons button {
+header .big-size-container .row .icons .box .cart_bottom .buttons button {
   font-size: 14px;
   height: 40px;
   width: 49%;
@@ -194,13 +187,13 @@ header .big-size-container .row .icons .box .cart-bottom .buttons button {
   color: white;
   transition: 0.5s;
 }
-header .big-size-container .row .icons .box .cart-bottom .buttons button:hover {
+header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
   background-color: #232323;
 }
-header .big-size-container .row .icons .box .cart-bottom .buttons button:nth-child(2) {
+header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
   background-color: #232323;
 }
-header .big-size-container .row .icons .box .cart-bottom .buttons button:nth-child(2):hover {
+header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
   background-color: #eb4d50;
 }
 header .big-size-container .row .icons .box.active {

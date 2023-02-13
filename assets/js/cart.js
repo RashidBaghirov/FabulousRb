@@ -11,7 +11,7 @@ device.forEach((devices) => {
 </div></td>
  <td class="text-left">${devices.title}</td>
 <td class="text-left"><span class="me-2">Product</span>${devices.id}</td>
- <td class="text-left"><div class="input-group btn-block" style="max-width: 200px;">
+ <td class="text-left"><div class="d-flex"  style="max-width: 200px;">
  <input type="text" value="1" size="1" class="form-control" style="height: 33px;">
         <span class="input-group-btn">
        <div class="buttons">

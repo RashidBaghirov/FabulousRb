@@ -341,7 +341,7 @@ cart.addEventListener("click", function (product) {
     </div>
     <div class="info d-flex">
    <p>${devices.count}</p>
-   <p>x</p>
+   <p class="me-1 ms-1">x</p>
    <p>${devices.title}</p>
    </div>
 </div>
@@ -351,7 +351,7 @@ cart.addEventListener("click", function (product) {
   <div class="del_btn" style="position: relative;">
     <i class="fa-solid fa-trash" style="
     position: absolute;
-    top: -138px;
+    top: -125px;
     right: 16px;"
 ></i>
   </div>
