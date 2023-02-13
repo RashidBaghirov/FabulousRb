@@ -853,4 +853,58 @@ footer .secondFooter .box .text-img p a {
 }
 #carts .table-responsive .table .table_body .buttons .second:hover {
   background: red;
+}
+
+.container .row .accordion .devices_info .cart_info_faq_title {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  border: 1px solid #e0dada;
+}
+.container .row .accordion .cart_info_ {
+  display: none;
+}
+.container .row .accordion .active {
+  display: block;
+}
+.container .row .cart-bottom {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  height: 30%;
+  border-top: 1px solid #eee;
+  background-color: white;
+}
+.container .row .cart-bottom ul {
+  line-height: 30px;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
+.container .row .cart-bottom ul li {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .row .cart-bottom ul li span:nth-child(even) {
+  font-weight: 500;
+}
+.container .row .cart-bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .row .cart-bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #232323;
+  color: white;
+  transition: 0.5s;
+}
+.container .row .cart-bottom .buttons button:hover {
+  background-color: #eb4d50;
 }/*# sourceMappingURL=cart.css.map */
