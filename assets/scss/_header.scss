@@ -33,8 +33,8 @@ header {
               position: absolute;
               top: 34px;
               background-color: rgb(252, 252, 252);
-              visibility: hidden;
-              transition: 0.2s all;
+              height: 0;
+              transition: 0.3s all;
               .menu {
                 font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
                   sans-serif;
@@ -53,7 +53,8 @@ header {
               }
             }
             .accesories-menu.active {
-              visibility: visible;
+             height: 170px;
+             z-index: 9;
             }
             .drone-menu {
               overflow: hidden;
@@ -61,8 +62,8 @@ header {
               background-color: rgb(255, 255, 255);
               top: 34px;
               left: 50px;
-              visibility: hidden;
-              transition: 0.2s all;
+             height: 0;
+              transition: 0.3s all;
               .menu {
                 font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
                   sans-serif;
@@ -82,7 +83,8 @@ header {
             }
 
             .drone-menu.active {
-              visibility: visible;
+             height: 170px;
+             z-index: 9;
             }
           }
         }

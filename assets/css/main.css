@@ -37,8 +37,8 @@ header .big-size-container .row nav ul li .accesories-menu {
   position: absolute;
   top: 34px;
   background-color: rgb(252, 252, 252);
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -56,7 +56,8 @@ header .big-size-container .row nav ul li .accesories-menu .menu .accesories_men
   color: gray;
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
   overflow: hidden;
@@ -64,8 +65,8 @@ header .big-size-container .row nav ul li .drone-menu {
   background-color: rgb(255, 255, 255);
   top: 34px;
   left: 50px;
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -81,7 +82,8 @@ header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
   color: gray;
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row .icons .icon {
   color: white;
@@ -828,8 +830,8 @@ header .big-size-container .row nav ul li .accesories-menu {
   position: absolute;
   top: 34px;
   background-color: rgb(252, 252, 252);
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -847,7 +849,8 @@ header .big-size-container .row nav ul li .accesories-menu .menu .accesories_men
   color: gray;
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
   overflow: hidden;
@@ -855,8 +858,8 @@ header .big-size-container .row nav ul li .drone-menu {
   background-color: rgb(255, 255, 255);
   top: 34px;
   left: 50px;
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -872,7 +875,8 @@ header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
   color: gray;
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row .icons .icon {
   color: white;
@@ -1758,8 +1762,8 @@ header .big-size-container .row nav ul li .accesories-menu {
   position: absolute;
   top: 34px;
   background-color: rgb(252, 252, 252);
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -1777,7 +1781,8 @@ header .big-size-container .row nav ul li .accesories-menu .menu .accesories_men
   color: gray;
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
   overflow: hidden;
@@ -1785,8 +1790,8 @@ header .big-size-container .row nav ul li .drone-menu {
   background-color: rgb(255, 255, 255);
   top: 34px;
   left: 50px;
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -1802,7 +1807,8 @@ header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
   color: gray;
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row .icons .icon {
   color: white;
@@ -2666,8 +2672,8 @@ header .big-size-container .row nav ul li .accesories-menu {
   position: absolute;
   top: 34px;
   background-color: rgb(252, 252, 252);
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -2685,7 +2691,8 @@ header .big-size-container .row nav ul li .accesories-menu .menu .accesories_men
   color: gray;
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
   overflow: hidden;
@@ -2693,8 +2700,8 @@ header .big-size-container .row nav ul li .drone-menu {
   background-color: rgb(255, 255, 255);
   top: 34px;
   left: 50px;
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -2710,7 +2717,8 @@ header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
   color: gray;
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row .icons .icon {
   color: white;
@@ -3529,8 +3537,8 @@ header .big-size-container .row nav ul li .accesories-menu {
   position: absolute;
   top: 34px;
   background-color: rgb(252, 252, 252);
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -3548,7 +3556,8 @@ header .big-size-container .row nav ul li .accesories-menu .menu .accesories_men
   color: gray;
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
   overflow: hidden;
@@ -3556,8 +3565,8 @@ header .big-size-container .row nav ul li .drone-menu {
   background-color: rgb(255, 255, 255);
   top: 34px;
   left: 50px;
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -3573,7 +3582,8 @@ header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
   color: gray;
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row .icons .icon {
   color: white;
@@ -4990,8 +5000,8 @@ header .big-size-container .row nav ul li .accesories-menu {
   position: absolute;
   top: 34px;
   background-color: rgb(252, 252, 252);
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -5009,7 +5019,8 @@ header .big-size-container .row nav ul li .accesories-menu .menu .accesories_men
   color: gray;
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
   overflow: hidden;
@@ -5017,8 +5028,8 @@ header .big-size-container .row nav ul li .drone-menu {
   background-color: rgb(255, 255, 255);
   top: 34px;
   left: 50px;
-  visibility: hidden;
-  transition: 0.2s all;
+  height: 0;
+  transition: 0.3s all;
 }
 header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -5034,7 +5045,8 @@ header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
   color: gray;
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  visibility: visible;
+  height: 170px;
+  z-index: 9;
 }
 header .big-size-container .row .icons .icon {
   color: white;
@@ -5850,16 +5862,20 @@ footer .secondFooter .box .text-img p a {
   position: absolute;
 }
 #collection .left .big_discount .image .img {
-  width: 260px;
-  height: 337px;
-  transition: 1s all;
+  width: 0;
+  height: 0;
+  top: 160px;
+  left: 145px;
+  transition: 0.5s all;
+  position: absolute;
 }
 #collection .left .big_discount .image:hover .img {
   width: 260px;
-  height: 337px;
-  transform: rotateY(180deg);
-  position: absolute;
-  background-color: rgba(107, 104, 104, 0.2470588235);
+  height: 360px;
+  top: 0;
+  left: 0;
+  transform: rotateZ(180deg);
+  background-color: rgba(156, 150, 150, 0.2470588235);
 }
 #collection .left .showPages {
   margin-top: 30px;

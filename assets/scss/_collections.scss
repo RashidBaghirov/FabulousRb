@@ -113,17 +113,23 @@
           position: absolute;
         }
         .img {
-            width: 260px;
-            height: 337px;
-          transition: 1s all;
+            width: 0;
+            height: 0;
+            top: 160px;
+            left: 145px;
+          transition: 0.5s all;
+          position: absolute;
+        
         }
         &:hover {
           .img {
             width: 260px;
-            height: 337px;
-            transform: rotateY(180deg);
-            position: absolute;
-            background-color: #6b68683f;
+            height: 360px;
+            top: 0;
+            left: 0;
+            transform: rotateZ(180deg);
+            background-color: #9c96963f;
+            
           }
         }
       }
