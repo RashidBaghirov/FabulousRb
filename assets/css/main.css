@@ -8185,4 +8185,175 @@ footer .secondFooter .box .text-img p a {
   justify-content: flex-end;
   align-items: center;
   margin-top: 30px;
+}
+#htc .details {
+  position: sticky;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+#htc .details .title {
+  border-bottom: solid 0.5px rgb(230, 230, 230);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+#htc .details .title h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+#htc .details .social_network {
+  display: flex;
+  align-items: center;
+}
+#htc .details .social_network .facebook button {
+  border: none;
+  color: white;
+  border: none;
+  background: #1877f2;
+  border-radius: 3px;
+  font-size: 11px;
+  height: 20px;
+  padding: 0px 5px;
+  font-weight: 500;
+}
+#htc .details .social_network .twit_share {
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+}
+#htc .details .social_network .twit_share .twitter {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #1d9bf0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 20px;
+  border: none;
+}
+#htc .details .social_network .twit_share .twitter i {
+  color: white;
+  font-size: 12px;
+}
+#htc .details .social_network .twit_share .twitter span {
+  font-size: 14px;
+  color: white;
+}
+#htc .details .social_network .twit_share .share {
+  background-color: #fe6d4c;
+  margin-right: 15px;
+  border-radius: 0px;
+  padding: 0 5px;
+  border-radius: 3px;
+  position: relative;
+  left: -2px;
+  border: none;
+}
+#htc .details .social_network .twit_share .share i {
+  color: white;
+  font-size: 12px;
+}
+#htc .details .social_network .twit_share .share span {
+  font-size: 14px;
+  color: white;
+}
+#htc .details .rating {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+#htc .details .rating .rate i {
+  font-size: 13px;
+}
+#htc .details .rating .review {
+  font-size: 14px;
+  color: #888;
+  margin-left: 15px;
+}
+#htc .details .rating .review i {
+  font-size: 13px;
+}
+#htc .details .price {
+  padding: 20px 0 20px;
+  border-bottom: solid 0.5px rgb(230, 230, 230);
+}
+#htc .details .price h4 {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #232323;
+}
+#htc .details .price span {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #232323;
+}
+#htc .details .add-cart {
+  padding: 10px 0;
+  border-bottom: solid 0.5px rgb(230, 230, 230);
+  border-top: solid 0.5px rgb(230, 230, 230);
+}
+#htc .details .add-cart input {
+  width: 70px;
+  border-radius: 0px;
+  border: solid 0.5px rgb(230, 230, 230);
+  outline: none;
+  padding-left: 10px;
+  margin-left: 6px;
+}
+#htc .details .add-cart .add {
+  border: none;
+  height: 36px;
+  font-size: 14px;
+  padding: 0 15px;
+  color: white;
+  background-color: #232323;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#htc .details .add-cart .add:hover {
+  background-color: #eb4d4b;
+}
+#htc .details .some_button {
+  margin-left: 10px;
+  border: none;
+  height: 36px;
+  width: 36px;
+  background-color: #eb4d4b;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#htc .details .some_button i {
+  color: white;
+}
+#htc .details .some_button:hover {
+  background-color: #232323;
+}
+#htc .details .twoUl {
+  display: flex;
+  margin-top: 30px;
+}
+#htc .details .twoUl .last_ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+#htc .details .twoUl .last_ul li {
+  width: 100%;
+  line-height: 35px;
+  padding: 5px 5px 0;
+  float: left;
+  border: 1px solid #eee;
+  margin-right: 15px;
+  color: #666;
+  margin-bottom: 15px;
+}
+#htc .details .twoUl .last_ul li p {
+  background-color: #f6f4f4;
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
