@@ -5487,7 +5487,7 @@ footer .secondFooter .box .text-img p a {
 }
 
 .active {
-  display: block !important;
+  display: block;
 }
 
 .second_crsl {
@@ -5495,7 +5495,7 @@ footer .secondFooter .box .text-img p a {
 }
 
 .third_crsl {
-  display: none;
+  display: none !important;
 }
 
 .owl-theme .owl-dots .owl-dot span {
