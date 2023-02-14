@@ -50,88 +50,126 @@
         cursor: pointer;
       }
     }
-    .accordions{
-        margin-top: 40px;
-        .htc_ctgr{
-            border-top: 1px solid rgb(219, 216, 216);
-          
-            .htc_title{
-                display: flex;
-                justify-content: space-between;
-                p{
-                    font-weight: 500;
-                }
-              .icons{
-                position: relative;
-                right: 15px;
-                .plus{
-                    position: absolute;
-                    transition: 0.5s all;  
-                }
-                .minus{
-                    position: absolute; 
-                    transition: 0.5s all;
+    .accordions {
+      margin-top: 40px;
+      .htc_ctgr {
+        border-top: 1px solid rgb(219, 216, 216);
+
+        .htc_title {
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-weight: 500;
+          }
+          .icons {
+            position: relative;
+            right: 15px;
+            .plus {
+              position: absolute;
+              transition: 0.5s all;
+            }
+            .minus {
+              position: absolute;
+              transition: 0.5s all;
+            }
+          }
+        }
+        .active {
+          .plus {
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s all;
+            transform: rotate(180deg);
+          }
+          .minus {
+            position: absolute;
+            opacity: 1;
+            transition: 0.5s all;
+            transform: rotate(180deg);
+          }
+        }
+        .htc_info {
+          display: none;
+          .htc_desc {
+            color: gray;
+            font-size: 14px;
+          }
+          .title {
+            font-weight: 700;
+            font-size: 14px;
+            color: gray;
+          }
+          ul {
+            li {
+              font-size: 14px;
+              color: gray;
+            }
+          }
+          table {
+            thead {
+              background-color: rgb(224, 221, 221);
+            }
+            tbody {
+              tr {
+                td {
+                  color: gray;
+                  i {
+                    margin-left: 3px;
+                    color: rgb(175, 172, 172);
+                  }
+                  .gray {
+                    color: rgb(80, 78, 78);
+                  }
                 }
               }
-              
             }
-            .active{
-                .plus{
-                    position: absolute;
-                    opacity: 0;
-                    transition: 0.5s all;  
-                    transform: rotate(180deg);
+          }
+          .show {
+            font-size: 14px;
+            font-weight: 400;
+            color: gray;
+          }
+          .inputs {
+            .input_title {
+              .star {
+                font-size: 14px;
+                &::before {
+                  content: " \2731";
+                  display: inline;
+                  color: red;
+                  font-size: 10px;
                 }
-                .minus{
-                    position: absolute;
-                    opacity: 1;
-                    transition: 0.5s all;
-                    transform: rotate(180deg);
-                }
+              }
             }
-            .htc_info{
-                display: none;
-                .htc_desc{
-                    color: gray;
-                    font-size: 14px;
-                }
-                .title{
-                    font-weight: 700;
-                    font-size: 14px;
-                    color: gray;
-                }
-                ul{
-                    li{
-                        font-size: 14px;
-                        color: gray;
-                    }
-                }
-                table{
-                   thead{
-                    background-color: rgb(224, 221, 221);
-                   }
-                   tbody{
-                    tr{
-                        td{
-                            color: gray;
-                            i{
-                                margin-left: 3px;
-                                color: rgb(175, 172, 172);
-                            }
-                            .gray{
-                                color: rgb(80, 78, 78);
-                            }
-                        }
-                    }
-                   }
-                }
-                .show{
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: gray;
-                }
+            .form-control {
+              box-shadow: none;
+              border-radius: 0;
+              margin: 0 0 5px;
+              border-color: #e9e9e9;
+              transition: 0.5s all;
+              &:focus {
+                box-shadow: none;
+              }
             }
+            .label {
+              margin-right: 10px;
+              &::before {
+                content: " \2731";
+                display: inline;
+                color: red;
+                font-size: 10px;
+              }
+            }
+          }
+          .buttons {
+            padding: 10px 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 30px;
+          }
         }
+      }
     }
   }
 }
