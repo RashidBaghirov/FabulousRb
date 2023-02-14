@@ -476,6 +476,16 @@
       }
     }
   }
+
+  @media screen and (max-width: 391px) {
+    .item{
+      .detail{
+        width: 400px;
+        
+      }
+    }
+  }
+
 }
 
 #latest {

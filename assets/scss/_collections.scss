@@ -142,8 +142,89 @@
       }
     }
   }
+  .layout {
+    background-color: rgba(230, 230, 230, 0.493);
+    margin: 0 10px;
+
+    .icons {
+      padding: 20px 0 0 25px;
+      overflow: hidden;
+
+      .grid {
+        &:hover i {
+          transform: rotateY(360deg);
+        }
+
+        i {
+          overflow: hidden;
+          color: #333;
+          padding: 2px 6px;
+          font-size: 20px;
+          cursor: pointer;
+          transition: 0.3s;
+          animation-duration: 0.2s;
+
+          @media screen and (max-width: 821px) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      p {
+        margin-left: 6px;
+
+        a {
+          color: #333;
+          text-decoration: none;
+          transition: 0.3s;
+
+          &:hover {
+            color: #eb4d4b;
+          }
+        }
+      }
+    }
+    .sort_show {
+      align-items: center;
+
+      div {
+        @media screen and (max-width: 391px) {
+          margin-bottom: 17px;
+        }
+
+        label {
+          margin: 0 10px 0 18px;
+          font-size: 15px;
+          color: #333;
+
+          @media screen and (max-width: 821px) {
+            font-size: 13px;
+          }
+        }
+
+        select {
+          border: 1px solid lightgray;
+          color: gray;
+          font-size: 15px;
+          padding: 2px;
+
+          @media screen and (max-width: 821px) {
+            font-size: 12px;
+          }
+
+          &:focus {
+            outline: none;
+          }
+
+          option {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
   .first_page {
-    display: none;
+
     .right {
       .device {
         padding: 0px;
@@ -250,89 +331,10 @@
       }
     }
   }
-  .layout {
-    background-color: rgba(230, 230, 230, 0.493);
-    margin: 0 10px;
-
-    .icons {
-      padding: 20px 0 0 25px;
-      overflow: hidden;
-
-      .gridList {
-        &:hover i {
-          transform: rotateY(360deg);
-        }
-
-        i {
-          overflow: hidden;
-          color: #333;
-          padding: 2px 6px;
-          font-size: 20px;
-          cursor: pointer;
-          transition: 0.3s;
-          animation-duration: 0.2s;
-
-          @media screen and (max-width: 821px) {
-            font-size: 18px;
-          }
-        }
-      }
-
-      p {
-        margin-left: 6px;
-
-        a {
-          color: #333;
-          text-decoration: none;
-          transition: 0.3s;
-
-          &:hover {
-            color: #eb4d4b;
-          }
-        }
-      }
-    }
-    .sort_show {
-      align-items: center;
-
-      div {
-        @media screen and (max-width: 391px) {
-          margin-bottom: 17px;
-        }
-
-        label {
-          margin: 0 10px 0 18px;
-          font-size: 15px;
-          color: #333;
-
-          @media screen and (max-width: 821px) {
-            font-size: 13px;
-          }
-        }
-
-        select {
-          border: 1px solid lightgray;
-          color: gray;
-          font-size: 15px;
-          padding: 2px;
-
-          @media screen and (max-width: 821px) {
-            font-size: 12px;
-          }
-
-          &:focus {
-            outline: none;
-          }
-
-          option {
-            color: gray;
-          }
-        }
-      }
-    }
-  }
+  
 
   .second_page {
+    display: none;
     .devices{
       .device {
         position: relative;
@@ -534,22 +536,7 @@
             color: gray;
           }
 
-          .prices {
-            font-weight: 600;
-            color: #eb4d4b;
-
-            @media screen and (max-width: 821px) {
-              & {
-                font-size: 12px;
-              }
-            }
-
-            @media screen and (max-width: 391px) {
-              & {
-                font-size: 8px;
-              }
-            }
-          }
+         
 
           .price {
             display: flex;
@@ -561,12 +548,28 @@
               color: #787878;
               text-decoration: initial;
             }
+            .prices {
+              font-weight: 600;
+              color: #eb4d4b;
+  
+              @media screen and (max-width: 821px) {
+                & {
+                  font-size: 12px;
+                }
+              }
+  
+              @media screen and (max-width: 391px) {
+                & {
+                  font-size: 8px;
+                }
+              }
+            }
           }
 
           .add_cart {
             opacity: 1;
             position: absolute;
-            top: 150px;
+            top: 135px;
             left: 20px;
             background-color: #eb4d4b;
             height: 37px;
@@ -592,11 +595,12 @@
             }
 
             &:hover {
-              background-color: #333;
+              background-color: #3b3535;
+
             }
 
             p {
-              color: white;
+              color: rgb(240, 233, 233);
               padding: 6px 20px;
 
               @media screen and (max-width: 821px) {
