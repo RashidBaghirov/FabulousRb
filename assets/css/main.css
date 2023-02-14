@@ -6539,56 +6539,58 @@ footer .secondFooter .box .text-img p a {
 #collection .left .showPages p {
   padding-top: 14px;
 }
-#collection .right .device {
+#collection .first_page {
+  display: none;
+}
+#collection .first_page .right .device {
   padding: 0px;
   height: 270px;
   position: relative;
-  position: relative;
 }
-#collection .right .device .image {
+#collection .first_page .right .device .image {
   height: 100%;
   position: relative;
   cursor: pointer;
 }
-#collection .right .device .image img {
+#collection .first_page .right .device .image img {
   width: 100%;
   height: 100%;
 }
-#collection .right .device .image .first {
+#collection .first_page .right .device .image .first {
   position: absolute;
   opacity: 1;
   transition: 1s all;
 }
-#collection .right .device .image .second {
+#collection .first_page .right .device .image .second {
   position: absolute;
   opacity: 0;
   transition: 1s all;
 }
-#collection .right .device .image:hover .first {
+#collection .first_page .right .device .image:hover .first {
   opacity: 0;
   transform: rotateY(180deg);
 }
-#collection .right .device .image:hover .second {
+#collection .first_page .right .device .image:hover .second {
   opacity: 1;
   transform: rotateY(180deg);
 }
-#collection .right .device .rating {
+#collection .first_page .right .device .rating {
   position: absolute;
   bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
 }
-#collection .right .device .rating .yellow {
+#collection .first_page .right .device .rating .yellow {
   color: yellow;
 }
-#collection .right .device .buttons {
+#collection .first_page .right .device .buttons {
   position: absolute;
   left: auto;
   right: 13px;
   top: -36px;
   display: block;
 }
-#collection .right .device .buttons .allbutton {
+#collection .first_page .right .device .buttons .allbutton {
   border: 1px solid black;
   padding: 8px;
   border-radius: 50%;
@@ -6600,16 +6602,16 @@ footer .secondFooter .box .text-img p a {
   transition: 0.5s all;
   cursor: pointer;
 }
-#collection .right .device .buttons .allbutton:hover {
+#collection .first_page .right .device .buttons .allbutton:hover {
   background-color: #eb4d4b;
 }
-#collection .right .device .allbutton.active {
+#collection .first_page .right .device .allbutton.active {
   opacity: 1;
 }
-#collection .right .caption {
+#collection .first_page .right .device .caption {
   padding: 10px;
 }
-#collection .right .caption .add_cart {
+#collection .first_page .right .device .caption .add_cart {
   color: white;
   display: flex;
   justify-content: center;
@@ -6626,16 +6628,326 @@ footer .secondFooter .box .text-img p a {
   width: 120px;
   cursor: pointer;
 }
-#collection .right .caption .add_cart.active {
+#collection .first_page .right .device .caption .add_cart.active {
   opacity: 1;
 }
-#collection .right .caption .description {
+#collection .first_page .right .device .caption .description {
   margin-bottom: 10px;
 }
-#collection .right .caption .price {
+#collection .first_page .right .device .caption .price {
   color: #eb4d4b;
   font-size: 16px;
   margin-bottom: 5px;
   transition: all 0.4s;
   opacity: 1;
+}
+#collection .layout {
+  background-color: rgba(230, 230, 230, 0.493);
+  margin: 0 10px;
+}
+#collection .layout .icons {
+  padding: 20px 0 0 25px;
+  overflow: hidden;
+}
+#collection .layout .icons .gridList:hover i {
+  transform: rotateY(360deg);
+}
+#collection .layout .icons .gridList i {
+  overflow: hidden;
+  color: #333;
+  padding: 2px 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  animation-duration: 0.2s;
+}
+@media screen and (max-width: 821px) {
+  #collection .layout .icons .gridList i {
+    font-size: 18px;
+  }
+}
+#collection .layout .icons p {
+  margin-left: 6px;
+}
+#collection .layout .icons p a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#collection .layout .icons p a:hover {
+  color: #eb4d4b;
+}
+#collection .layout .sort_show {
+  align-items: center;
+}
+@media screen and (max-width: 391px) {
+  #collection .layout .sort_show div {
+    margin-bottom: 17px;
+  }
+}
+#collection .layout .sort_show div label {
+  margin: 0 10px 0 18px;
+  font-size: 15px;
+  color: #333;
+}
+@media screen and (max-width: 821px) {
+  #collection .layout .sort_show div label {
+    font-size: 13px;
+  }
+}
+#collection .layout .sort_show div select {
+  border: 1px solid lightgray;
+  color: gray;
+  font-size: 15px;
+  padding: 2px;
+}
+@media screen and (max-width: 821px) {
+  #collection .layout .sort_show div select {
+    font-size: 12px;
+  }
+}
+#collection .layout .sort_show div select:focus {
+  outline: none;
+}
+#collection .layout .sort_show div select option {
+  color: gray;
+}
+#collection .second_page .devices .device {
+  position: relative;
+  top: 15px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+#collection .second_page .devices .device .device_icons {
+  position: absolute;
+  z-index: 1;
+  left: 248px;
+  top: 0;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .device_icons {
+    left: 25px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .device_icons {
+    top: 2px;
+    right: 6px;
+  }
+}
+#collection .second_page .devices .device .device_icons div {
+  cursor: pointer;
+  display: none;
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+  background-color: white;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+  transition: 0.5s;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .device_icons div {
+    width: 33px;
+    height: 33px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .device_icons div {
+    width: 15px;
+    height: 15px;
+    margin-top: 7px;
+  }
+}
+#collection .second_page .devices .device .device_icons div:hover {
+  background-color: #eb4d4b;
+  color: white;
+}
+#collection .second_page .devices .device .device_icons div i {
+  margin-top: 10px;
+  font-size: 20px;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .device_icons div i {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .device_icons div i {
+    position: relative;
+    top: -8px;
+    font-size: 7px;
+    margin-top: 0;
+  }
+}
+#collection .second_page .devices .device .image {
+  overflow: hidden;
+  position: relative;
+  width: 289.98px;
+  height: 289.98px;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .image {
+    width: 230px;
+    height: 230px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .image {
+    width: 180px;
+    height: 180px;
+  }
+}
+#collection .second_page .devices .device .image .first {
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+  cursor: pointer;
+}
+#collection .second_page .devices .device .image .second {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+#collection .second_page .devices .device .image:hover .first {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+#collection .second_page .devices .device .image:hover .second {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+#collection .second_page .devices .device .icons {
+  position: absolute;
+  top: 260px;
+  font-size: 13px;
+  width: 100%;
+  left: 110px;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .icons {
+    top: 300px;
+    font-size: 13px;
+    width: 100%;
+    left: 145px;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .icons {
+    top: 155px;
+    width: 100%;
+    left: 77px;
+    z-index: 2;
+  }
+}
+#collection .second_page .devices .device .icons i {
+  color: #b6b6b6;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .icons i {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .icons i {
+    font-size: 6px;
+  }
+}
+#collection .second_page .devices .device .icons .yellow {
+  color: #fec42d;
+}
+#collection .second_page .devices .device .description {
+  padding: 13px;
+  position: relative;
+}
+#collection .second_page .devices .device .description .title {
+  cursor: pointer;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .description .title {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .description .title {
+    font-size: 8px;
+  }
+}
+#collection .second_page .devices .device .description .about {
+  color: gray;
+}
+#collection .second_page .devices .device .description .prices {
+  font-weight: 600;
+  color: #eb4d4b;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .description .prices {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .description .prices {
+    font-size: 8px;
+  }
+}
+#collection .second_page .devices .device .description .price {
+  display: flex;
+  cursor: pointer;
+}
+#collection .second_page .devices .device .description .price .notPrice {
+  margin: 0 7px;
+  color: #787878;
+  text-decoration: initial;
+}
+#collection .second_page .devices .device .description .add_cart {
+  opacity: 1;
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  background-color: #eb4d4b;
+  height: 37px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .description .add_cart {
+    top: 17px;
+    left: 126px;
+    height: 24px;
+    width: 90px;
+  }
+}
+@media screen and (max-width: 391px) {
+  #collection .second_page .devices .device .description .add_cart {
+    top: 20px;
+    left: 53px;
+    height: 18px;
+    width: 66px;
+  }
+}
+#collection .second_page .devices .device .description .add_cart:hover {
+  background-color: #333;
+}
+#collection .second_page .devices .device .description .add_cart p {
+  color: white;
+  padding: 6px 20px;
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .description .add_cart p {
+    padding: 6px 17px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 821px) {
+  #collection .second_page .devices .device .description .add_cart p {
+    padding: 3px 10px;
+    font-size: 8px;
+  }
 }/*# sourceMappingURL=main.css.map */
