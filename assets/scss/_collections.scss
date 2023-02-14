@@ -306,17 +306,19 @@
             position: absolute;
             left: 50%;
             transform: translate(-50%);
-            bottom: -77px;
+            bottom: -62px;
             transition: 0.5s all;
             overflow: hidden;
             opacity: 0;
-            height: 35px;
+            height: 0;
             width: 120px;
             cursor: pointer;
           }
           .add_cart.active {
+            height: 34px;
             opacity: 1;
           }
+        }
           .description {
             margin-bottom: 10px;
           }
@@ -663,4 +665,4 @@
       
     }
   }
-}
+

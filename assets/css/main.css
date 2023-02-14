@@ -458,6 +458,13 @@ header .mobile-menu ul .drone-icon.active {
 header .mobile-menu.active {
   width: 200px;
 }
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
+}
 
 footer {
   background-color: rgb(242, 246, 249);
@@ -1379,6 +1386,13 @@ header .mobile-menu ul .drone-icon.active {
 }
 header .mobile-menu.active {
   width: 200px;
+}
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
 }
 
 footer {
@@ -2441,6 +2455,13 @@ header .mobile-menu ul .drone-icon.active {
 header .mobile-menu.active {
   width: 200px;
 }
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
+}
 
 footer {
   background-color: rgb(242, 246, 249);
@@ -3480,6 +3501,13 @@ header .mobile-menu ul .drone-icon.active {
 header .mobile-menu.active {
   width: 200px;
 }
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
+}
 
 footer {
   background-color: rgb(242, 246, 249);
@@ -4474,6 +4502,13 @@ header .mobile-menu ul .drone-icon.active {
 header .mobile-menu.active {
   width: 200px;
 }
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
+}
 
 footer {
   background-color: rgb(242, 246, 249);
@@ -5352,7 +5387,7 @@ footer .secondFooter .box .text-img p a {
 #latest .device {
   margin-bottom: 110px;
   padding: 11px;
-  height: 400px;
+  height: 370px;
   position: relative;
 }
 #latest .device .image {
@@ -5367,12 +5402,12 @@ footer .secondFooter .box .text-img p a {
 #latest .device .image .first {
   position: absolute;
   opacity: 1;
-  transition: 1s all;
+  transition: 0.4s all;
 }
 #latest .device .image .second {
   position: absolute;
   opacity: 0;
-  transition: 1s all;
+  transition: 0.4s all;
 }
 #latest .device .image:hover .first {
   opacity: 0;
@@ -5432,33 +5467,38 @@ footer .secondFooter .box .text-img p a {
   transition: 0.5s all;
   overflow: hidden;
   opacity: 0;
-  height: 35px;
+  height: 0;
   width: 120px;
   cursor: pointer;
 }
 #latest .caption .add_cart.active {
+  height: 34px;
   opacity: 1;
 }
-#latest .caption .description {
+#latest .description {
   margin-bottom: 10px;
 }
-#latest .caption .price {
+#latest .price {
   color: #eb4d4b;
   font-size: 16px;
   margin-bottom: 5px;
   transition: all 0.4s;
   opacity: 1;
 }
-#latest .active {
+
+.active {
   display: block;
 }
-#latest .second_crsl {
+
+.second_crsl {
   display: none;
 }
-#latest .third_crsl {
+
+.third_crsl {
   display: none;
 }
-#latest .owl-theme .owl-dots .owl-dot span {
+
+.owl-theme .owl-dots .owl-dot span {
   visibility: hidden;
 }
 
@@ -6070,6 +6110,13 @@ header .mobile-menu ul .drone-icon.active {
 }
 header .mobile-menu.active {
   width: 200px;
+}
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
 }
 
 footer {
@@ -6814,21 +6861,22 @@ footer .secondFooter .box .text-img p a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: -77px;
+  bottom: -62px;
   transition: 0.5s all;
   overflow: hidden;
   opacity: 0;
-  height: 35px;
+  height: 0;
   width: 120px;
   cursor: pointer;
 }
 #collection .first_page .right .device .caption .add_cart.active {
+  height: 34px;
   opacity: 1;
 }
-#collection .first_page .right .device .caption .description {
+#collection .first_page .right .device .description {
   margin-bottom: 10px;
 }
-#collection .first_page .right .device .caption .price {
+#collection .first_page .right .device .price {
   color: #eb4d4b;
   font-size: 16px;
   margin-bottom: 5px;
@@ -6836,54 +6884,55 @@ footer .secondFooter .box .text-img p a {
   opacity: 1;
 }
 @media screen and (max-width: 821px) {
-  #collection .first_page .right {
+  #collection .first_page {
     display: flex;
     justify-content: center;
     padding: 60px;
   }
-  #collection .first_page .right .device {
+  #collection .first_page .device {
     width: 205px;
     height: 205px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .first_page .right {
+  #collection .first_page {
     padding: 60px;
     display: flex;
     justify-content: center;
   }
-  #collection .first_page .right .device {
+  #collection .first_page .device {
     width: 205px;
     height: 205px;
   }
 }
-#collection .second_page {
+
+.second_page {
   display: none;
 }
-#collection .second_page .devices .device {
+.second_page .devices .device {
   position: relative;
   top: 15px;
   overflow: hidden;
   margin: 15px 0;
 }
-#collection .second_page .devices .device .device_icons {
+.second_page .devices .device .device_icons {
   position: absolute;
   z-index: 1;
   left: 248px;
   top: 0;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .device_icons {
+  .second_page .devices .device .device_icons {
     left: 25px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .device_icons {
+  .second_page .devices .device .device_icons {
     top: 2px;
     right: 6px;
   }
 }
-#collection .second_page .devices .device .device_icons div {
+.second_page .devices .device .device_icons div {
   cursor: pointer;
   display: none;
   width: 36px;
@@ -6896,58 +6945,58 @@ footer .secondFooter .box .text-img p a {
   transition: 0.5s;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .device_icons div {
+  .second_page .devices .device .device_icons div {
     width: 33px;
     height: 33px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .device_icons div {
+  .second_page .devices .device .device_icons div {
     width: 15px;
     height: 15px;
     margin-top: 7px;
   }
 }
-#collection .second_page .devices .device .device_icons div:hover {
+.second_page .devices .device .device_icons div:hover {
   background-color: #eb4d4b;
   color: white;
 }
-#collection .second_page .devices .device .device_icons div i {
+.second_page .devices .device .device_icons div i {
   margin-top: 10px;
   font-size: 20px;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .device_icons div i {
+  .second_page .devices .device .device_icons div i {
     font-size: 15px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .device_icons div i {
+  .second_page .devices .device .device_icons div i {
     position: relative;
     top: -8px;
     font-size: 7px;
     margin-top: 0;
   }
 }
-#collection .second_page .devices .device .image {
+.second_page .devices .device .image {
   overflow: hidden;
   position: relative;
   width: 289.98px;
   height: 289.98px;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .image {
+  .second_page .devices .device .image {
     width: 230px;
     height: 230px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .image {
+  .second_page .devices .device .image {
     width: 180px;
     height: 180px;
   }
 }
-#collection .second_page .devices .device .image .first {
+.second_page .devices .device .image .first {
   -o-object-fit: contain;
      object-fit: contain;
   position: absolute;
@@ -6956,22 +7005,22 @@ footer .secondFooter .box .text-img p a {
   transition: 0.7s;
   cursor: pointer;
 }
-#collection .second_page .devices .device .image .second {
+.second_page .devices .device .image .second {
   position: absolute;
   opacity: 0;
   width: 100%;
   height: 100%;
   transition: 0.7s;
 }
-#collection .second_page .devices .device .image:hover .first {
+.second_page .devices .device .image:hover .first {
   opacity: 0;
   transform: rotateY(180deg);
 }
-#collection .second_page .devices .device .image:hover .second {
+.second_page .devices .device .image:hover .second {
   opacity: 1;
   transform: rotateY(180deg);
 }
-#collection .second_page .devices .device .icons {
+.second_page .devices .device .icons {
   position: absolute;
   top: 260px;
   font-size: 13px;
@@ -6979,7 +7028,7 @@ footer .secondFooter .box .text-img p a {
   left: 110px;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .icons {
+  .second_page .devices .device .icons {
     top: 300px;
     font-size: 13px;
     width: 100%;
@@ -6988,73 +7037,73 @@ footer .secondFooter .box .text-img p a {
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .icons {
+  .second_page .devices .device .icons {
     top: 155px;
     width: 100%;
     left: 77px;
     z-index: 2;
   }
 }
-#collection .second_page .devices .device .icons i {
+.second_page .devices .device .icons i {
   color: #b6b6b6;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .icons i {
+  .second_page .devices .device .icons i {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .icons i {
+  .second_page .devices .device .icons i {
     font-size: 6px;
   }
 }
-#collection .second_page .devices .device .icons .yellow {
+.second_page .devices .device .icons .yellow {
   color: #fec42d;
 }
-#collection .second_page .devices .device .description {
+.second_page .devices .device .description {
   padding: 13px;
   position: relative;
 }
-#collection .second_page .devices .device .description .title {
+.second_page .devices .device .description .title {
   cursor: pointer;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .description .title {
+  .second_page .devices .device .description .title {
     font-size: 13px;
   }
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .description .title {
+  .second_page .devices .device .description .title {
     font-size: 8px;
   }
 }
-#collection .second_page .devices .device .description .about {
+.second_page .devices .device .description .about {
   color: gray;
 }
-#collection .second_page .devices .device .description .price {
+.second_page .devices .device .description .price {
   display: flex;
   cursor: pointer;
 }
-#collection .second_page .devices .device .description .price .notPrice {
+.second_page .devices .device .description .price .notPrice {
   margin: 0 7px;
   color: #787878;
   text-decoration: initial;
 }
-#collection .second_page .devices .device .description .price .prices {
+.second_page .devices .device .description .price .prices {
   font-weight: 600;
   color: #eb4d4b;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .description .price .prices {
+  .second_page .devices .device .description .price .prices {
     font-size: 12px;
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .description .price .prices {
+  .second_page .devices .device .description .price .prices {
     font-size: 8px;
   }
 }
-#collection .second_page .devices .device .description .add_cart {
+.second_page .devices .device .description .add_cart {
   opacity: 1;
   position: absolute;
   top: 135px;
@@ -7065,7 +7114,7 @@ footer .secondFooter .box .text-img p a {
   transition: 0.5s;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .description .add_cart {
+  .second_page .devices .device .description .add_cart {
     top: 17px;
     left: 126px;
     height: 24px;
@@ -7073,42 +7122,43 @@ footer .secondFooter .box .text-img p a {
   }
 }
 @media screen and (max-width: 391px) {
-  #collection .second_page .devices .device .description .add_cart {
+  .second_page .devices .device .description .add_cart {
     top: 20px;
     left: 53px;
     height: 18px;
     width: 66px;
   }
 }
-#collection .second_page .devices .device .description .add_cart:hover {
+.second_page .devices .device .description .add_cart:hover {
   background-color: #3b3535;
 }
-#collection .second_page .devices .device .description .add_cart p {
+.second_page .devices .device .description .add_cart p {
   color: rgb(240, 233, 233);
   padding: 6px 20px;
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .description .add_cart p {
+  .second_page .devices .device .description .add_cart p {
     padding: 6px 17px;
     font-size: 10px;
   }
 }
 @media screen and (max-width: 821px) {
-  #collection .second_page .devices .device .description .add_cart p {
+  .second_page .devices .device .description .add_cart p {
     padding: 3px 10px;
     font-size: 8px;
   }
 }
-#collection .collections_accordion .collect_title {
+
+.collections_accordion .collect_title {
   padding: 5px;
   background-color: #dfdbdb;
   display: flex;
   justify-content: space-between;
 }
-#collection .collections_accordion .collect_title i.active {
+.collections_accordion .collect_title i.active {
   transform: rotate(180deg);
 }
-#collection .collections_accordion .collect_info {
+.collections_accordion .collect_info {
   display: none;
 }
 
@@ -7570,6 +7620,13 @@ header .mobile-menu ul .drone-icon.active {
 }
 header .mobile-menu.active {
   width: 200px;
+}
+header .back {
+  width: 100%;
+  height: 100vh;
+}
+header .back.active {
+  background-color: rgba(122, 120, 120, 0.575);
 }
 
 footer {
@@ -8356,4 +8413,127 @@ footer .secondFooter .box .text-img p a {
   background-color: #f6f4f4;
   margin: 0;
   padding: 0;
+}
+
+#htc_product .title .subtitle {
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 12px;
+  color: #eb4d4b;
+}
+#htc_product .title .home {
+  font-size: 34px;
+  position: relative;
+}
+#htc_product .title .home .home_title:before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #eb4d4b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#htc_product .item .device {
+  margin-bottom: 110px;
+  width: 241px;
+  height: 241px;
+  padding: 11px;
+  position: relative;
+}
+#htc_product .item .device .image {
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+#htc_product .item .device .image img {
+  width: 100%;
+  height: 100%;
+}
+#htc_product .item .device .image .first {
+  position: absolute;
+  opacity: 1;
+  transition: 1s all;
+}
+#htc_product .item .device .image .second {
+  position: absolute;
+  opacity: 0;
+  transition: 1s all;
+}
+#htc_product .item .device .image:hover .first {
+  opacity: 0;
+  transform: rotateY(180deg);
+}
+#htc_product .item .device .image:hover .second {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+#htc_product .item .device .rating {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#htc_product .item .device .rating .yellow {
+  color: yellow;
+}
+#htc_product .item .device .buttons {
+  position: absolute;
+  left: auto;
+  right: 16px;
+  top: 10px;
+  display: block;
+}
+#htc_product .item .device .buttons .allbutton {
+  border: 1px solid black;
+  padding: 6px;
+  border-radius: 50%;
+  margin-top: 5px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#htc_product .item .device .buttons .allbutton:hover {
+  background-color: #eb4d4b;
+}
+#htc_product .item .device .allbutton.active {
+  opacity: 1;
+}
+#htc_product .item .device .add_cart {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eb4d4b;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -62px;
+  transition: 0.5s all;
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  width: 120px;
+  cursor: pointer;
+}
+#htc_product .item .device .add_cart.active {
+  height: 34px;
+  opacity: 1;
+}
+#htc_product .owl-carousel .owl-nav button.owl-next, #htc_product .owl-carousel .owl-nav button.owl-prev {
+  width: 34px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  border: none;
+  padding: 0 !important;
+  font-size: 26px;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

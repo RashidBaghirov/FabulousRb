@@ -532,7 +532,7 @@
   .device {
     margin-bottom: 110px;
     padding: 11px;
-    height: 400px;
+    height: 370px;
     position: relative;
     .image {
       height: 100%;
@@ -545,12 +545,12 @@
       .first {
         position: absolute;
         opacity: 1;
-        transition: 1s all;
+        transition: 0.4s all;
       }
       .second {
         position: absolute;
         opacity: 0;
-        transition: 1s all;
+        transition: 0.4s all;
       }
       &:hover {
         .first {
@@ -614,13 +614,15 @@
       transition: 0.5s all;
       overflow: hidden;
       opacity: 0;
-      height: 35px;
+      height: 0;
       width: 120px;
       cursor: pointer;
     }
     .add_cart.active {
+      height: 34px;
       opacity: 1;
     }
+  }
     .description {
       margin-bottom: 10px;
     }
@@ -644,7 +646,7 @@
   .owl-theme .owl-dots .owl-dot span {
     visibility: hidden;
   }
-}
+
 
 #faq {
   background-color: #f2f6f9;

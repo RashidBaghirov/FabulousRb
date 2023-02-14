@@ -327,10 +327,11 @@ let ulparent = document.querySelectorAll(".box");
 let exitbtn = document.querySelectorAll(".exitbutton");
 let base = document.getElementById("base");
 let crtbtn = document.querySelectorAll(".cart_bottom");
-
+let backgray=document.querySelector(".back");
 cart.forEach((crt)=>{
   console.log(crt);
   crt.addEventListener("click", function (product) {
+    backgray.classList.add("active");
     document.body.style.overflowY = "hidden";
     ulparent.forEach((ule)=>{
       ule.classList.add("active");
@@ -389,6 +390,7 @@ cart.forEach((crt)=>{
 
 exitbtn.forEach((ext)=>{
   ext.addEventListener("click", function () {
+    backgray.classList.remove("active");
     ulparent.forEach((ule)=>{
       ule.classList.remove("active");
     })

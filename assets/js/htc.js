@@ -45,3 +45,22 @@ $(".responsive").slick({
     $(".htc_info").not($(this).next()).slideUp();
     // $(".htc_title").removeClass("active");
   });
+
+
+
+  $('#htc_product .owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        }
+    }
+})
