@@ -46,9 +46,6 @@ delbtn.forEach((btn) => {
 
 
  $(".cart_info_faq_title").click(function () {
-  let $icon = $(this).find("i");
-  $icon.toggleClass("active");
   $(this).next().slideToggle();
   $(".cart_info_").not($(this).next()).slideUp();
-  $(".cart_info_faq_title i").not($icon).removeClass("active");
 });

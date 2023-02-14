@@ -329,6 +329,29 @@
           }
         }
       }
+      @media screen and (max-width: 821px) {
+        & {
+          display: flex;
+          justify-content: center;
+           padding: 60px;
+           .device{
+            width: 205px;
+            height: 205px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 391px) {
+        & {
+          padding: 60px;
+          display: flex;
+          justify-content: center;
+          .device{
+            width: 205px;
+            height: 205px;
+          }
+        }
+      }
     }
   }
   
@@ -620,6 +643,24 @@
           }
         }
       }
+    }
+  }
+
+  .collections_accordion{
+    .collect_title{
+      padding: 5px;
+      background-color: #dfdbdb;
+      display: flex;
+      justify-content: space-between;
+      
+      i.active{
+        transform:rotate(180deg);
+      }
+
+    }
+    .collect_info{
+      display: none;
+      
     }
   }
 }

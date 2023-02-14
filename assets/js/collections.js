@@ -18,3 +18,11 @@ $(".device").on("mouseover", function () {
     $(".first_page").fadeOut();
     $(".second_page").fadeIn();
   });
+
+  $(".collect_title").click(function () {
+    let $icon = $(this).find("i");
+    $icon.toggleClass("active");
+    $(this).next().slideToggle();
+    $(".collect_info").not($(this).next()).slideUp();
+    $(".collect_title i").not($icon).removeClass("active");
+  });
