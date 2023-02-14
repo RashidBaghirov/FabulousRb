@@ -370,40 +370,7 @@ cart.forEach((crt)=>{
     ul.forEach((ll)=>{
       ll.innerHTML+= task;
     })
-
-
-
-
-    let border = `
-    <li>
-   <div class="d-flex">
-     <div class="cart_image">
-    <img src="${devices.src}" alt="">
-      </div>
-      <div class="info ">
-     <span>${devices.count}</span>
-     <span class="me-1 ms-1">x</span>
-     <span>${devices.title}</span>
-     <p>${devices.price}</p>
-     </div>
-  </div>
-  <div>
-    
-    </div>
-    <div class="del_btn" style="position: relative;">
-      <i class="fa-solid fa-trash" style="
-      position: absolute;
-      top: -115px;
-      right: 16px;"
-  ></i>
-    </div>
-    </li>
-    `;
-    crtbtn.forEach((crt)=>{
-      crt.classList.add("active");
-    })
-
-      
+  
     });
     let delbtn = document.querySelectorAll(".del_btn");
   
