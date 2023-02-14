@@ -377,7 +377,7 @@ cart.forEach((crt)=>{
     delbtn.forEach((btn) => {
       btn.addEventListener("click", function () {
         let li = this.parentElement;
-        let src = li.querySelector(".cart_image img").src;
+        let id = li.querySelector(".cart_image img").src;
         device = device.filter((dev) => dev.src != src);
         li.remove();
         // ShowTotalPrice(basket);

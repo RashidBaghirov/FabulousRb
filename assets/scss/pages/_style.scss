@@ -635,13 +635,13 @@
     }
   }
   .active {
-    display: block;
+    display: block !important;
   }
   .second_crsl {
-    display: none;
+    display: none !important;
   }
   .third_crsl {
-    display: none;
+    display: none ;
   }
   .owl-theme .owl-dots .owl-dot span {
     visibility: hidden;

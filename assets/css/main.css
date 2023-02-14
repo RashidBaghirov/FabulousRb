@@ -5487,11 +5487,11 @@ footer .secondFooter .box .text-img p a {
 }
 
 .active {
-  display: block;
+  display: block !important;
 }
 
 .second_crsl {
-  display: none;
+  display: none !important;
 }
 
 .third_crsl {
