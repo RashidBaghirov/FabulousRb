@@ -50,5 +50,88 @@
         cursor: pointer;
       }
     }
+    .accordions{
+        margin-top: 40px;
+        .htc_ctgr{
+            border-top: 1px solid rgb(219, 216, 216);
+          
+            .htc_title{
+                display: flex;
+                justify-content: space-between;
+                p{
+                    font-weight: 500;
+                }
+              .icons{
+                position: relative;
+                right: 15px;
+                .plus{
+                    position: absolute;
+                    transition: 0.5s all;  
+                }
+                .minus{
+                    position: absolute; 
+                    transition: 0.5s all;
+                }
+              }
+              
+            }
+            .active{
+                .plus{
+                    position: absolute;
+                    opacity: 0;
+                    transition: 0.5s all;  
+                    transform: rotate(180deg);
+                }
+                .minus{
+                    position: absolute;
+                    opacity: 1;
+                    transition: 0.5s all;
+                    transform: rotate(180deg);
+                }
+            }
+            .htc_info{
+                display: none;
+                .htc_desc{
+                    color: gray;
+                    font-size: 14px;
+                }
+                .title{
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: gray;
+                }
+                ul{
+                    li{
+                        font-size: 14px;
+                        color: gray;
+                    }
+                }
+                table{
+                   thead{
+                    background-color: rgb(224, 221, 221);
+                   }
+                   tbody{
+                    tr{
+                        td{
+                            color: gray;
+                            i{
+                                margin-left: 3px;
+                                color: rgb(175, 172, 172);
+                            }
+                            .gray{
+                                color: rgb(80, 78, 78);
+                            }
+                        }
+                    }
+                   }
+                }
+                .show{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: gray;
+                }
+            }
+        }
+    }
   }
 }

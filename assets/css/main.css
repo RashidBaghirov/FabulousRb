@@ -8078,4 +8078,75 @@ footer .secondFooter .box .text-img p a {
   top: 50%;
   transform: translate(-50%);
   cursor: pointer;
+}
+#htc .devices_drone .accordions {
+  margin-top: 40px;
+}
+#htc .devices_drone .accordions .htc_ctgr {
+  border-top: 1px solid rgb(219, 216, 216);
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_title {
+  display: flex;
+  justify-content: space-between;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_title p {
+  font-weight: 500;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_title .icons {
+  position: relative;
+  right: 15px;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_title .icons .plus {
+  position: absolute;
+  transition: 0.5s all;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_title .icons .minus {
+  position: absolute;
+  transition: 0.5s all;
+}
+#htc .devices_drone .accordions .htc_ctgr .active .plus {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s all;
+  transform: rotate(180deg);
+}
+#htc .devices_drone .accordions .htc_ctgr .active .minus {
+  position: absolute;
+  opacity: 1;
+  transition: 0.5s all;
+  transform: rotate(180deg);
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info {
+  display: none;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info .htc_desc {
+  color: gray;
+  font-size: 14px;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info .title {
+  font-weight: 700;
+  font-size: 14px;
+  color: gray;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info ul li {
+  font-size: 14px;
+  color: gray;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info table thead {
+  background-color: rgb(224, 221, 221);
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info table tbody tr td {
+  color: gray;
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info table tbody tr td i {
+  margin-left: 3px;
+  color: rgb(175, 172, 172);
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info table tbody tr td .gray {
+  color: rgb(80, 78, 78);
+}
+#htc .devices_drone .accordions .htc_ctgr .htc_info .show {
+  font-size: 14px;
+  font-weight: 400;
+  color: gray;
 }/*# sourceMappingURL=main.css.map */
