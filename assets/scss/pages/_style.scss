@@ -537,20 +537,23 @@
     .image {
       height: 100%;
       position: relative;
-      img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .first {
-        position: absolute;
-        opacity: 1;
-        transition: 0.4s all;
-      }
-      .second {
-        position: absolute;
-        opacity: 0;
-        transition: 0.4s all;
+      a{
+        text-decoration: none;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .first {
+          position: absolute;
+          opacity: 1;
+          transition: 0.4s all;
+        }
+        .second {
+          position: absolute;
+          opacity: 0;
+          transition: 0.4s all;
+        }
       }
       &:hover {
         .first {

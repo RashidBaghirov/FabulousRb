@@ -5395,16 +5395,19 @@ footer .secondFooter .box .text-img p a {
   position: relative;
   cursor: pointer;
 }
-#latest .device .image img {
+#latest .device .image a {
+  text-decoration: none;
+}
+#latest .device .image a img {
   width: 100%;
   height: 100%;
 }
-#latest .device .image .first {
+#latest .device .image a .first {
   position: absolute;
   opacity: 1;
   transition: 0.4s all;
 }
-#latest .device .image .second {
+#latest .device .image a .second {
   position: absolute;
   opacity: 0;
   transition: 0.4s all;
