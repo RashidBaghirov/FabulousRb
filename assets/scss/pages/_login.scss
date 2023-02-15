@@ -14,7 +14,8 @@
                 width: 100%;
                 height: 240px;
                 padding: 15px;
-                span {
+                strong {
+                    display: block;
                     font-size: 16px;
                     display: block;
                     color: black;
@@ -25,19 +26,20 @@
                     font-size: 13px;
                     color: #333;
                 }
+               a{
                 .reg_btn {
                     transition: .8s;
                     background-color: #333;
                     color: white;
                     border-color: #333;
                     border-radius: 0;
-                    font-family: 'Poppins', sans-serif;
+    
                     &:hover {
                         background-color: #eb4d4b;
                         border-color: #eb4d4b;
-                        font-family: 'Poppins', sans-serif;
                     }
                 }
+               }
             }
             .login {
                 border: 0.8px solid #e9e9e9;

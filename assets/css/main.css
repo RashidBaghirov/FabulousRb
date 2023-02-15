@@ -125,6 +125,9 @@ header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
 }
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
+}
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
   list-style: none;
@@ -1053,6 +1056,9 @@ header .big-size-container .row .icons .box {
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
+}
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
 }
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
@@ -2122,6 +2128,9 @@ header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
 }
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
+}
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
   list-style: none;
@@ -2936,7 +2945,8 @@ footer .secondFooter .box .text-img p a {
   height: 240px;
   padding: 15px;
 }
-#login .container .row .registr span {
+#login .container .row .registr strong {
+  display: block;
   font-size: 16px;
   display: block;
   color: black;
@@ -2947,18 +2957,16 @@ footer .secondFooter .box .text-img p a {
   font-size: 13px;
   color: #333;
 }
-#login .container .row .registr .reg_btn {
+#login .container .row .registr a .reg_btn {
   transition: 0.8s;
   background-color: #333;
   color: white;
   border-color: #333;
   border-radius: 0;
-  font-family: "Poppins", sans-serif;
 }
-#login .container .row .registr .reg_btn:hover {
+#login .container .row .registr a .reg_btn:hover {
   background-color: #eb4d4b;
   border-color: #eb4d4b;
-  font-family: "Poppins", sans-serif;
 }
 #login .container .row .login {
   border: 0.8px solid #e9e9e9;
@@ -3167,6 +3175,9 @@ header .big-size-container .row .icons .box {
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
+}
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
 }
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
@@ -3981,6 +3992,134 @@ footer .secondFooter .box .text-img p a {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+#registration .left .collection_ctgr {
+  padding-bottom: 5px;
+  border: 1px solid #dfdfdf;
+}
+#registration .left .collection_ctgr h5 {
+  color: #555;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+#registration .left .collection_refine {
+  margin-top: 30px;
+  border: 1px solid #dfdfdf;
+}
+#registration .left .collection_refine h5 {
+  color: #555;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+#registration .left .collection_refine .buttons {
+  transition: 0.7s;
+  border: none;
+  margin-top: 20px;
+  margin: 20px 10px 15px;
+  border-radius: 0;
+  background-color: #232323;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+}
+#registration .left .collection_refine .buttons:hover {
+  background-color: #eb4d4b;
+}
+#registration .left .collection_refine .items {
+  padding-left: 10px;
+}
+#registration .left .collection_refine .items label {
+  color: #888;
+  margin-left: 3px;
+}
+#registration .left .collections_lastsellers {
+  margin-top: 403px;
+}
+#registration .left .collections_bestsellers {
+  margin-top: 30px;
+}
+#registration .left .collections_bestsellers,
+#registration .left .collections_lastsellers {
+  border: 1px solid #dfdfdf;
+}
+#registration .left .collections_bestsellers h5,
+#registration .left .collections_lastsellers h5 {
+  color: #555;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+#registration .left .collections_bestsellers .device .image,
+#registration .left .collections_lastsellers .device .image {
+  padding: 10px;
+  display: flex;
+  width: 85px;
+  height: 85px;
+}
+#registration .left .collections_bestsellers .device .image img,
+#registration .left .collections_lastsellers .device .image img {
+  width: 100%;
+  height: 100%;
+}
+#registration .left .collections_bestsellers .device .text,
+#registration .left .collections_lastsellers .device .text {
+  margin-left: 10px;
+}
+#registration .left .collections_bestsellers .device .text span,
+#registration .left .collections_lastsellers .device .text span {
+  display: block;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+#registration .left .collections_bestsellers .device .text .red,
+#registration .left .collections_lastsellers .device .text .red {
+  color: #eb4d4b;
+  font-weight: 500;
+}
+#registration .left .collections_bestsellers .device .text .price,
+#registration .left .collections_lastsellers .device .text .price {
+  display: flex;
+}
+#registration .left .collections_bestsellers .device .text .price .line,
+#registration .left .collections_lastsellers .device .text .price .line {
+  margin-left: 3px;
+  color: #888;
+  text-decoration: line-through;
+}
+#registration .left .big_discount {
+  margin-top: 30px;
+}
+#registration .left .big_discount .image {
+  position: relative;
+}
+#registration .left .big_discount .image img {
+  width: 100%;
+  position: absolute;
+}
+#registration .left .big_discount .image .img {
+  width: 0;
+  height: 0;
+  top: 160px;
+  left: 145px;
+  transition: 0.5s all;
+  position: absolute;
+}
+#registration .left .big_discount .image:hover .img {
+  width: 260px;
+  height: 360px;
+  top: 0;
+  left: 0;
+  transform: rotateZ(180deg);
+  background-color: rgba(156, 150, 150, 0.2470588235);
+}
+#registration .left .showPages {
+  margin-top: 30px;
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+}
+#registration .left .showPages p {
+  padding-top: 14px;
+}
 #registration .alert .warning {
   padding: 10px;
   text-align: center;
@@ -4041,6 +4180,18 @@ footer .secondFooter .box .text-img p a {
   border-bottom: 1px solid gray;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+#registration .collections_accordion .collect_title {
+  padding: 5px;
+  background-color: #dfdbdb;
+  display: flex;
+  justify-content: space-between;
+}
+#registration .collections_accordion .collect_title i.active {
+  transform: rotate(180deg);
+}
+#registration .collections_accordion .collect_info {
+  display: none;
 }
 
 header {
@@ -4168,6 +4319,9 @@ header .big-size-container .row .icons .box {
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
+}
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
 }
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
@@ -5781,6 +5935,9 @@ header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
 }
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
+}
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
   list-style: none;
@@ -7290,6 +7447,9 @@ header .big-size-container .row .icons .box {
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
   overflow: auto;
+}
+header .big-size-container .row .icons .box .device_box .box_device {
+  padding: 0;
 }
 header .big-size-container .row .icons .box .device_box .box_device li {
   border-bottom: 1px solid rgb(167, 164, 164);
