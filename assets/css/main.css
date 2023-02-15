@@ -464,9 +464,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {
@@ -1396,9 +1398,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {
@@ -2002,6 +2006,10 @@ footer .secondFooter .box .text-img p a {
   background-color: #232323;
 }
 
+#empty.passiv {
+  display: none;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -2467,9 +2475,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {
@@ -3515,9 +3525,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {
@@ -4659,9 +4671,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {
@@ -6282,9 +6296,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {
@@ -7797,9 +7813,11 @@ header .mobile-menu.active {
 header .back {
   width: 100%;
   height: 100vh;
+  display: none;
 }
 header .back.active {
   background-color: rgba(122, 120, 120, 0.575);
+  display: block;
 }
 
 footer {

@@ -312,6 +312,8 @@ function GetProductsData(product) {
   return result;
 }
 
+
+
 function ShowProductCount(device) {
   let deviceCount = document.querySelectorAll(".total_count");
     deviceCount.forEach((dvc)=>{
