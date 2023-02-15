@@ -913,21 +913,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul li {
+#clipboard .clipboard_background ul .li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul li a {
+#clipboard .clipboard_background ul .li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul li a::after {
+#clipboard .clipboard_background ul .li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul li a:hover {
+#clipboard .clipboard_background ul .li a:hover {
   color: #eb4d4b;
 }
 
@@ -1845,21 +1845,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul li {
+#clipboard .clipboard_background ul .li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul li a {
+#clipboard .clipboard_background ul .li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul li a::after {
+#clipboard .clipboard_background ul .li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul li a:hover {
+#clipboard .clipboard_background ul .li a:hover {
   color: #eb4d4b;
 }
 
@@ -2916,21 +2916,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul li {
+#clipboard .clipboard_background ul .li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul li a {
+#clipboard .clipboard_background ul .li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul li a::after {
+#clipboard .clipboard_background ul .li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul li a:hover {
+#clipboard .clipboard_background ul .li a:hover {
   color: #eb4d4b;
 }
 
@@ -3964,21 +3964,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul li {
+#clipboard .clipboard_background ul .li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul li a {
+#clipboard .clipboard_background ul .li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul li a::after {
+#clipboard .clipboard_background ul .li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul li a:hover {
+#clipboard .clipboard_background ul .li a:hover {
   color: #eb4d4b;
 }
 
@@ -5548,27 +5548,28 @@ footer .secondFooter .box .text-img p a {
 #latest .device {
   margin-bottom: 110px;
   padding: 11px;
-  height: 370px;
   position: relative;
 }
 #latest .device .image {
-  height: 100%;
+  height: 370px;
+  width: 100%;
   position: relative;
   cursor: pointer;
 }
 #latest .device .image a {
+  width: 100%;
   text-decoration: none;
 }
-#latest .device .image a img {
+#latest .device .image a .first {
   width: 100%;
   height: 100%;
-}
-#latest .device .image a .first {
   position: absolute;
   opacity: 1;
   transition: 0.4s all;
 }
 #latest .device .image a .second {
+  width: 100%;
+  height: 100%;
   position: absolute;
   opacity: 0;
   transition: 0.4s all;
@@ -5583,7 +5584,7 @@ footer .secondFooter .box .text-img p a {
 }
 #latest .device .rating {
   position: absolute;
-  bottom: 40px;
+  bottom: 132px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -5627,7 +5628,7 @@ footer .secondFooter .box .text-img p a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: -62px;
+  bottom: 30px;
   transition: 0.5s all;
   overflow: hidden;
   opacity: 0;
@@ -6730,21 +6731,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul li {
+#clipboard .clipboard_background ul .li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul li a {
+#clipboard .clipboard_background ul .li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul li a::after {
+#clipboard .clipboard_background ul .li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul li a:hover {
+#clipboard .clipboard_background ul .li a:hover {
   color: #eb4d4b;
 }
 
@@ -6952,24 +6953,26 @@ footer .secondFooter .box .text-img p a {
 }
 #collection .first_page .right .device {
   padding: 0px;
-  height: 270px;
   position: relative;
 }
 #collection .first_page .right .device .image {
-  height: 100%;
+  height: 270px;
   position: relative;
   cursor: pointer;
 }
-#collection .first_page .right .device .image img {
+#collection .first_page .right .device .image a {
+  width: 100%;
+}
+#collection .first_page .right .device .image a .first {
   width: 100%;
   height: 100%;
-}
-#collection .first_page .right .device .image .first {
   position: absolute;
   opacity: 1;
   transition: 1s all;
 }
-#collection .first_page .right .device .image .second {
+#collection .first_page .right .device .image a .second {
+  width: 100%;
+  height: 100%;
   position: absolute;
   opacity: 0;
   transition: 1s all;
@@ -6984,7 +6987,7 @@ footer .secondFooter .box .text-img p a {
 }
 #collection .first_page .right .device .rating {
   position: absolute;
-  bottom: 8px;
+  bottom: 103px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -6995,7 +6998,7 @@ footer .secondFooter .box .text-img p a {
   position: absolute;
   left: auto;
   right: 13px;
-  top: -36px;
+  top: 0px;
   display: block;
 }
 #collection .first_page .right .device .buttons .allbutton {
@@ -7028,11 +7031,11 @@ footer .secondFooter .box .text-img p a {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: -62px;
+  bottom: 20px;
   transition: 0.5s all;
   overflow: hidden;
   opacity: 0;
-  height: 0;
+  height: 0px;
   width: 120px;
   cursor: pointer;
 }
@@ -8243,21 +8246,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul li {
+#clipboard .clipboard_background ul .li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul li a {
+#clipboard .clipboard_background ul .li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul li a::after {
+#clipboard .clipboard_background ul .li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul li a:hover {
+#clipboard .clipboard_background ul .li a:hover {
   color: #eb4d4b;
 }
 
@@ -8698,9 +8701,9 @@ footer .secondFooter .box .text-img p a {
   opacity: 1;
 }
 #htc_product .owl-carousel .owl-nav button.owl-next, #htc_product .owl-carousel .owl-nav button.owl-prev {
-  width: 34px;
+  width: 38px;
   border-radius: 50%;
-  background: red;
+  background: #eb4d4b;
   color: white;
   border: none;
   padding: 0 !important;

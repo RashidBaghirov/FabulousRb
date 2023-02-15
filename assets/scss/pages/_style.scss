@@ -539,24 +539,25 @@
   .device {
     margin-bottom: 110px;
     padding: 11px;
-    height: 370px;
+   
     position: relative;
     .image {
-      height: 100%;
+      height: 370px;
+      width: 100%;
       position: relative;
       a{
+        width: 100%;
         text-decoration: none;
-        img {
+        .first {
           width: 100%;
           height: 100%;
-        }
-  
-        .first {
           position: absolute;
           opacity: 1;
           transition: 0.4s all;
         }
         .second {
+          width: 100%;
+          height: 100%;
           position: absolute;
           opacity: 0;
           transition: 0.4s all;
@@ -576,7 +577,7 @@
     }
     .rating {
       position: absolute;
-      bottom: 40px;
+      bottom: 132px;
       left: 50%;
       transform: translateX(-50%);
       .yellow {
@@ -620,7 +621,7 @@
       position: absolute;
       left: 50%;
       transform: translate(-50%);
-      bottom: -62px;
+      bottom: 30px;
       transition: 0.5s all;
       overflow: hidden;
       opacity: 0;
