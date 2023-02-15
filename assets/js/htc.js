@@ -63,49 +63,65 @@ $("#htc_product .owl-carousel").owlCarousel({
 let share = document.querySelector(".share");
 let sharediv = document.querySelector(".share_div");
 
-share.addEventListener("click", function () {
+share.addEventListener("mouseover", function () {
   let html = `
   <ul class="list-unstyled">
 <li>
-    <span><i class="bi bi-facebook"></i></span>
-    <span>Facebook</span>
+<a href=""> <span><i class="bi bi-facebook"></i></span>
+    <span>Facebook</span>   </a>
 </li>
 <li>
-    <span>
+<a href="">  <span>
         <i  class="fa-brands fa-twitter"></i>
     </span>
-    <span>Twitter</span>
+    <span>Twitter</span> </a>
 </li>
 <li>
-    <span>
+<a href="">  <span>
         <i class="bi bi-printer"></i>
     </span>
     <span>
         Print
-    </span>
+    </span> </a>
 </li>
 <li>
-    <span><i class="bi bi-envelope"></i></span>
-    <span>Email</span>
+<a href="">  <span><i class="bi bi-envelope"></i></span>
+    <span>Email</span> </a>
 </li>
 <li>
-    <span><i class="bi bi-pinterest"></i></span>
-    <span>Pinterest</span>
+<a href="">  <span><i class="bi bi-pinterest"></i></span>
+    <span>Pinterest</span> </a>
 </li>
 <li>
-    <span><i class="bi bi-envelope-at-fill"></i></span>
-    <span>Gmail</span>
+<a href="">   <span><i class="bi bi-envelope-at-fill"></i></span>
+    <span>Gmail</span> </a>
 </li>
 <li>
-    <span><i class="bi bi-linkedin"></i></span>
-    <span>LinkedIn</span>
+<a href="https://www.linkedin.com/in/rashid-baghirov-53a178249/">  <span><i class="bi bi-linkedin"></i></span>
+    <span>LinkedIn</span> </a>
 </li>
 <li>
-    <span><i class="bi bi-clipboard2-plus"></i></span>
-    <span>More(181)...</span>
+<a href="">    <span><i class="bi bi-clipboard2-plus"></i></span>
+    <span>More(181)...</span></a>
 </li>
 </ul>`;
   sharediv.innerHTML = " ";
   sharediv.innerHTML += html;
   sharediv.classList.toggle("active");
+});
+
+
+$('img[data-enlargable]').addClass('img-enlargable').click(function(){
+  var src = $(this).attr('src');
+  $('<div>').css({
+      background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+      backgroundSize: 'contain',
+      width:'100%', height:'100%',
+      position:'fixed',
+      zIndex:'10000',
+      top:'0', left:'0',
+      cursor: 'zoom-out'
+  }).click(function(){
+      $(this).remove();
+  }).appendTo('body');
 });

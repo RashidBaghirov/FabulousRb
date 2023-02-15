@@ -27,11 +27,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -87,14 +87,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -473,7 +473,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -968,11 +968,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -1028,14 +1028,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -1414,7 +1414,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -2052,11 +2052,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -2112,14 +2112,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -2498,7 +2498,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -2969,6 +2969,134 @@ footer .secondFooter .box .text-img p a {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+#login .left .collection_ctgr {
+  padding-bottom: 5px;
+  border: 1px solid #dfdfdf;
+}
+#login .left .collection_ctgr h5 {
+  color: #555;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+#login .left .collection_refine {
+  margin-top: 30px;
+  border: 1px solid #dfdfdf;
+}
+#login .left .collection_refine h5 {
+  color: #555;
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+#login .left .collection_refine .buttons {
+  transition: 0.7s;
+  border: none;
+  margin-top: 20px;
+  margin: 20px 10px 15px;
+  border-radius: 0;
+  background-color: #232323;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+}
+#login .left .collection_refine .buttons:hover {
+  background-color: #eb4d4b;
+}
+#login .left .collection_refine .items {
+  padding-left: 10px;
+}
+#login .left .collection_refine .items label {
+  color: #888;
+  margin-left: 3px;
+}
+#login .left .collections_lastsellers {
+  margin-top: 403px;
+}
+#login .left .collections_bestsellers {
+  margin-top: 30px;
+}
+#login .left .collections_bestsellers,
+#login .left .collections_lastsellers {
+  border: 1px solid #dfdfdf;
+}
+#login .left .collections_bestsellers h5,
+#login .left .collections_lastsellers h5 {
+  color: #555;
+  background-color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px;
+}
+#login .left .collections_bestsellers .device .image,
+#login .left .collections_lastsellers .device .image {
+  padding: 10px;
+  display: flex;
+  width: 85px;
+  height: 85px;
+}
+#login .left .collections_bestsellers .device .image img,
+#login .left .collections_lastsellers .device .image img {
+  width: 100%;
+  height: 100%;
+}
+#login .left .collections_bestsellers .device .text,
+#login .left .collections_lastsellers .device .text {
+  margin-left: 10px;
+}
+#login .left .collections_bestsellers .device .text span,
+#login .left .collections_lastsellers .device .text span {
+  display: block;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+#login .left .collections_bestsellers .device .text .red,
+#login .left .collections_lastsellers .device .text .red {
+  color: #eb4d4b;
+  font-weight: 500;
+}
+#login .left .collections_bestsellers .device .text .price,
+#login .left .collections_lastsellers .device .text .price {
+  display: flex;
+}
+#login .left .collections_bestsellers .device .text .price .line,
+#login .left .collections_lastsellers .device .text .price .line {
+  margin-left: 3px;
+  color: #888;
+  text-decoration: line-through;
+}
+#login .left .big_discount {
+  margin-top: 30px;
+}
+#login .left .big_discount .image {
+  position: relative;
+}
+#login .left .big_discount .image img {
+  width: 100%;
+  position: absolute;
+}
+#login .left .big_discount .image .img {
+  width: 0;
+  height: 0;
+  top: 160px;
+  left: 145px;
+  transition: 0.5s all;
+  position: absolute;
+}
+#login .left .big_discount .image:hover .img {
+  width: 260px;
+  height: 360px;
+  top: 0;
+  left: 0;
+  transform: rotateZ(180deg);
+  background-color: rgba(156, 150, 150, 0.2470588235);
+}
+#login .left .showPages {
+  margin-top: 30px;
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+}
+#login .left .showPages p {
+  padding-top: 14px;
+}
 #login .container .row .registr {
   border: 0.8px solid #e9e9e9;
   border-radius: 5px;
@@ -3080,6 +3208,18 @@ footer .secondFooter .box .text-img p a {
   background-color: #eb4d4b;
   border-color: #eb4d4b;
 }
+#login .collections_accordion .collect_title {
+  padding: 5px;
+  background-color: #dfdbdb;
+  display: flex;
+  justify-content: space-between;
+}
+#login .collections_accordion .collect_title i.active {
+  transform: rotate(180deg);
+}
+#login .collections_accordion .collect_info {
+  display: none;
+}
 
 header {
   position: absolute;
@@ -3109,11 +3249,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -3169,14 +3309,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -3555,7 +3695,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -4262,11 +4402,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -4322,14 +4462,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -4708,7 +4848,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -5894,11 +6034,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -5954,14 +6094,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -6340,7 +6480,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -7418,11 +7558,11 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 18px;
-  color: #fff;
+  color: black;
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #b4afaf;
+  color: #eb4d50;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
@@ -7478,14 +7618,14 @@ header .big-size-container .row nav ul li .drone-menu.active {
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: white;
+  color: black;
   font-size: 26px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: black;
+  color: #eb4d50;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -7864,7 +8004,7 @@ header .back {
   display: none;
 }
 header .back.active {
-  background-color: rgba(61, 53, 53, 0.788);
+  background-color: rgba(0, 0, 0, 0.4);
   display: block;
 }
 
@@ -8353,11 +8493,15 @@ footer .secondFooter .box .text-img p a {
   height: 100%;
 }
 #htc .devices_drone .responsive .left_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 25px;
   height: 25px;
+  background-color: #eb4d4b;
   border-radius: 50%;
-  color: rgb(236, 20, 20);
+  color: white;
   z-index: 4;
   position: absolute;
   top: 50%;
@@ -8365,14 +8509,18 @@ footer .secondFooter .box .text-img p a {
   cursor: pointer;
 }
 #htc .devices_drone .responsive .right_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 25px;
   height: 25px;
+  background-color: #eb4d4b;
   border-radius: 50%;
-  color: rgb(236, 20, 20);
+  color: white;
   z-index: 4;
   position: absolute;
-  right: -40px;
+  right: -30px;
   top: 50%;
   transform: translate(-50%);
   cursor: pointer;
@@ -8565,8 +8713,17 @@ footer .secondFooter .box .text-img p a {
 #htc .details .social_network .share_div.active {
   display: block;
 }
+#htc .details .social_network .share_div ul {
+  border-bottom: 0.5px solid rgb(177, 170, 170);
+}
+#htc .details .social_network .share_div ul li {
+  cursor: pointer;
+}
 #htc .details .social_network .share_div ul li:hover {
-  background-color: blue;
+  background-color: rgba(2, 2, 240, 0.274);
+}
+#htc .details .social_network .share_div ul li a {
+  text-decoration: none;
 }
 #htc .details .rating {
   display: flex;
@@ -8782,9 +8939,20 @@ footer .secondFooter .box .text-img p a {
   height: 34px;
   opacity: 1;
 }
-#htc_product .owl-carousel .owl-nav button.owl-next,
+#htc_product .owl-carousel .owl-nav button.owl-next {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #eb4d4b;
+  color: white;
+  border: none;
+  padding: 0 !important;
+  font-size: 26px;
+  font-weight: 700;
+}
 #htc_product .owl-carousel .owl-nav button.owl-prev {
-  width: 38px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: #eb4d4b;
   color: white;

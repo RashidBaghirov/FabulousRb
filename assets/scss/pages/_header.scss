@@ -22,10 +22,10 @@ header {
             margin-left: 35px;
             .li_a {
               font-size: 18px;
-              color: #fff;
+              color: black;
               z-index: 1;
               &:hover {
-                color: #b4afaf;
+                color: #eb4d50;
               }
             }
             .accesories-menu {
@@ -91,13 +91,13 @@ header {
       }
       .icons {
         .icon {
-          color: white;
+          color: black;
           font-size: 26px;
           margin-left: 20px;
           transition: 0.5s;
           cursor: pointer;
           &:hover {
-            color: black;
+            color: #eb4d50;
             transition: 0.5s;
           }
         }
@@ -486,7 +486,7 @@ header {
     display: none;
   }
   .back.active {
-    background-color: rgba(61, 53, 53, 0.788);
+    background-color: rgba(0, 0, 0, 0.4);
     display: block;
   }
 }

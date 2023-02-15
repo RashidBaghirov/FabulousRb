@@ -293,6 +293,7 @@ buttons.forEach((btn) => {
     } else {
       sameid.count++;
     }
+    
     ShowTotalPrice(device);
     ShowProductCount(device);
     let devicestr = JSON.stringify(device);

@@ -11,7 +11,7 @@ device.forEach((devices) => {
  <td class="text-left">${devices.title}</td>
 <td class="text-left"><span class="me-2">Product</span>${devices.id}</td>
  <td class="text-left"><div class="d-flex"  style="max-width: 200px;">
- <input type="text" value="1" size="1" class="form-control" style="height: 33px;">
+ <input type="text" value="${devices.count}" size="1" class="form-control" style="height: 33px;" >
         <span class="input-group-btn">
        <div class="buttons m-0 p-0">
        <p class="first"><i class="fa fa-refresh"></i></p>
@@ -21,7 +21,7 @@ device.forEach((devices) => {
 
         </span></div></td>
     <td class="text-right unit-price">${devices.price}</td>
-    <td class="text-right total-price">${devices.price}</td>
+    <td class="text-right total-price">${parseInt(devices.price)*devices.count}€</td>
 </tr>
 `;
   trparent.innerHTML += task;
@@ -75,3 +75,4 @@ function SearchLenght() {
     empty.classList.add("passiv");
   }
 }
+

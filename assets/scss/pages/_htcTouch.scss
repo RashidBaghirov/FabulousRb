@@ -25,11 +25,15 @@
         }
       }
       .left_arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 25px;
         height: 25px;
+        background-color: #eb4d4b;
         border-radius: 50%;
-        color: rgb(236, 20, 20);
+        color:white;
         z-index: 4;
         position: absolute;
         top: 50%;
@@ -37,14 +41,18 @@
         cursor: pointer;
       }
       .right_arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 25px;
         height: 25px;
+        background-color: #eb4d4b;
         border-radius: 50%;
-        color: rgb(236, 20, 20);
+        color:white;
         z-index: 4;
         position: absolute;
-        right: -40px;
+        right: -30px;
         top: 50%;
         transform: translate(-50%);
         cursor: pointer;
@@ -254,10 +262,16 @@
         }
         ul{
           li{
+            cursor: pointer;
             &:hover{
-              background-color: blue;
+              background-color: rgba(2, 2, 240, 0.274);
             }
+            a{
+              text-decoration: none;
+            }
+            
           }
+          border-bottom: 0.5px solid rgb(177, 170, 170);
         }
       }
     }
@@ -488,9 +502,21 @@
       }
     }
   }
-  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-next{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #eb4d4b;
+    color: white;
+    border: none;
+    padding: 0 !important;
+    font-size: 26px;
+    font-weight: 700;
+  }
   .owl-carousel .owl-nav button.owl-prev {
-    width: 38px;
+    width: 35px;
+
+    height: 35px;
     border-radius: 50%;
     background: #eb4d4b;
     color: white;
