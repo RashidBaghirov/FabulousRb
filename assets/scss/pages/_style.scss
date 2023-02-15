@@ -476,6 +476,13 @@
       }
     }
   }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+  }
 
   @media screen and (max-width: 391px) {
     .item{

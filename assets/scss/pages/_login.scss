@@ -1,132 +1,128 @@
 @import "./header";
 @import "./footer";
 @import "./clipboard";
-  
 
 #login {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    .container {
-        .row {
-            .registr {
-                border: 0.8px solid #e9e9e9;
-                border-radius: 5px;
-                width: 100%;
-                height: 240px;
-                padding: 15px;
-                strong {
-                    display: block;
-                    font-size: 16px;
-                    display: block;
-                    color: black;
-                    padding-top: 3px;
-                    padding-bottom: 10px;
-                }
-                p {
-                    font-size: 13px;
-                    color: #333;
-                }
-               a{
-                .reg_btn {
-                    transition: .8s;
-                    background-color: #333;
-                    color: white;
-                    border-color: #333;
-                    border-radius: 0;
-    
-                    &:hover {
-                        background-color: #eb4d4b;
-                        border-color: #eb4d4b;
-                    }
-                }
-               }
-            }
-            .login {
-                border: 0.8px solid #e9e9e9;
-                border-radius: 5px;
-                width: 100%;
-                height: 305px;
-                padding: 15px;
-                .text {
-                    p {
-                      font-weight:700;
-                      line-height: 0px;
-                        font-size: 16px;
-                        color: #333;
-                        padding-top: 3px;
-                        padding-bottom: 10px;
-                    }
-                }
-                .inputs {
-                    .email {
-                        label {
-                            font-size: 14px;
-                            color: #333;
-                            padding-bottom: 5px;
-                        }
-                        input {
-                            width: 100%;
-                            border-color: #c2c2c2;
-                            border-width: 1px;
-
-                            &::placeholder {
-                                color: #c2c2c2;
-                                font-size: 14px;
-                                padding: 6px;
-                            }
-                        }
-                    }
-                    .password {
-                        label {
-                            font-size: 14px;
-                            padding-bottom: 5px;
-                            color: #333;
-                        }
-                        input {
-                            width: 100%;
-                            border-color: #c2c2c2;
-                            border-width: 1px;
-
-                            &::placeholder {
-                                color: #c2c2c2;
-                                font-size: 14px;
-                                padding: 6px;
-                            }
-                        }
-                    }
-                }
-                .pass {
-                    span {
-                        display: block;
-                        a {
-                            font-size: 14px;
-                            transition: 0.8s;
-                            text-decoration: none;
-                            color: #232323;
-
-                            &:hover {
-                                color: #eb4d4b;
-                            }
-                        }
-                    }
-                    .login_button {
-                        width: 24%;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
-                        transition: .8s;
-                        background-color: #333;
-                        color: white;
-                        border-color: #333;
-                        border-radius: 0;
-
-                        &:hover {
-                            background-color: #eb4d4b;
-                            border-color: #eb4d4b;
-                        }
-                    }
-                }
-            }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    .row {
+      .registr {
+        border: 0.8px solid #e9e9e9;
+        border-radius: 5px;
+        width: 100%;
+        height: 240px;
+        padding: 15px;
+        strong {
+          display: block;
+          font-size: 16px;
+          display: block;
+          color: black;
+          padding-top: 3px;
+          padding-bottom: 10px;
         }
-    }
-}
+        p {
+          font-size: 13px;
+          color: #333;
+        }
+        .reg_btn_ {
+          transition: 0.8s;
+          background-color: #333;
+          color: white;
+          border-color: #333;
+          border-radius: 0;
 
+          &:hover {
+            background-color: #eb4d4b;
+            border-color: #eb4d4b;
+          }
+        }
+      }
+      .login {
+        border: 0.8px solid #e9e9e9;
+        border-radius: 5px;
+        width: 100%;
+        height: 305px;
+        padding: 15px;
+        .text {
+          p {
+            font-weight: 700;
+            line-height: 0px;
+            font-size: 16px;
+            color: #333;
+            padding-top: 3px;
+            padding-bottom: 10px;
+          }
+        }
+        .inputs {
+          .email {
+            label {
+              font-size: 14px;
+              color: #333;
+              padding-bottom: 5px;
+            }
+            input {
+              width: 100%;
+              border-color: #c2c2c2;
+              border-width: 1px;
+
+              &::placeholder {
+                color: #c2c2c2;
+                font-size: 14px;
+                padding: 6px;
+              }
+            }
+          }
+          .password {
+            label {
+              font-size: 14px;
+              padding-bottom: 5px;
+              color: #333;
+            }
+            input {
+              width: 100%;
+              border-color: #c2c2c2;
+              border-width: 1px;
+
+              &::placeholder {
+                color: #c2c2c2;
+                font-size: 14px;
+                padding: 6px;
+              }
+            }
+          }
+        }
+        .pass {
+          span {
+            display: block;
+            a {
+              font-size: 14px;
+              transition: 0.8s;
+              text-decoration: none;
+              color: #232323;
+
+              &:hover {
+                color: #eb4d4b;
+              }
+            }
+          }
+          .login_button {
+            width: 24%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            transition: 0.8s;
+            background-color: #333;
+            color: white;
+            border-color: #333;
+            border-radius: 0;
+
+            &:hover {
+              background-color: #eb4d4b;
+              border-color: #eb4d4b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
