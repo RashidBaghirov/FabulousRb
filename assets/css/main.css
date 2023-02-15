@@ -913,21 +913,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul .li {
+#clipboard .clipboard_background ul li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul .li a {
+#clipboard .clipboard_background ul li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul .li a::after {
+#clipboard .clipboard_background ul li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul .li a:hover {
+#clipboard .clipboard_background ul li a:hover {
   color: #eb4d4b;
 }
 
@@ -1845,21 +1845,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul .li {
+#clipboard .clipboard_background ul li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul .li a {
+#clipboard .clipboard_background ul li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul .li a::after {
+#clipboard .clipboard_background ul li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul .li a:hover {
+#clipboard .clipboard_background ul li a:hover {
   color: #eb4d4b;
 }
 
@@ -2916,21 +2916,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul .li {
+#clipboard .clipboard_background ul li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul .li a {
+#clipboard .clipboard_background ul li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul .li a::after {
+#clipboard .clipboard_background ul li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul .li a:hover {
+#clipboard .clipboard_background ul li a:hover {
   color: #eb4d4b;
 }
 
@@ -3964,21 +3964,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul .li {
+#clipboard .clipboard_background ul li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul .li a {
+#clipboard .clipboard_background ul li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul .li a::after {
+#clipboard .clipboard_background ul li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul .li a:hover {
+#clipboard .clipboard_background ul li a:hover {
   color: #eb4d4b;
 }
 
@@ -6731,21 +6731,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul .li {
+#clipboard .clipboard_background ul li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul .li a {
+#clipboard .clipboard_background ul li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul .li a::after {
+#clipboard .clipboard_background ul li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul .li a:hover {
+#clipboard .clipboard_background ul li a:hover {
   color: #eb4d4b;
 }
 
@@ -8246,21 +8246,21 @@ footer .secondFooter .box .text-img p a {
   justify-content: center;
   align-items: center;
 }
-#clipboard .clipboard_background ul .li {
+#clipboard .clipboard_background ul li {
   font-size: 14px;
 }
-#clipboard .clipboard_background ul .li a {
+#clipboard .clipboard_background ul li a {
   transition: 0.5s;
   color: #232323;
 }
-#clipboard .clipboard_background ul .li a::after {
+#clipboard .clipboard_background ul li a::after {
   content: " ";
   display: inline;
   border-right: 1px solid #232323;
   margin-left: 5px;
   margin-right: 5px;
 }
-#clipboard .clipboard_background ul .li a:hover {
+#clipboard .clipboard_background ul li a:hover {
   color: #eb4d4b;
 }
 
