@@ -53,8 +53,8 @@ header {
               }
             }
             .accesories-menu.active {
-             height: 170px;
-             z-index: 9;
+              height: 170px;
+              z-index: 9;
             }
             .drone-menu {
               overflow: hidden;
@@ -62,7 +62,7 @@ header {
               background-color: rgb(255, 255, 255);
               top: 34px;
               left: 50px;
-             height: 0;
+              height: 0;
               transition: 0.3s all;
               .menu {
                 font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
@@ -83,8 +83,8 @@ header {
             }
 
             .drone-menu.active {
-             height: 170px;
-             z-index: 9;
+              height: 170px;
+              z-index: 9;
             }
           }
         }
@@ -112,9 +112,8 @@ header {
           position: relative;
           right: 9px;
           bottom: 10px;
-       
         }
-     
+
         .box {
           height: 100vh;
           width: 0px;
@@ -123,9 +122,10 @@ header {
           right: 0;
           margin: 0 auto;
           background-color: white;
-          transition: 1s;
+          transition: 0.3s all;
           z-index: 1;
-          overflow: auto;
+          overflow-y: auto;
+          overflow-x: hidden;
           .device_box {
             height: 62%;
             overflow: auto;
@@ -148,7 +148,7 @@ header {
                     margin-top: 20px;
                     font-size: 16px;
                   }
-                  span{
+                  span {
                     font-size: 14px;
                   }
                 }
@@ -163,6 +163,14 @@ header {
                     padding: 5px 0 15px;
                     border-bottom: 1px solid #eee;
                     margin-bottom: 5px;
+                  }
+                }
+                .del_btn {
+                  position: absolute;
+                  i {
+                    position: absolute;
+                    top: -110px;
+                    left: 291px;
                   }
                 }
               }
@@ -218,8 +226,8 @@ header {
     }
     .search_input_large {
       width: 100%;
-      visibility: hidden;
-      opacity: 0;
+      height: 0px;
+      overflow: hidden;
       position: relative;
       top: 70%;
       right: 5%;
@@ -228,38 +236,30 @@ header {
         position: absolute;
         right: 0;
       }
-
-      .icon_search {
-        position: absolute;
-        top: 0px;
-        right: 0px;
+      &.active {
+        height: 80px;
       }
     }
-    .search_input_large.active {
-      visibility: visible;
-      opacity: 1;
-    }
+
     .user_registration {
-      width: 35%;
+      width: 28%;
       top: 71%;
       right: 8%;
-      visibility: hidden;
-      opacity: 0;
+      height: 0px;
       position: absolute;
-      height: max-content;
       background-color: rgb(255, 255, 255);
       padding: 0px 30px;
       transition: 0.3s all;
+      overflow: hidden;
       .language {
         line-height: 0;
         .image {
           margin-bottom: 10px;
         }
       }
-    }
-    .user_registration.active {
-      visibility: visible;
-      opacity: 1;
+      &.active {
+        height: 270px;
+      }
     }
   }
 
@@ -269,8 +269,7 @@ header {
     .row {
       .search_input {
         overflow: hidden;
-        visibility: hidden;
-        opacity: 0;
+        height: 0px;
         position: absolute;
         top: 50px;
         left: 50px;
@@ -280,11 +279,11 @@ header {
           top: 0px;
           right: 3px;
         }
+        &.active {
+          height: 80px;
+        }
       }
-      .search_input.active {
-        visibility: visible;
-        opacity: 1;
-      }
+
       .user_mobile_registration {
         text-align: start;
         top: 7%;
@@ -302,18 +301,15 @@ header {
             margin-bottom: 10px;
           }
         }
-
-       
       }
       .user_mobile_registration.active {
         visibility: visible;
         opacity: 1;
-        @media  screen and (max-width:391px) {
-          &{
+        @media screen and (max-width: 391px) {
+          & {
             top: 85%;
-            
-           }
-         }
+          }
+        }
       }
       .count {
         color: white;
@@ -327,20 +323,20 @@ header {
         right: -1px;
         bottom: 29px;
         @media screen and (max-width: 821px) {
-          &{
-           font-size: 12px;
-           right: 25px;
-           bottom: 5px;
-           width: 12px;
-           height: 12px;
+          & {
+            font-size: 12px;
+            right: 25px;
+            bottom: 5px;
+            width: 12px;
+            height: 12px;
           }
-         }
-         @media  screen and (max-width:391px) {
-          &{
-            right: 0px;
-            bottom: 30px;
-           }
-         }
+        }
+        @media screen and (max-width: 391px) {
+          & {
+            right: 1px;
+            bottom: 29px;
+          }
+        }
       }
       .box {
         height: 100vh;
@@ -371,7 +367,7 @@ header {
               .info {
                 padding: 20px;
                 p {
-                  font-size: 12px;
+                  font-size: 16px;
                 }
               }
               .cart-sticky {
@@ -385,6 +381,14 @@ header {
                   padding: 5px 0 15px;
                   border-bottom: 1px solid #eee;
                   margin-bottom: 5px;
+                }
+              }
+              .del_btn {
+                position: absolute;
+                i {
+                  position: absolute;
+                  top: -94px;
+                  left: 291px;
                 }
               }
             }
@@ -476,13 +480,13 @@ header {
   .mobile-menu.active {
     width: 200px;
   }
-  .back{
+  .back {
     width: 100%;
-    height: 100vh;
+    height: 600vh;
     display: none;
   }
-  .back.active{
-    background-color: rgba(122, 120, 120, 0.575);
+  .back.active {
+    background-color: rgba(61, 53, 53, 0.788);
     display: block;
   }
 }

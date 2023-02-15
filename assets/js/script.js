@@ -4,7 +4,7 @@ $(document).ready(function () {
     let mob_size = $(".mobile-container ");
     scroll = $(window).scrollTop();
     let a = big_size.find(".li_a");
-    let icon= big_size.find(".icon");
+    let icon = big_size.find(".icon");
     if (scroll >= 66) {
       big_size
         .css({
@@ -204,65 +204,63 @@ $(document).ready(function () {
     },
   });
 
-  var owl = $('#latest .owl-carousel');
+  var owl = $("#latest .owl-carousel");
   owl.owlCarousel({
-      loop:false,
-      nav:true,
-      margin:10,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:2
-          },            
-          960:{
-              items:2
-          },
-          1200:{
-              items:3
-          }
-      }
+    loop: false,
+    nav: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      960: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
   });
 
-$('#reclams  .owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  autoplay: true,
-  autoplayTimeout: 2500,
-  responsive:{
-      0:{
-          items:1
+  $("#reclams  .owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    responsive: {
+      0: {
+        items: 1,
       },
-      600:{
-          items:1
+      600: {
+        items: 1,
       },
-      1000:{
-          items:1
-      }
-  }
-})
+      1000: {
+        items: 1,
+      },
+    },
+  });
 
-$('#products .owl-carousel').owlCarousel({
-  stagePadding: 50,
-  loop:false,
-  margin:10,
-  nav:true,
-  responsive:{
-      0:{
-          items:1
+  $("#products .owl-carousel").owlCarousel({
+    stagePadding: 50,
+    loop: false,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
       },
-      621:{
-          items:2
+      621: {
+        items: 2,
       },
-      1000:{
-          items:2
-      }
-  }
-})
-
+      1000: {
+        items: 2,
+      },
+    },
+  });
 });
-
 
 document.addEventListener("DOMContentLoaded", function () {
   let devicestr = localStorage.getItem("device");
@@ -272,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("device", JSON.stringify([]));
   } else {
     ShowProductCount(device);
+    ShowTotalPrice(device);
   }
 });
 
@@ -294,8 +293,7 @@ buttons.forEach((btn) => {
     } else {
       sameid.count++;
     }
-    // ulparent.classList.remove("active");
-    // ShowTotalPrice(device);
+    ShowTotalPrice(device);
     ShowProductCount(device);
     let devicestr = JSON.stringify(device);
     localStorage.setItem("device", devicestr);
@@ -304,7 +302,7 @@ buttons.forEach((btn) => {
 
 function GetProductsData(product) {
   let parent = product.parentElement.parentElement;
-  let title = parent.querySelector(".description .title").innerText
+  let title = parent.querySelector(".description .title").innerText;
   let src = parent.querySelector("img").src;
   let id = parent.getAttribute("data-id");
   let price = parent.querySelector(".prices").innerText;
@@ -312,15 +310,24 @@ function GetProductsData(product) {
   return result;
 }
 
+function ShowTotalPrice(device) {
+  let totals = document.querySelectorAll(".total_price");
 
+  totals.forEach(tt=>{
+    tt.innerText = device.reduce((total, product) => {
+      return (total += parseInt(product.price) * product.count);
+    }, 0);
+  })
+ 
+}
 
 function ShowProductCount(device) {
   let deviceCount = document.querySelectorAll(".total_count");
-    deviceCount.forEach((dvc)=>{
-      dvc.innerText = device.reduce((total, product) => {
-        return (total += product.count);
-      }, 0);
-    })
+  deviceCount.forEach((dvc) => {
+    dvc.innerText = device.reduce((total, product) => {
+      return (total += product.count);
+    }, 0);
+  });
 }
 
 let cart = document.querySelectorAll(".cart");
@@ -329,23 +336,23 @@ let ulparent = document.querySelectorAll(".box");
 let exitbtn = document.querySelectorAll(".exitbutton");
 let base = document.getElementById("base");
 let crtbtn = document.querySelectorAll(".cart_bottom");
-let backgray=document.querySelector(".back");
-cart.forEach((crt)=>{
+let backgray = document.querySelector(".back");
+cart.forEach((crt) => {
   console.log(crt);
   crt.addEventListener("click", function (product) {
     backgray.classList.add("active");
     document.body.style.overflowY = "hidden";
-    ulparent.forEach((ule)=>{
+    ulparent.forEach((ule) => {
       ule.classList.add("active");
-    })
+    });
     let device = JSON.parse(localStorage.getItem("device"));
-    ul.forEach((ll)=>{
-      ll.innerHTML=" ";
-    })
-  
+    ul.forEach((ll) => {
+      ll.innerHTML = " ";
+    });
+
     device.forEach((devices) => {
       let task = `
-    <li>
+    <li style="cursor: pointer;" id="${devices.id}">
    <div class="d-flex">
      <div class="cart_image">
     <img src="${devices.src}" alt="">
@@ -354,48 +361,54 @@ cart.forEach((crt)=>{
      <span>${devices.count}</span>
      <span class="me-1 ms-1">x</span>
      <span>${devices.title}</span>
-     <p>${devices.price}</p>
+     <p>${devices.price}€</p>
      </div>
   </div>
   <div>
     
     </div>
-    <div class="del_btn" style="position: relative;">
-      <i class="fa-solid fa-trash" style="
-      position: absolute;
-      top: -115px;
-      right: 16px;"
+    <div class="del_btn" >
+      <i  class="fa-solid fa-trash" 
+      
+      
   ></i>
     </div>
     </li>
     `;
-    ul.forEach((ll)=>{
-      ll.innerHTML+= task;
-    })
-  
+      ul.forEach((ll) => {
+        ll.innerHTML += task;
+      });
     });
     let delbtn = document.querySelectorAll(".del_btn");
-  
+
     delbtn.forEach((btn) => {
       btn.addEventListener("click", function () {
         let li = this.parentElement;
-        let src = li.querySelector(".cart_image img").src;
-        device = device.filter((dev) => dev.src != src);
+        let id = li.getAttribute("id");
+        device = device.filter((dev) => dev.id != id);
         li.remove();
-        // ShowTotalPrice(basket);
+        ShowTotalPrice(device);
         ShowProductCount(device);
         localStorage.setItem("device", JSON.stringify(device));
       });
     });
   });
-})
+});
 
-exitbtn.forEach((ext)=>{
+exitbtn.forEach((ext) => {
   ext.addEventListener("click", function () {
     backgray.classList.remove("active");
-    ulparent.forEach((ule)=>{
+    ulparent.forEach((ule) => {
       ule.classList.remove("active");
-    })
+    });
     document.body.style.overflowY = "scroll";
   });
+});
+
+backgray.addEventListener("click",function(){
+  backgray.classList.remove("active");
+  ulparent.forEach((ule) => {
+    ule.classList.remove("active");
+  });
+  document.body.style.overflowY = "scroll";
 })

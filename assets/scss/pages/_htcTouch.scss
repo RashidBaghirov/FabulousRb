@@ -241,6 +241,25 @@
           }
         }
       }
+      .share_div {
+        position: absolute;
+        padding: 10px;
+        top: 97px;
+        right: 142px;
+        background-color: #ffffff;
+        width: 140px;
+        display: none;
+        &.active{
+          display: block;
+        }
+        ul{
+          li{
+            &:hover{
+              background-color: blue;
+            }
+          }
+        }
+      }
     }
     .rating {
       display: flex;
@@ -321,8 +340,8 @@
       }
     }
     .twoUl {
-        display: flex;
-        margin-top: 30px;
+      display: flex;
+      margin-top: 30px;
       .last_ul {
         margin-left: 20px;
         margin-bottom: 20px;
@@ -330,8 +349,7 @@
         overflow: hidden;
         text-align: center;
         li {
-        
-            width: 100%;
+          width: 100%;
           line-height: 35px;
           padding: 5px 5px 0;
           float: left;
@@ -339,19 +357,18 @@
           margin-right: 15px;
           color: #666;
           margin-bottom: 15px;
-            p{
-                background-color: #f6f4f4;
-                margin: 0;
-                padding: 0;
-            }
-         
+          p {
+            background-color: #f6f4f4;
+            margin: 0;
+            padding: 0;
+          }
         }
       }
     }
   }
 }
 
-#htc_product{
+#htc_product {
   .title {
     .subtitle {
       font-size: 26px;
@@ -377,7 +394,7 @@
       }
     }
   }
-  .item{
+  .item {
     .device {
       margin-bottom: 110px;
       width: 241px;
@@ -391,7 +408,7 @@
           width: 100%;
           height: 100%;
         }
-  
+
         .first {
           position: absolute;
           opacity: 1;
@@ -440,7 +457,7 @@
           align-items: center;
           transition: 0.5s all;
           cursor: pointer;
-          &:hover{
+          &:hover {
             background-color: #eb4d4b;
           }
         }
@@ -470,17 +487,16 @@
         opacity: 1;
       }
     }
-   
   }
-  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
     width: 38px;
     border-radius: 50%;
-    background:  #eb4d4b;
+    background: #eb4d4b;
     color: white;
     border: none;
-    padding: 0!important;
+    padding: 0 !important;
     font-size: 26px;
     font-weight: 700;
-}
-  
+  }
 }
