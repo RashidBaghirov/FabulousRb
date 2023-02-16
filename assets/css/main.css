@@ -27,17 +27,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -46,18 +46,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -73,28 +75,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -252,6 +255,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -474,6 +498,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {
@@ -967,17 +1016,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -986,18 +1035,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -1013,28 +1064,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -1192,6 +1244,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -1414,6 +1487,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {
@@ -2050,17 +2148,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -2069,18 +2167,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -2096,28 +2196,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -2275,6 +2376,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -2497,6 +2619,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {
@@ -3246,17 +3393,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -3265,18 +3412,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -3292,28 +3441,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -3471,6 +3621,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -3693,6 +3864,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {
@@ -4398,17 +4594,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -4417,18 +4613,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -4444,28 +4642,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -4623,6 +4822,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -4845,6 +5065,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {
@@ -5682,7 +5927,7 @@ footer .secondFooter .box .text-img p a {
 #products .owl-carousel .owl-nav button.owl-prev {
   width: 25px;
   height: 25px;
-  background-color: red;
+  background-color: #eb4d4b;
   color: white;
   font-weight: 600;
 }
@@ -6044,17 +6289,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -6063,18 +6308,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -6090,28 +6337,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -6269,6 +6517,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -6491,6 +6760,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {
@@ -7567,17 +7861,17 @@ header .big-size-container .row nav ul li {
 }
 header .big-size-container .row nav ul li .li_a {
   font-size: 14px;
-  color: black;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 header .big-size-container .row nav ul li .li_a:hover {
-  color: #eb4d50;
+  color: #000000;
 }
 header .big-size-container .row nav ul li .accesories-menu {
   overflow: hidden;
   position: absolute;
   top: 34px;
-  background-color: rgb(252, 252, 252);
+  background-color: white;
   height: 0;
   transition: 0.3s all;
 }
@@ -7586,18 +7880,20 @@ header .big-size-container .row nav ul li .accesories-menu .menu {
 }
 header .big-size-container .row nav ul li .accesories-menu .menu h5 {
   cursor: pointer;
+  font-size: 18px;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul {
   text-align: center;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li {
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .accesories-menu .menu .accesories_menu_ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .accesories-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row nav ul li .drone-menu {
@@ -7613,28 +7909,29 @@ header .big-size-container .row nav ul li .drone-menu .menu {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 header .big-size-container .row nav ul li .drone-menu .menu h5 {
+  font-size: 18px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li {
-  padding: 2px;
+  font-size: 14px;
   cursor: pointer;
 }
 header .big-size-container .row nav ul li .drone-menu .menu ul li:hover {
-  color: gray;
+  color: rgb(163, 158, 158);
 }
 header .big-size-container .row nav ul li .drone-menu.active {
-  height: 170px;
+  height: 150px;
   z-index: 9;
 }
 header .big-size-container .row .icons .icon {
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 19px;
   margin-left: 20px;
   transition: 0.5s;
   cursor: pointer;
 }
 header .big-size-container .row .icons .icon:hover {
-  color: #eb4d50;
+  color: #000000;
   transition: 0.5s;
 }
 header .big-size-container .row .icons .count {
@@ -7792,6 +8089,27 @@ header .big-size-container .user_registration .language .image {
 }
 header .big-size-container .user_registration.active {
   height: 270px;
+}
+header .big-size-container.active {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header .big-size-container.active nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header .big-size-container.active .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header .big-size-container.active .icons .icon:hover {
+  color: #a85c5c;
 }
 header .mobile-container {
   background-color: white;
@@ -8014,6 +8332,31 @@ header .back {
 header .back.active {
   background-color: rgba(0, 0, 0, 0.4);
   display: block;
+}
+header.active {
+  height: 66px;
+  background-color: white;
+}
+header.active .big-size-container {
+  position: fixed !important;
+  top: 0 !important;
+  background-color: white !important;
+  box-shadow: 1px 1px 10px 1px gray !important;
+  z-index: 22 !important;
+}
+header.active .big-size-container nav ul li .li_a {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container nav ul li .li_a:hover {
+  color: #eb4d4b;
+}
+header.active .big-size-container .icons .icon {
+  color: rgb(2, 2, 2);
+  z-index: 1;
+}
+header.active .big-size-container .icons .icon:hover {
+  color: #a85c5c;
 }
 
 footer {

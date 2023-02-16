@@ -22,17 +22,17 @@ header {
             margin-left: 35px;
             .li_a {
               font-size: 14px;
-              color: black;
+              color: rgb(255, 255, 255);
               z-index: 1;
               &:hover {
-                color: #eb4d50;
+                color: #000000;
               }
             }
             .accesories-menu {
               overflow: hidden;
               position: absolute;
               top: 34px;
-              background-color: rgb(252, 252, 252);
+              background-color:white;
               height: 0;
               transition: 0.3s all;
               .menu {
@@ -40,20 +40,22 @@ header {
                   sans-serif;
                 h5 {
                   cursor: pointer;
+                  font-size: 18px;
                 }
                 .accesories_menu_ul {
                   text-align: center;
                   li {
+                    font-size: 14px;
                     cursor: pointer;
                     &:hover {
-                      color: gray;
+                      color: rgb(163, 158, 158);
                     }
                   }
                 }
               }
             }
             .accesories-menu.active {
-              height: 170px;
+              height: 150px;
               z-index: 9;
             }
             .drone-menu {
@@ -68,14 +70,15 @@ header {
                 font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
                   sans-serif;
                 h5 {
+                  font-size: 18px;
                   cursor: pointer;
                 }
                 ul {
                   li {
-                    padding: 2px;
+                    font-size: 14px;
                     cursor: pointer;
                     &:hover {
-                      color: gray;
+                      color: rgb(163, 158, 158);
                     }
                   }
                 }
@@ -83,7 +86,7 @@ header {
             }
 
             .drone-menu.active {
-              height: 170px;
+              height: 150px;
               z-index: 9;
             }
           }
@@ -91,13 +94,13 @@ header {
       }
       .icons {
         .icon {
-          color: black;
+          color: rgb(255, 255, 255);
           font-size: 19px;
           margin-left: 20px;
           transition: 0.5s;
           cursor: pointer;
           &:hover {
-            color: #eb4d50;
+            color: #000000;
             transition: 0.5s;
           }
         }
@@ -260,6 +263,35 @@ header {
       }
       &.active {
         height: 270px;
+      }
+    }
+    &.active{
+      position: fixed !important;
+      top: 0 !important;
+      background-color: white !important;
+      box-shadow: 1px 1px 10px 1px gray !important;
+      z-index: 22 !important;
+      nav {
+        ul {
+          li {
+            .li_a {
+              color: rgb(2, 2, 2);
+              z-index: 1;
+              &:hover {
+                color: #eb4d4b;
+              }
+            }
+          }
+        }
+      }
+      .icons {
+        .icon {
+          color: rgb(2, 2, 2);
+              z-index: 1;
+              &:hover {
+                color: #a85c5c;
+              }
+        }
       }
     }
   }
@@ -489,5 +521,38 @@ header {
   .back.active {
     background-color: rgba(0, 0, 0, 0.4);
     display: block;
+  }
+  &.active{
+    height: 66px;
+    background-color: white;
+    .big-size-container{
+      position: fixed !important;
+      top: 0 !important;
+      background-color: white !important;
+      box-shadow: 1px 1px 10px 1px gray !important;
+      z-index: 22 !important;
+      nav {
+        ul {
+          li {
+            .li_a {
+              color: rgb(2, 2, 2);
+              z-index: 1;
+              &:hover {
+                color: #eb4d4b;
+              }
+            }
+          }
+        }
+      }
+      .icons {
+        .icon {
+          color: rgb(2, 2, 2);
+              z-index: 1;
+              &:hover {
+                color: #a85c5c;
+              }
+        }
+      }
+    }
   }
 }
