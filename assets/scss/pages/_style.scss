@@ -399,7 +399,6 @@
   background-image: url(../images/testimonialbackground.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 48px;
   .title {
     .subtitle {
       font-size: 26px;
@@ -433,8 +432,8 @@
       position: relative;
       text-align: left;
       background: #fff;
-      padding: 65px 50px 40px;
       margin-top: 60px;
+      padding: 65px 50px 40px;
       .image {
         max-width: 100px;
         border-radius: 50%;
@@ -475,21 +474,25 @@
       }
     }
   }
+
+  .owl-carousel {
+    padding: 0;
+  }
+  .owl-stage-outer .owl-stage {
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: 640px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev {
     width: 25px;
     height: 25px;
+    border-radius: 50%;
     background-color: #eb4d4b;
     color: white;
-    font-weight: 600;
-  }
-
-  @media screen and (max-width: 391px) {
-    .item {
-      .detail {
-        width: 400px;
-      }
-    }
+    font-weight: 700;
   }
 }
 
@@ -643,27 +646,24 @@
     opacity: 1;
   }
   .owl-carousel .owl-nav button.owl-next {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: #eb4d4b;
     color: white;
     border: none;
-    padding: 0 !important;
-    font-size: 26px;
-    font-weight: 700;
+    padding: 0 !important; 
+    font-weight:700;
   }
   .owl-carousel .owl-nav button.owl-prev {
-    width: 35px;
-  
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background: #eb4d4b;
     color: white;
     border: none;
     padding: 0 !important;
-    font-size: 26px;
-    font-weight: 700;
+    font-weight:700;
   }
 }
 .active {
@@ -673,7 +673,6 @@
 .owl-theme .owl-dots .owl-dot span {
   visibility: hidden;
 }
-
 
 #faq {
   background-color: #f2f6f9;

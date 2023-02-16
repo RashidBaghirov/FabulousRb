@@ -133,6 +133,7 @@ header {
             height: 62%;
             overflow: auto;
             .box_device {
+              position: relative;
               padding: 0;
               li {
                 border-bottom: 1px solid rgb(167, 164, 164);
@@ -179,6 +180,7 @@ header {
                 }
               }
             }
+            
           }
           .cart_button_x {
             position: fixed;
@@ -386,6 +388,7 @@ header {
           height: 62%;
           overflow: auto;
           .box_device {
+            position: relative;
             li {
               border-bottom: 1px solid rgb(167, 164, 164);
               list-style: none;
@@ -482,8 +485,9 @@ header {
     background-color: rgb(255, 255, 255);
     width: 0px;
     height: 100vh;
-    transition: 1s all;
+    transition: 0.5s all;
     z-index: 100;
+    
     ul {
       padding: 10px;
       li {

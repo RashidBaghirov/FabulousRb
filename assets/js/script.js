@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  /* Header scrool change background and position and accesories and drone menu*/
   $(window).scroll(function () {
     let big_size = $(".big-size-container");
     // let mob_size = $(".mobile-container ");
@@ -24,45 +25,6 @@ $(document).ready(function () {
     }
   }
 
-  $(".first_btn").click(function () {
-    filterGroup("first_crsl");
-  });
-  $(".second_btn").click(function () {
-    filterGroup("second_crsl ");
-  });
-  $(".third_btn").click(function () {
-    filterGroup("third_crsl ");
-  });
-
-  $(".accordion_btn").on("click", function () {
-    if ($(this).hasClass("active")) {
-      $(this).siblings(".content").slideUp("fast");
-      $(this).removeClass("active");
-      console.log(this);
-    } else {
-      $(".content").slideUp("fast");
-      $(".btn").removeClass("active");
-      $(this).siblings(".content").slideToggle();
-      $(this).toggleClass("active");
-      console.log(this);
-    }
-  });
-
-  $(".mobil_bars").on("click", function () {
-    $(".mobile-menu").addClass("active");
-    $(".search_input").removeClass("active");
-  });
-  $(".xbtn").on("click", function () {
-    $(".mobile-menu").removeClass("active");
-  });
-  $(".first").on("click", function () {
-    $(".drone-icon").toggleClass("active");
-    $(".first").toggleClass("active");
-  });
-  $(".second").on("click", function () {
-    $(".acs-icon").toggleClass("active");
-    $(".second").toggleClass("active");
-  });
   $(".accesories").on("mouseover", function () {
     $(".accesories-menu").addClass("active");
   });
@@ -75,10 +37,16 @@ $(document).ready(function () {
   $(".drone").on("mouseout", function () {
     $(".drone-menu").removeClass("active");
   });
-  $(".mobile_glass").on("click", function () {
-    $(".search_input").toggleClass("active");
-    $(".user_mobile_registration").removeClass("active");
+
+  $(".first").on("click", function () {
+    $(".drone-icon").toggleClass("active");
+    $(".first").toggleClass("active");
   });
+  $(".second").on("click", function () {
+    $(".acs-icon").toggleClass("active");
+    $(".second").toggleClass("active");
+  });
+
   $(".large_glass").on("click", function () {
     $(".search_input_large").toggleClass("active");
     $(".user_registration").removeClass("active");
@@ -87,27 +55,8 @@ $(document).ready(function () {
     $(".user_registration").toggleClass("active");
     $(".search_input_large").removeClass("active");
   });
-  $(".user").on("click", function () {
-    $(".user_mobile_registration").toggleClass("active");
-    $(".search_input").removeClass("active");
-  });
 
-  $(".device").on("mouseover", function () {
-    $(this).find(".add_cart").addClass("active");
-    $(this).find(".allbutton").addClass("active");
-  });
-  $(".device").on("mouseout", function () {
-    $(this).find(".add_cart").removeClass("active");
-    $(this).find(".allbutton").removeClass("active");
-  });
-
-  $(".title_info_faq_title").click(function () {
-    let $icon = $(this).find("i");
-    $icon.toggleClass("active");
-    $(this).next().slideToggle();
-    $(".faq_info_").not($(this).next()).slideUp();
-    $(".title_info_faq_title i").not($icon).removeClass("active");
-  });
+  /* Base sections is activity and owl-carousel a */
 
   setInterval(function () {
     $(".droneInfo").addClass("animate__fadeInDownBig");
@@ -153,26 +102,18 @@ $(document).ready(function () {
   $(".stop").on("click", function () {
     owl.trigger("stop.owl.autoplay");
   });
-  // $("#base .owl-carousel").owlCarousel({
-  //   loop: true,
-  //   margin: 10,
-  //   responsiveClass: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //       nav: true,
-  //     },
-  //     600: {
-  //       items: 1,
-  //       nav: false,
-  //     },
-  //     1000: {
-  //       items: 1,
-  //       nav: true,
-  //       loop: false,
-  //     },
-  //   },
-  // });
+
+  /*Latest sections filter system and slider*/
+
+  $(".first_btn").click(function () {
+    filterGroup("first_crsl");
+  });
+  $(".second_btn").click(function () {
+    filterGroup("second_crsl ");
+  });
+  $(".third_btn").click(function () {
+    filterGroup("third_crsl ");
+  });
 
   var owl = $("#latest .owl-carousel");
   owl.owlCarousel({
@@ -195,23 +136,59 @@ $(document).ready(function () {
     },
   });
 
-  $("#reclams  .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    autoplay: true,
-    autoplayTimeout: 2500,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
+  $(".device").on("mouseover", function () {
+    $(this).find(".add_cart").addClass("active");
+    $(this).find(".allbutton").addClass("active");
   });
+  $(".device").on("mouseout", function () {
+    $(this).find(".add_cart").removeClass("active");
+    $(this).find(".allbutton").removeClass("active");
+  });
+
+  /*Responsive mobile header activity*/
+
+  $(".accordion_btn").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).siblings(".content").slideUp("fast");
+      $(this).removeClass("active");
+      console.log(this);
+    } else {
+      $(".content").slideUp("fast");
+      $(".btn").removeClass("active");
+      $(this).siblings(".content").slideToggle();
+      $(this).toggleClass("active");
+      console.log(this);
+    }
+  });
+
+  $(".mobil_bars").on("click", function () {
+    $(".mobile-menu").addClass("active");
+    $(".search_input").removeClass("active");
+  });
+  $(".xbtn").on("click", function () {
+    $(".mobile-menu").removeClass("active");
+  });
+  $(".mobile_glass").on("click", function () {
+    $(".search_input").toggleClass("active");
+    $(".user_mobile_registration").removeClass("active");
+  });
+
+  $(".user").on("click", function () {
+    $(".user_mobile_registration").toggleClass("active");
+    $(".search_input").removeClass("active");
+  });
+
+  /* Faq sections accordions activity */
+
+  $(".title_info_faq_title").click(function () {
+    let $icon = $(this).find("i");
+    $icon.toggleClass("active");
+    $(this).next().slideToggle();
+    $(".faq_info_").not($(this).next()).slideUp();
+    $(".title_info_faq_title i").not($icon).removeClass("active");
+  });
+
+  /*Product sections owl caousel */
 
   $("#products .owl-carousel").owlCarousel({
     stagePadding: 50,
@@ -232,197 +209,23 @@ $(document).ready(function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  let devicestr = localStorage.getItem("device");
-  let device = JSON.parse(devicestr);
+/*Reclams sections owl carousel */
 
-  if (!device || !device.length) {
-    localStorage.setItem("device", JSON.stringify([]));
-  } else {
-    ShowProductCount(device);
-    ShowTotalPrice(device);
-    ShowTotalVat(device);
-    ShowTotalEco(device);
-    ShowTotalSub(device);
-  }
+$("#reclams  .owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  autoplay: true,
+  autoplayTimeout: 2500,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
 });
 
-let buttons = document.querySelectorAll(".add_cart");
-
-buttons.forEach((btn) => {
-  btn.addEventListener("click", function () {
-    let device = JSON.parse(localStorage.getItem("device"));
-    if (!device) {
-      localStorage.setItem("device", JSON.stringify([]));
-      device = JSON.parse(localStorage.getItem("device"));
-    }
-    let product = GetProductsData(this);
-    console.log(product);
-    let sameid = device.find((pro) => {
-      return pro.id == product.id;
-    });
-    if (!sameid) {
-      device.push(product);
-    } else {
-      sameid.count++;
-    }
-    ShowTotalVat(device);
-    ShowTotalPrice(device);
-    ShowProductCount(device);
-    ShowTotalEco(device);
-    ShowTotalSub(device);
-    let devicestr = JSON.stringify(device);
-    localStorage.setItem("device", devicestr);
-  });
-});
-
-function GetProductsData(product) {
-  let parent = product.parentElement.parentElement;
-  let title = parent.querySelector(".description .title").innerText;
-  let src = parent.querySelector("img").src;
-  let id = parent.getAttribute("data-id");
-  let price = parent.querySelector(".prices").innerText;
-  result = { title, src, id, price, count: 1 };
-  return result;
-}
-
-function ShowTotalPrice(device) {
-  let totals = document.querySelectorAll(".total_price");
-
-  totals.forEach((tt) => {
-    tt.innerText = device.reduce((total, product) => {
-      return Math.trunc((total += parseInt(product.price) * product.count));
-    }, 0);
-  });
-}
-
-function ShowProductCount(device) {
-  let deviceCount = document.querySelectorAll(".total_count");
-  deviceCount.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc((total += product.count));
-    }, 0);
-  });
-}
-
-function ShowTotalVat(device) {
-  let deviceVat = document.querySelectorAll(".total_vat");
-  deviceVat.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc(
-        (total += (parseInt(product.price) * product.count * 20) / 100)
-      );
-    }, 0);
-  });
-}
-
-function ShowTotalEco(device) {
-  let deviceEco = document.querySelectorAll(".total_eco");
-
-  deviceEco.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc(
-        (total += parseInt(product.price) * product.count * 0.09)
-      );
-    }, 0);
-  });
-}
-
-function ShowTotalSub(device) {
-  let devicesub = document.querySelectorAll(".total_sub");
-  devicesub.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc(
-        (total +=
-          parseInt(product.price) * product.count -
-          parseInt(product.price) * product.count * 0.09)
-      );
-    }, 0);
-  });
-}
-
-let cart = document.querySelectorAll(".cart");
-let ul = document.querySelectorAll(".box_device");
-let ulparent = document.querySelectorAll(".box");
-let exitbtn = document.querySelectorAll(".exitbutton");
-let base = document.getElementById("base");
-let crtbtn = document.querySelectorAll(".cart_bottom");
-let backgray = document.querySelector(".back");
-cart.forEach((crt) => {
-  console.log(crt);
-  crt.addEventListener("click", function (product) {
-    backgray.classList.add("active");
-    document.body.style.overflowY = "hidden";
-    ulparent.forEach((ule) => {
-      ule.classList.add("active");
-    });
-    let device = JSON.parse(localStorage.getItem("device"));
-    ul.forEach((ll) => {
-      ll.innerHTML = " ";
-    });
-
-    device.forEach((devices) => {
-      let task = `
-    <li style="cursor: pointer;" id="${devices.id}">
-   <div class="d-flex">
-     <div class="cart_image">
-    <img src="${devices.src}" alt="">
-      </div>
-      <div class="info ">
-     <span>${devices.count}</span>
-     <span class="me-1 ms-1">x</span>
-     <span>${devices.title}</span>
-     <p>${devices.price}€</p>
-     </div>
-  </div>
-  <div>
-    
-    </div>
-    <div class="del_btn" >
-      <i  class="fa-solid fa-trash" 
-      
-      
-  ></i>
-    </div>
-    </li>
-    `;
-      ul.forEach((ll) => {
-        ll.innerHTML += task;
-      });
-    });
-    let delbtn = document.querySelectorAll(".del_btn");
-
-    delbtn.forEach((btn) => {
-      btn.addEventListener("click", function () {
-        let li = this.parentElement;
-        let id = li.getAttribute("id");
-        device = device.filter((dev) => dev.id != id);
-        li.remove();
-        ShowTotalVat(device);
-        ShowTotalPrice(device);
-        ShowProductCount(device);
-        ShowTotalEco(device);
-        ShowTotalSub(device);
-        localStorage.setItem("device", JSON.stringify(device));
-      });
-    });
-  });
-});
-
-exitbtn.forEach((ext) => {
-  ext.addEventListener("click", function () {
-    backgray.classList.remove("active");
-    ulparent.forEach((ule) => {
-      ule.classList.remove("active");
-    });
-    document.body.style.overflowY = "scroll";
-  });
-});
-
-backgray.addEventListener("click", function () {
-  backgray.classList.remove("active");
-  ulparent.forEach((ule) => {
-    ule.classList.remove("active");
-  });
-  document.body.style.overflowY = "scroll";
-});
