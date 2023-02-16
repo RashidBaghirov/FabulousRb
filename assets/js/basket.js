@@ -19,6 +19,7 @@ let buttons = document.querySelectorAll(".add_cart");
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", function () {
+
     let device = JSON.parse(localStorage.getItem("device"));
     if (!device) {
       localStorage.setItem("device", JSON.stringify([]));
@@ -54,60 +55,7 @@ function GetProductsData(product) {
   return result;
 }
 
-function ShowTotalPrice(device) {
-  let totals = document.querySelectorAll(".total_price");
 
-  totals.forEach((tt) => {
-    tt.innerText = device.reduce((total, product) => {
-      return Math.trunc((total += parseInt(product.price) * product.count));
-    }, 0);
-  });
-}
-
-function ShowProductCount(device) {
-  let deviceCount = document.querySelectorAll(".total_count");
-  deviceCount.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc((total += product.count));
-    }, 0);
-  });
-}
-
-function ShowTotalVat(device) {
-  let deviceVat = document.querySelectorAll(".total_vat");
-  deviceVat.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc(
-        (total += (parseInt(product.price) * product.count * 20) / 100)
-      );
-    }, 0);
-  });
-}
-
-function ShowTotalEco(device) {
-  let deviceEco = document.querySelectorAll(".total_eco");
-
-  deviceEco.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc(
-        (total += parseInt(product.price) * product.count * 0.09)
-      );
-    }, 0);
-  });
-}
-
-function ShowTotalSub(device) {
-  let devicesub = document.querySelectorAll(".total_sub");
-  devicesub.forEach((dvc) => {
-    dvc.innerText = device.reduce((total, product) => {
-      return Math.trunc(
-        (total +=
-          parseInt(product.price) * product.count -
-          parseInt(product.price) * product.count * 0.09)
-      );
-    }, 0);
-  });
-}
 
 let cart = document.querySelectorAll(".cart");
 let ul = document.querySelectorAll(".box_device");
@@ -118,7 +66,6 @@ let crtbtn = document.querySelectorAll(".cart_bottom");
 let backgray = document.querySelector(".back");
 let emptytitle = document.querySelectorAll(".device_empty_title");
 cart.forEach((crt) => {
-  console.log(crt);
   crt.addEventListener("click", function (product) {
     backgray.classList.add("active");
     document.body.style.overflowY = "hidden";
@@ -182,6 +129,9 @@ cart.forEach((crt) => {
   });
 });
 
+
+
+
 exitbtn.forEach((ext) => {
   ext.addEventListener("click", function () {
     backgray.classList.remove("active");
@@ -201,6 +151,75 @@ backgray.addEventListener("click", function () {
 });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ShowTotalPrice(device) {
+    let totals = document.querySelectorAll(".total_price");
+  
+    totals.forEach((tt) => {
+      tt.innerText = device.reduce((total, product) => {
+        return Math.trunc((total += parseInt(product.price) * product.count));
+      }, 0);
+    });
+  }
+  
+  function ShowProductCount(device) {
+    let deviceCount = document.querySelectorAll(".total_count");
+    deviceCount.forEach((dvc) => {
+      dvc.innerText = device.reduce((total, product) => {
+        return Math.trunc((total += product.count));
+      }, 0);
+    });
+  }
+  
+  function ShowTotalVat(device) {
+    let deviceVat = document.querySelectorAll(".total_vat");
+    deviceVat.forEach((dvc) => {
+      dvc.innerText = device.reduce((total, product) => {
+        return Math.trunc(
+          (total += (parseInt(product.price) * product.count ) *0.2)
+        );
+      }, 0);
+    });
+  }
+  
+  function ShowTotalEco(device) {
+    let deviceEco = document.querySelectorAll(".total_eco");
+  
+    deviceEco.forEach((dvc) => {
+      dvc.innerText = device.reduce((total, product) => {
+        return Math.trunc(
+          (total += parseInt(product.price) * product.count * 0.02)
+        );
+      }, 0);
+    });
+  }
+  
+  function ShowTotalSub(device) {
+    let devicesub = document.querySelectorAll(".total_sub");
+    devicesub.forEach((dvc) => {
+      dvc.innerText = device.reduce((total, product) => {
+        return Math.trunc(
+          (total +=
+            parseInt(product.price) * product.count -
+            parseInt(product.price) * product.count * 0.09)
+        );
+      }, 0);
+    });
+  }
+
+  
 function EmptyShow(device){
     if (device.length <= 0) {
         crtbtn.forEach((card) => {

@@ -1,3 +1,7 @@
+body{
+  font-family: "Poppins";
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -95,7 +99,7 @@ header {
       .icons {
         .icon {
           color: rgb(255, 255, 255);
-          font-size: 19px;
+          font-size: 25px;
           margin-left: 20px;
           transition: 0.5s;
           cursor: pointer;
@@ -114,7 +118,7 @@ header {
           border-radius: 50%;
           position: relative;
           right: 9px;
-          bottom: 4px;
+          bottom: 10px;
         }
 
         .box {
@@ -136,10 +140,8 @@ header {
               position: relative;
               padding: 0;
               li {
-                border-bottom: 1px solid rgb(167, 164, 164);
                 list-style: none;
                 .cart_image {
-                  border-right: 1px solid rgb(192, 188, 188);
                   img {
                     width: 100px;
                     height: 100px;
@@ -173,8 +175,8 @@ header {
                   position: absolute;
                   i {
                     position: absolute;
-                    right: -312px;
-                    top: -116px;
+                    right: -320px;
+                    top: -110px;
                     
                   }
                 }

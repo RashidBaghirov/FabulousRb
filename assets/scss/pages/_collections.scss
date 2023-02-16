@@ -2,6 +2,10 @@
 @import "./footer";
 @import "./clipboard";
 
+body{
+  font-family: "Poppins";
+}
+
 #collection {
   margin-top: 100px;
   .left {
