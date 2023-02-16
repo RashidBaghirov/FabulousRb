@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 
-
 #base {
   @media screen and (max-width: 391px) {
     & {
@@ -476,7 +475,8 @@
       }
     }
   }
-  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
     width: 25px;
     height: 25px;
     background-color: red;
@@ -485,14 +485,12 @@
   }
 
   @media screen and (max-width: 391px) {
-    .item{
-      .detail{
+    .item {
+      .detail {
         width: 400px;
-        
       }
     }
   }
-
 }
 
 #latest {
@@ -539,13 +537,13 @@
   .device {
     margin-bottom: 110px;
     padding: 11px;
-   
+
     position: relative;
     .image {
       height: 370px;
       width: 100%;
       position: relative;
-      a{
+      a {
         width: 100%;
         text-decoration: none;
         .first {
@@ -601,7 +599,7 @@
         align-items: center;
         transition: 0.5s all;
         cursor: pointer;
-        &:hover{
+        &:hover {
           background-color: #eb4d4b;
         }
       }
@@ -634,29 +632,47 @@
       opacity: 1;
     }
   }
-    .description {
-      margin-bottom: 10px;
-    }
-    .price {
-      color: #eb4d4b;
-      font-size: 16px;
-      margin-bottom: 5px;
-      transition: all 0.4s;
-      opacity: 1;
-    }
+  .description {
+    margin-bottom: 10px;
   }
-  .active {
-    display: block ;
+  .price {
+    color: #eb4d4b;
+    font-size: 16px;
+    margin-bottom: 5px;
+    transition: all 0.4s;
+    opacity: 1;
   }
-  .second_crsl {
-    display: none !important;
+  .owl-carousel .owl-nav button.owl-next {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #eb4d4b;
+    color: white;
+    border: none;
+    padding: 0 !important;
+    font-size: 26px;
+    font-weight: 700;
   }
-  .third_crsl {
-    display: none !important;
+  .owl-carousel .owl-nav button.owl-prev {
+    width: 35px;
+  
+    height: 35px;
+    border-radius: 50%;
+    background: #eb4d4b;
+    color: white;
+    border: none;
+    padding: 0 !important;
+    font-size: 26px;
+    font-weight: 700;
   }
-  .owl-theme .owl-dots .owl-dot span {
-    visibility: hidden;
-  }
+}
+.active {
+  display: block;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  visibility: hidden;
+}
 
 
 #faq {

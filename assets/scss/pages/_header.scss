@@ -21,7 +21,7 @@ header {
           li {
             margin-left: 35px;
             .li_a {
-              font-size: 18px;
+              font-size: 14px;
               color: black;
               z-index: 1;
               &:hover {
@@ -92,7 +92,7 @@ header {
       .icons {
         .icon {
           color: black;
-          font-size: 26px;
+          font-size: 19px;
           margin-left: 20px;
           transition: 0.5s;
           cursor: pointer;
@@ -111,7 +111,7 @@ header {
           border-radius: 50%;
           position: relative;
           right: 9px;
-          bottom: 10px;
+          bottom: 4px;
         }
 
         .box {

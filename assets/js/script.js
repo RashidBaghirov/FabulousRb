@@ -40,7 +40,7 @@ $(document).ready(function () {
         $(this).css({ color: "black" });
       });
     } else {
-      if ($(window).width() >= 891) {
+      if ($(window).width() >= 821) {
         big_size.css({
           position: "absolute",
           backgroundColor: "transparent",
@@ -177,32 +177,86 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 2500,
   });
+
+
+
+
+
+
+
+  var carouselEl = $(".owl-carousel");
+  $(".right").click(function () {
+    carouselEl.trigger("next.owl.carousel");
+    $(".title-text").addClass("animate__fadeInDown");
+    $(".droneButton").addClass("animate__fadeInDown");
+    setTimeout(function () {
+     
+      $(".title-text").removeClass("animate__fadeInDown");
+      $(".droneButton").removeClass("animate__fadeInDown");
+    }, 1000);
+  });
+
+  $(".left").click(function () {
+    carouselEl.trigger("prev.owl.carousel");
+    $(".title-text").addClass("animate__fadeInDown");
+    $(".droneButton").addClass("animate__fadeInDown");
+
+    
+    setTimeout(function () {
+      $(".title-text").removeClass("animate__fadeInDown");
+      $(".droneButton").removeClass("animate__fadeInDown");
+    }, 1600);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   $(".play").on("click", function () {
     owl.trigger("play.owl.autoplay", [1000]);
   });
   $(".stop").on("click", function () {
     owl.trigger("stop.owl.autoplay");
   });
-  $("#base .owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: true,
-      },
-      600: {
-        items: 1,
-        nav: false,
-      },
-      1000: {
-        items: 1,
-        nav: true,
-        loop: false,
-      },
-    },
-  });
+  // $("#base .owl-carousel").owlCarousel({
+  //   loop: true,
+  //   margin: 10,
+  //   responsiveClass: true,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //       nav: true,
+  //     },
+  //     600: {
+  //       items: 1,
+  //       nav: false,
+  //     },
+  //     1000: {
+  //       items: 1,
+  //       nav: true,
+  //       loop: false,
+  //     },
+  //   },
+  // });
 
   var owl = $("#latest .owl-carousel");
   owl.owlCarousel({
@@ -249,7 +303,7 @@ $(document).ready(function () {
     margin: 10,
     nav: true,
     responsive: {
-      0: {
+      321: {
         items: 1,
       },
       621: {
