@@ -271,6 +271,9 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     ShowProductCount(device);
     ShowTotalPrice(device);
+    ShowTotalVat(device);
+    ShowTotalEco(device);
+    ShowTotalSub(device);
   }
 });
 
@@ -293,9 +296,11 @@ buttons.forEach((btn) => {
     } else {
       sameid.count++;
     }
-    
+    ShowTotalVat(device);
     ShowTotalPrice(device);
     ShowProductCount(device);
+    ShowTotalEco(device);
+    ShowTotalSub(device);
     let devicestr = JSON.stringify(device);
     localStorage.setItem("device", devicestr);
   });
@@ -314,19 +319,54 @@ function GetProductsData(product) {
 function ShowTotalPrice(device) {
   let totals = document.querySelectorAll(".total_price");
 
-  totals.forEach(tt=>{
+  totals.forEach((tt) => {
     tt.innerText = device.reduce((total, product) => {
-      return (total += parseInt(product.price) * product.count);
+      return Math.trunc((total += parseInt(product.price) * product.count));
     }, 0);
-  })
- 
+  });
 }
 
 function ShowProductCount(device) {
   let deviceCount = document.querySelectorAll(".total_count");
   deviceCount.forEach((dvc) => {
     dvc.innerText = device.reduce((total, product) => {
-      return (total += product.count);
+      return Math.trunc((total += product.count));
+    }, 0);
+  });
+}
+
+function ShowTotalVat(device) {
+  let deviceVat = document.querySelectorAll(".total_vat");
+  deviceVat.forEach((dvc) => {
+    dvc.innerText = device.reduce((total, product) => {
+      return Math.trunc(
+        (total += (parseInt(product.price) * product.count * 20) / 100)
+      );
+    }, 0);
+  });
+}
+
+function ShowTotalEco(device) {
+  let deviceEco = document.querySelectorAll(".total_eco");
+
+  deviceEco.forEach((dvc) => {
+    dvc.innerText = device.reduce((total, product) => {
+      return Math.trunc(
+        (total += parseInt(product.price) * product.count * 0.09)
+      );
+    }, 0);
+  });
+}
+
+function ShowTotalSub(device) {
+  let devicesub = document.querySelectorAll(".total_sub");
+  devicesub.forEach((dvc) => {
+    dvc.innerText = device.reduce((total, product) => {
+      return Math.trunc(
+        (total +=
+          parseInt(product.price) * product.count -
+          parseInt(product.price) * product.count * 0.09)
+      );
     }, 0);
   });
 }
@@ -388,8 +428,11 @@ cart.forEach((crt) => {
         let id = li.getAttribute("id");
         device = device.filter((dev) => dev.id != id);
         li.remove();
+        ShowTotalVat(device);
         ShowTotalPrice(device);
         ShowProductCount(device);
+        ShowTotalEco(device);
+        ShowTotalSub(device);
         localStorage.setItem("device", JSON.stringify(device));
       });
     });
@@ -406,10 +449,12 @@ exitbtn.forEach((ext) => {
   });
 });
 
-backgray.addEventListener("click",function(){
+backgray.addEventListener("click", function () {
   backgray.classList.remove("active");
   ulparent.forEach((ule) => {
     ule.classList.remove("active");
   });
   document.body.style.overflowY = "scroll";
-})
+});
+
+

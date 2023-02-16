@@ -119,8 +119,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -170,8 +169,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;
@@ -1060,8 +1059,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -1111,8 +1109,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;
@@ -2144,8 +2142,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -2195,8 +2192,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;
@@ -3341,8 +3338,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -3392,8 +3388,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;
@@ -4494,8 +4490,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -4545,8 +4540,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;
@@ -6126,8 +6121,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -6177,8 +6171,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;
@@ -7650,8 +7644,7 @@ header .big-size-container .row .icons .box {
   background-color: white;
   transition: 0.3s all;
   z-index: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 header .big-size-container .row .icons .box .device_box {
   height: 62%;
@@ -7701,8 +7694,8 @@ header .big-size-container .row .icons .box .device_box .box_device li .del_btn 
 }
 header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
   position: absolute;
-  top: -110px;
-  left: 291px;
+  right: -312px;
+  top: -116px;
 }
 header .big-size-container .row .icons .box .cart_button_x {
   position: fixed;

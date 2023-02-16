@@ -4,14 +4,16 @@ console.log(device);
 
 device.forEach((devices) => {
   let task = `
-<tr>
+<tr id="${devices.id}">
 <td class="text-center"><div class="cart-image">
 <img style="width: 104px;" src="${devices.src}" alt="">
 </div></td>
  <td class="text-left">${devices.title}</td>
 <td class="text-left"><span class="me-2">Product</span>${devices.id}</td>
  <td class="text-left"><div class="d-flex"  style="max-width: 200px;">
- <input type="text" value="${devices.count}" size="1" class="form-control" style="height: 33px;" >
+ <input type="text" value="${
+   devices.count
+ }" size="1" class="form-control" style="height: 33px;" >
         <span class="input-group-btn">
        <div class="buttons m-0 p-0">
        <p class="first"><i class="fa fa-refresh"></i></p>
@@ -20,8 +22,10 @@ device.forEach((devices) => {
        </div>
 
         </span></div></td>
-    <td class="text-right unit-price">${devices.price}</td>
-    <td class="text-right total-price">${parseInt(devices.price)*devices.count}€</td>
+    <td class="text-right unit-price">${devices.price}€</td>
+    <td class="text-right total-price">${
+      parseInt(devices.price) * devices.count
+    }€</td>
 </tr>
 `;
   trparent.innerHTML += task;
@@ -35,10 +39,14 @@ delbtn.forEach((btn) => {
       this.parentElement.parentElement.parentElement.parentElement.parentElement
         .parentElement;
     console.log(tr);
-    let src = tr.querySelector(".cart-image img").src;
-    device = device.filter((devce) => devce.src != src);
+    let id = tr.getAttribute("id");
+    device = device.filter((devce) => devce.id != id);
     tr.remove();
+    ShowTotalVat(device);
+    ShowTotalPrice(device);
     ShowProductCount(device);
+    ShowTotalEco(device);
+    ShowTotalSub(device);
     localStorage.setItem("device", JSON.stringify(device));
     SearchLenght();
   });
@@ -68,11 +76,9 @@ function SearchLenght() {
     accordion.style.display = "none";
     section_cart.style.display = "none";
     empty.classList.remove("passiv");
-  }
-  else{
+  } else {
     accordion.style.display = "block";
     section_cart.style.display = "block";
     empty.classList.add("passiv");
   }
 }
-

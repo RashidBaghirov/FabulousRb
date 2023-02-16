@@ -124,8 +124,8 @@ header {
           background-color: white;
           transition: 0.3s all;
           z-index: 1;
-          overflow-y: auto;
-          overflow-x: hidden;
+          
+          overflow: hidden;
           .device_box {
             height: 62%;
             overflow: auto;
@@ -169,8 +169,9 @@ header {
                   position: absolute;
                   i {
                     position: absolute;
-                    top: -110px;
-                    left: 291px;
+                    right: -312px;
+                    top: -116px;
+                    
                   }
                 }
               }
