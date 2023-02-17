@@ -55,8 +55,6 @@ function GetProductsData(product) {
   return result;
 }
 
-
-
 let cart = document.querySelectorAll(".cart");
 let ul = document.querySelectorAll(".box_device");
 let ulparent = document.querySelectorAll(".box");

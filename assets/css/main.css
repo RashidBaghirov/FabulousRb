@@ -251,111 +251,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -435,7 +330,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -458,7 +353,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -488,114 +383,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -627,7 +418,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -662,6 +453,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -1116,6 +1012,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#clipboard .clipboard_background ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #clipboard .clipboard_background ul li {
   font-size: 14px;
@@ -1252,111 +1153,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -1436,7 +1232,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -1459,7 +1255,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -1489,114 +1285,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -1628,7 +1320,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -1663,6 +1355,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -2117,6 +1914,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#clipboard .clipboard_background ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #clipboard .clipboard_background ul li {
   font-size: 14px;
@@ -2400,111 +2202,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -2584,7 +2281,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -2607,7 +2304,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -2637,114 +2334,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -2776,7 +2369,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -2811,6 +2404,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -3265,6 +2963,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#clipboard .clipboard_background ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #clipboard .clipboard_background ul li {
   font-size: 14px;
@@ -3661,111 +3364,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -3845,7 +3443,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -3868,7 +3466,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -3898,114 +3496,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -4037,7 +3531,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -4072,6 +3566,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -4527,6 +4126,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+#clipboard .clipboard_background ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #clipboard .clipboard_background ul li {
   font-size: 14px;
 }
@@ -4878,111 +4482,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -5062,7 +4561,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -5085,7 +4584,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -5115,114 +4614,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -5254,7 +4649,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -5289,6 +4684,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -6588,111 +6088,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -6772,7 +6167,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -6795,7 +6190,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -6825,114 +6220,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -6964,7 +6255,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -6999,6 +6290,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -7454,6 +6850,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+#clipboard .clipboard_background ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #clipboard .clipboard_background ul li {
   font-size: 14px;
 }
@@ -7477,7 +6878,7 @@ body {
 }
 
 #collection {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 #collection .left .collection_ctgr {
   padding-bottom: 5px;
@@ -7720,6 +7121,16 @@ body {
 #collection .first_page .right .device .rating .yellow {
   color: yellow;
 }
+@media screen and (max-width: 391px) {
+  #collection .first_page .right .device .rating {
+    bottom: 110px;
+  }
+}
+@media screen and (max-width: 821px) {
+  #collection .first_page .right .device .rating {
+    bottom: 110px;
+  }
+}
 #collection .first_page .right .device .buttons {
   position: absolute;
   left: auto;
@@ -7779,26 +7190,9 @@ body {
   transition: all 0.4s;
   opacity: 1;
 }
-@media screen and (max-width: 821px) {
-  #collection .first_page {
-    display: flex;
-    justify-content: center;
-    padding: 60px;
-  }
-  #collection .first_page .device {
-    width: 205px;
-    height: 205px;
-  }
-}
 @media screen and (max-width: 391px) {
-  #collection .first_page {
-    padding: 60px;
-    display: flex;
-    justify-content: center;
-  }
-  #collection .first_page .device {
-    width: 205px;
-    height: 205px;
+  #collection .first_page .device .buttons .allbutton {
+    bottom: -139px;
   }
 }
 
@@ -8174,111 +7568,6 @@ header .big-size-container .row .icons .count {
   right: 9px;
   bottom: 10px;
 }
-header .big-size-container .row .icons .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 0.3s all;
-  z-index: 1;
-  overflow: hidden;
-}
-header .big-size-container .row .icons .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .big-size-container .row .icons .box .device_box .box_device {
-  position: relative;
-  padding: 0;
-}
-header .big-size-container .row .icons .box .device_box .box_device li {
-  list-style: none;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info p {
-  margin-top: 20px;
-  font-size: 16px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .info span {
-  font-size: 14px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .big-size-container .row .icons .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  right: -320px;
-  top: -110px;
-}
-header .big-size-container .row .icons .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .big-size-container .row .icons .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .big-size-container .row .icons .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .big-size-container .row .icons .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .big-size-container .row .icons .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .big-size-container .row .icons .box.active {
-  width: 350px;
-}
 header .big-size-container .search_input_large {
   width: 100%;
   height: 0px;
@@ -8358,7 +7647,7 @@ header .mobile-container .row .search_input.active {
 }
 header .mobile-container .row .user_mobile_registration {
   text-align: start;
-  top: 7%;
+  top: 5%;
   right: 0;
   visibility: hidden;
   opacity: 0;
@@ -8381,7 +7670,7 @@ header .mobile-container .row .user_mobile_registration.active {
 }
 @media screen and (max-width: 391px) {
   header .mobile-container .row .user_mobile_registration.active {
-    top: 85%;
+    top: 7%;
   }
 }
 header .mobile-container .row .count {
@@ -8411,114 +7700,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
-header .mobile-container .row .box {
-  height: 100vh;
-  width: 0px;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  margin: 0 auto;
-  background-color: white;
-  transition: 1s;
-  z-index: 1;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box {
-  height: 62%;
-  overflow: auto;
-}
-header .mobile-container .row .box .device_box .box_device {
-  position: relative;
-}
-header .mobile-container .row .box .device_box .box_device li {
-  border-bottom: 1px solid rgb(167, 164, 164);
-  list-style: none;
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image {
-  border-right: 1px solid rgb(192, 188, 188);
-}
-header .mobile-container .row .box .device_box .box_device li .cart_image img {
-  width: 100px;
-  height: 100px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-header .mobile-container .row .box .device_box .box_device li .info {
-  padding: 20px;
-}
-header .mobile-container .row .box .device_box .box_device li .info p {
-  font-size: 16px;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky {
-  position: fixed;
-  background: #fff;
-  z-index: 99;
-}
-header .mobile-container .row .box .device_box .box_device li .cart-sticky .exitbutton {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px 0 15px;
-  border-bottom: 1px solid #eee;
-  margin-bottom: 5px;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn {
-  position: absolute;
-}
-header .mobile-container .row .box .device_box .box_device li .del_btn i {
-  position: absolute;
-  top: -94px;
-  left: 291px;
-}
-header .mobile-container .row .box .cart_button_x {
-  position: fixed;
-  background: #fff;
-  display: contents;
-  z-index: 99;
-}
-header .mobile-container .row .box .cart_bottom {
-  border-top: 1px solid rgb(182, 170, 170);
-}
-header .mobile-container .row .box .cart_bottom li {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-header .mobile-container .row .box .cart_bottom li span {
-  font-weight: 700;
-}
-header .mobile-container .row .box .cart_bottom .buttons {
-  width: 100%;
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .mobile-container .row .box .cart_bottom .buttons button {
-  font-size: 14px;
-  height: 40px;
-  width: 49%;
-  border: none;
-  background-color: #eb4d50;
-  color: white;
-  transition: 0.5s;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:hover {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2) {
-  background-color: #232323;
-}
-header .mobile-container .row .box .cart_bottom .buttons button:nth-child(2):hover {
-  background-color: #eb4d50;
-}
-header .mobile-container .row .box.active {
-  width: 350px;
-}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
-  top: 0%;
+  top: -110px;
   background-color: rgb(255, 255, 255);
   width: 0px;
   height: 100vh;
@@ -8550,7 +7735,7 @@ header .mobile-menu ul .drone-icon.active {
   display: block;
 }
 header .mobile-menu.active {
-  width: 200px;
+  width: 350px;
 }
 header .back {
   width: 100%;
@@ -8585,6 +7770,111 @@ header.active .big-size-container .icons .icon {
 }
 header.active .big-size-container .icons .icon:hover {
   color: #a85c5c;
+}
+header .box {
+  height: 100vh;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  transition: 0.3s all;
+  z-index: 1;
+  overflow: hidden;
+}
+header .box .device_box {
+  height: 62%;
+  overflow: auto;
+}
+header .box .device_box .box_device {
+  position: relative;
+  padding: 0;
+}
+header .box .device_box .box_device li {
+  list-style: none;
+}
+header .box .device_box .box_device li .cart_image img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .box .device_box .box_device li .info {
+  padding: 20px;
+}
+header .box .device_box .box_device li .info p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+header .box .device_box .box_device li .info span {
+  font-size: 14px;
+}
+header .box .device_box .box_device li .cart-sticky {
+  position: fixed;
+  background: #fff;
+  z-index: 99;
+}
+header .box .device_box .box_device li .cart-sticky .exitbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+}
+header .box .device_box .box_device li .del_btn {
+  position: absolute;
+}
+header .box .device_box .box_device li .del_btn i {
+  position: absolute;
+  right: -320px;
+  top: -110px;
+}
+header .box .cart_button_x {
+  position: fixed;
+  background: #fff;
+  display: contents;
+  z-index: 99;
+}
+header .box .cart_bottom {
+  border-top: 1px solid rgb(182, 170, 170);
+}
+header .box .cart_bottom li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+header .box .cart_bottom li span {
+  font-weight: 700;
+}
+header .box .cart_bottom .buttons {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .box .cart_bottom .buttons button {
+  font-size: 14px;
+  height: 40px;
+  width: 49%;
+  border: none;
+  background-color: #eb4d50;
+  color: white;
+  transition: 0.5s;
+}
+header .box .cart_bottom .buttons button:hover {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2) {
+  background-color: #232323;
+}
+header .box .cart_bottom .buttons button:nth-child(2):hover {
+  background-color: #eb4d50;
+}
+header .box.active {
+  width: 350px;
 }
 
 body {
@@ -9039,6 +8329,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#clipboard .clipboard_background ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #clipboard .clipboard_background ul li {
   font-size: 14px;
