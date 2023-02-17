@@ -383,6 +383,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
+}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
@@ -1284,6 +1288,10 @@ header .mobile-container .row .count {
     right: 1px;
     bottom: 29px;
   }
+}
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
 }
 header .mobile-menu {
   overflow: hidden;
@@ -2333,6 +2341,10 @@ header .mobile-container .row .count {
     right: 1px;
     bottom: 29px;
   }
+}
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
 }
 header .mobile-menu {
   overflow: hidden;
@@ -3496,6 +3508,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
+}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
@@ -4613,6 +4629,10 @@ header .mobile-container .row .count {
     right: 1px;
     bottom: 29px;
   }
+}
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
 }
 header .mobile-menu {
   overflow: hidden;
@@ -6220,6 +6240,10 @@ header .mobile-container .row .count {
     bottom: 29px;
   }
 }
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
+}
 header .mobile-menu {
   overflow: hidden;
   position: relative;
@@ -7318,10 +7342,9 @@ body {
 }
 @media screen and (max-width: 821px) {
   .second_page .devices .device .icons {
-    top: 300px;
-    font-size: 13px;
+    top: 195px;
     width: 100%;
-    left: 145px;
+    left: 77px;
     z-index: 2;
   }
 }
@@ -7329,7 +7352,7 @@ body {
   .second_page .devices .device .icons {
     top: 155px;
     width: 100%;
-    left: 77px;
+    left: 56px;
     z-index: 2;
   }
 }
@@ -7338,12 +7361,12 @@ body {
 }
 @media screen and (max-width: 821px) {
   .second_page .devices .device .icons i {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 391px) {
   .second_page .devices .device .icons i {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
 .second_page .devices .device .icons .yellow {
@@ -7363,7 +7386,7 @@ body {
 }
 @media screen and (max-width: 821px) {
   .second_page .devices .device .description .title {
-    font-size: 8px;
+    font-size: 13px;
   }
 }
 .second_page .devices .device .description .about {
@@ -7384,12 +7407,12 @@ body {
 }
 @media screen and (max-width: 821px) {
   .second_page .devices .device .description .price .prices {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 391px) {
   .second_page .devices .device .description .price .prices {
-    font-size: 8px;
+    font-size: 14px;
   }
 }
 .second_page .devices .device .description .add_cart {
@@ -7404,18 +7427,16 @@ body {
 }
 @media screen and (max-width: 821px) {
   .second_page .devices .device .description .add_cart {
-    top: 17px;
-    left: 126px;
-    height: 24px;
-    width: 90px;
+    width: 78px;
+    height: 20px;
+    position: static;
   }
 }
 @media screen and (max-width: 391px) {
   .second_page .devices .device .description .add_cart {
-    top: 20px;
-    left: 53px;
-    height: 18px;
-    width: 66px;
+    width: 78px;
+    height: 20px;
+    position: static;
   }
 }
 .second_page .devices .device .description .add_cart:hover {
@@ -7435,6 +7456,11 @@ body {
   .second_page .devices .device .description .add_cart p {
     padding: 3px 10px;
     font-size: 8px;
+  }
+}
+@media screen and (max-width: 391px) {
+  .second_page .devices .device .buttons .allbutton {
+    bottom: -139px;
   }
 }
 
@@ -7699,6 +7725,10 @@ header .mobile-container .row .count {
     right: 1px;
     bottom: 29px;
   }
+}
+header .mobile-container.active {
+  position: fixed !important;
+  z-index: 22;
 }
 header .mobile-menu {
   overflow: hidden;

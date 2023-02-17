@@ -490,22 +490,22 @@ body {
         font-size: 13px;
         width: 100%;
         left: 110px;
-
+        
         @media screen and (max-width: 821px) {
           & {
-            top: 300px;
-            font-size: 13px;
+            top: 195px;
             width: 100%;
-            left: 145px;
+            left: 77px;
             z-index: 2;
           }
         }
+     
 
         @media screen and (max-width: 391px) {
           & {
             top: 155px;
             width: 100%;
-            left: 77px;
+            left: 56px;
             z-index: 2;
           }
         }
@@ -515,13 +515,13 @@ body {
 
           @media screen and (max-width: 821px) {
             & {
-              font-size: 10px;
+              font-size: 16px;
             }
           }
 
           @media screen and (max-width: 391px) {
             & {
-              font-size: 6px;
+              font-size: 10px;
             }
           }
         }
@@ -546,7 +546,7 @@ body {
 
           @media screen and (max-width: 821px) {
             & {
-              font-size: 8px;
+              font-size: 13px;
             }
           }
         }
@@ -571,13 +571,13 @@ body {
 
             @media screen and (max-width: 821px) {
               & {
-                font-size: 12px;
+                font-size: 14px;
               }
             }
 
             @media screen and (max-width: 391px) {
               & {
-                font-size: 8px;
+                font-size: 14px;
               }
             }
           }
@@ -595,19 +595,17 @@ body {
 
           @media screen and (max-width: 821px) {
             & {
-              top: 17px;
-              left: 126px;
-              height: 24px;
-              width: 90px;
+              width: 78px;
+              height: 20px;
+             position: static;
             }
           }
 
           @media screen and (max-width: 391px) {
             & {
-              top: 20px;
-              left: 53px;
-              height: 18px;
-              width: 66px;
+              width: 78px;
+              height: 20px;
+             position: static;
             }
           }
 
@@ -636,7 +634,17 @@ body {
         }
       }
     }
+    @media screen and (max-width: 391px) {
+      .device {
+        .buttons{
+          .allbutton{
+            bottom: -139px;
+          }
+        }
+      }
+    }
   }
+
 }
 
 .collections_accordion {

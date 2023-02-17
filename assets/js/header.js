@@ -7,14 +7,19 @@
 
     $(window).scroll(function () {
       let big_size = $(".big-size-container");
-      // let mob_size = $(".mobile-container ");
+      let mob_size = $(".mobile-container ");
       scroll = $(window).scrollTop();
       if (scroll >= 66) {
+        mob_size.addClass("active");
+        mob_size.addClass("animate_animated animate_fadeInDown");
+
         big_size.addClass("active");
         big_size.addClass("animate_animated animate_fadeInDown");
       } else {
         big_size.removeClass("active");
         big_size.removeClass("animate_animated animate_fadeInDown");
+        mob_size.removeClass("active");
+        mob_size.removeClass("animate_animated animate_fadeInDown");
       }
     });
     var activeCat = "";
