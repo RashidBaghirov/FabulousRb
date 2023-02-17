@@ -80,7 +80,7 @@ $(document).ready(function () {
     nav: true,
     margin: 10,
     responsive: {
-      0: {
+      321: {
         items: 1,
       },
       600: {
