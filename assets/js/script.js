@@ -50,6 +50,20 @@ $(document).ready(function () {
 
   /*Latest sections filter system and slider*/
 
+
+  var activeCat = "";
+  function filterGroup(group) {
+    if (activeCat != group) {
+      $("._latest")
+        .filter("." + group)
+        .show();
+      $("._latest")
+        .filter(":not(." + group + ")")
+        .hide();
+      activeCat = group;
+    }
+  }
+
   $(".first_btn").click(function () {
     filterGroup("first_crsl");
   });

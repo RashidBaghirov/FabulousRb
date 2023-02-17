@@ -257,7 +257,6 @@ body{
           &:hover {
             .first {
               opacity: 0;
-              transform: rotateY(180deg);
             }
             .second {
               opacity: 1;
@@ -486,7 +485,7 @@ body{
           &:hover {
             .first {
               opacity: 0;
-              transform: rotateY(180deg);
+              
             }
             .second {
               opacity: 1;

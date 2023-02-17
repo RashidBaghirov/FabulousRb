@@ -6218,7 +6218,6 @@ body {
 }
 #latest .device .image:hover .first {
   opacity: 0;
-  transform: rotateY(180deg);
 }
 #latest .device .image:hover .second {
   opacity: 1;
@@ -6248,6 +6247,7 @@ body {
   opacity: 0;
   display: flex;
   justify-content: center;
+  background-color: white;
   align-items: center;
   transition: 0.5s all;
   cursor: pointer;
@@ -6255,7 +6255,7 @@ body {
 #latest .device .buttons .allbutton:hover {
   background-color: #eb4d4b;
 }
-#latest .device .allbutton.active {
+#latest .device .buttons .allbutton.active {
   opacity: 1;
 }
 #latest .caption {
@@ -7706,7 +7706,6 @@ body {
 }
 #collection .first_page .right .device .image:hover .first {
   opacity: 0;
-  transform: rotateY(180deg);
 }
 #collection .first_page .right .device .image:hover .second {
   opacity: 1;
@@ -7911,7 +7910,6 @@ body {
 }
 .second_page .devices .device .image:hover .first {
   opacity: 0;
-  transform: rotateY(180deg);
 }
 .second_page .devices .device .image:hover .second {
   opacity: 1;
@@ -9471,7 +9469,6 @@ body {
 }
 #htc_product .item .device .image:hover .first {
   opacity: 0;
-  transform: rotateY(180deg);
 }
 #htc_product .item .device .image:hover .second {
   opacity: 1;

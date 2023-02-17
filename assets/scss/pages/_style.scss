@@ -570,8 +570,7 @@ body{
       }
       &:hover {
         .first {
-          opacity: 0;
-          transform: rotateY(180deg);
+          opacity: 0; 
         }
         .second {
           opacity: 1;
@@ -603,17 +602,19 @@ body{
         opacity: 0;
         display: flex;
         justify-content: center;
+        background-color: white;
         align-items: center;
         transition: 0.5s all;
         cursor: pointer;
         &:hover {
           background-color: #eb4d4b;
         }
+        &.active {
+          opacity: 1;
+        }
       }
     }
-    .allbutton.active {
-      opacity: 1;
-    }
+    
   }
   .caption {
     padding: 10px;
